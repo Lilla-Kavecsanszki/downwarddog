@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-lilla-kavecsanszki-downw-he3rojkpv5.us2.codeanyapp.com',
-                 'yoga_studio.herokuapp.com', 'localhost']
+                 'downwarddog.herokuapp.com', 'localhost']
 
 
 # Application definition
