@@ -2,12 +2,17 @@ body {
     background-color: white;
 }
 
+.navbar-color {
+    background-color: #f2eae3;
+}
+
 .logo {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: blue;
+    color: #322925;
 }
+
 
 .thin {
     font-weight: 300;

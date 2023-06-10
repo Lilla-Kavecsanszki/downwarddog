@@ -3,10 +3,15 @@ from django.views import generic, View
 from .models import Post
 
 
+def home(request):
+    """ Homepage """
+    return render(request, 'index.html')
+
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
-    template_name = "index.html"
+    template_name = "articles.html"
     paginate_by = 4
 
 
@@ -22,7 +27,7 @@ class PostDetail(View):
 
         return render(
             request,
-            "post_detail.html",
+            "articles_detail.html",
             {
                 "post": post,
                 "comments": comments,

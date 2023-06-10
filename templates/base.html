@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&amp;display=swap"
         rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,7 +28,7 @@
     <!-- Navigation -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
+        <div class="container-fluid navbar-color">
             <a class="navbar-brand" href="{% url 'home' %}"><span class="logo">DownwardDog</span> <i
                     class="fa-solid fa-paw fa-bounce fa-lg" style="color: #c36d4e;"></i></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -41,7 +41,7 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Articles</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'articles' %}">Articles</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -60,7 +60,7 @@
                     {% endif %}
                 </ul>
                 <span class="navbar-text text-muted">
-                    space holder
+                    Breathe.. or bark?
                 </span>
             </div>
         </div>
@@ -75,9 +75,13 @@
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">Made by Lilla Kavecsanszki</p>
-        <p class="m-0 text-center text-white">Find me on: <i class="fab fa-github-square ms-3"></i>
-            <i class="fab fa-github-square ms-3"></i>
-            <i class="fab fa-linkedin-square ms-3"></i>
+        <p class="m-0 text-center text-white">Find me on:
+            <a href="https://github.com/Lilla-Kavecsanszki" target="_blank" title="Github">
+                <i class="fa-brands fa-github fa-lg" style="color: #f2eae3;"></i></a>
+            <a href="https://www.linkedin.com/in/lilla-kavecsanszki-31888a100/" target="_blank" title="My_LinkedIn">
+                <i class="fa-brands fa-linkedin-in fa-lg" style="color: #f2eae3;"></i></a>
+            <br>
+        <p class="m-0 text-center text-white">This website is for educational use only</p>
     </footer>
 </body>
 
