@@ -1,3 +1,5 @@
+/* base.html */
+
 body {
     background-color: white;
 }
@@ -7,15 +9,9 @@ body {
 }
 
 .logo {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-family: 'Poiret One', cursive;
+    font-size: 2rem;
     color: #322925;
-}
-
-
-.thin {
-    font-weight: 300;
 }
 
 .light-bg {
@@ -29,6 +25,8 @@ body {
 .main-bg {
     background-color: white
 }
+
+/* articles.html and articles_detail.html */
 
 .card {
     border: none;
@@ -44,13 +42,14 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #f2eae3;
 }
 
 .author {
-    color: white;
+    color: #322925;
     margin: 4px;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .masthead {
@@ -63,9 +62,9 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
+    background-color: #f2eae3;
     position: relative;
+    font-family: 'Poiret One', cursive;
 }
 
 .masthead-image {
@@ -80,7 +79,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #f2eae3;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -89,23 +88,27 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #322925;
+    font-family: 'Poiret One', cursive;
 }
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #c36d4e;
 }
 
 .post-title {
     margin-top: 20%;
     margin-left: 5%;
+    color: #c36d4e;
 }
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #c36d4e;
 }
+
+/* Sign-up */
 
 .btn-signup {
     background-color: #23BBBB;
@@ -140,4 +143,19 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+/* index.hmtl */
+
+.custom-btn {
+    background-color: #c36d4e;
+    border: none;
+}
+
+.custom-btn:hover,
+.custom-btn:active,
+.custom-btn:after {
+    background-color: #f2eae3;
+    border: 2px solid #c36d4e;
+    color: #c36d4e
 }
