@@ -111,36 +111,37 @@ body {
 /* Sign-up */
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #c36d4e;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color: #f2eae3;
+    color: #c36d4e;
+    border: 2px solid #c36d4e;
 }
 
 .link {
-    color: #23BBBB;
+    color: #c36d4e;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #322925;
     text-decoration: underline;
 }
 
 .btn-like {
-    color: #E84610;
+    color: #c36d4e;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #c36d4e;
     background: transparent;
     border: none;
 }
