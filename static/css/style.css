@@ -2,6 +2,7 @@
 
 body {
     background-color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-color {
@@ -12,6 +13,11 @@ body {
     font-family: 'Poiret One', cursive;
     font-size: 2rem;
     color: #322925;
+}
+
+.nav-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
 }
 
 .light-bg {
@@ -161,4 +167,10 @@ body {
     background-color: #f2eae3;
     border: 2px solid #c36d4e;
     color: #c36d4e
+}
+
+/* Footer */
+
+footer {
+    font-family: 'Montserrat', sans-serif;
 }

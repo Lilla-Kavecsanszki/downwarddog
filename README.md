@@ -11,3 +11,4 @@ https://www.yogabasics.com/explore/yogic-lifestyle/yogic-diet/yogic-diet-guide/
 
 https://www.yogajournal.com/lifestyle/yoga-trends/practice-yoga-dog/
 
+https://www.shutterstock.com/video/editorial/search/puppy-yoga
