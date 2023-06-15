@@ -108,6 +108,21 @@ body {
     color: #c36d4e;
 }
 
+/* Like/ unlike hearts */
+
+.btn-like {
+    color: #c36d4e;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #c36d4e;
+    background: transparent;
+    border: none;
+}
+
 /* Sign-up */
 
 .btn-signup {
@@ -131,19 +146,6 @@ body {
 .link:active {
     color: #322925;
     text-decoration: underline;
-}
-
-.btn-like {
-    color: #c36d4e;
-    border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #c36d4e;
-    background: transparent;
-    border: none;
 }
 
 /* index.hmtl */
