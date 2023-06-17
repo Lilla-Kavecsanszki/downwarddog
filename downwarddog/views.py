@@ -81,3 +81,8 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('articles_detail', args=[slug]))
+
+
+def yoga(request):
+    """ Yoga """
+    return render(request, 'yoga.html')

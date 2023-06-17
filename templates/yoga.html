@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <video width="320" height="240" controls>
+
+        <source
+            src="https://res.cloudinary.com/djpamvm7i/video/upload/v1687023828/pexels-kampus-production-8056618-3840x2160-25fps_vqeupb.mp4"
+            type="video/mp4">
+        </source>
+        Your browser does not support the video tag
+    </video>
+</section>
+<section class="classes">
+    <div class="container">
+        <h2>Our Classes</h2>
+        <div class="row">
+            {% for yoga_class in yoga_classes %}
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="#" alt="{{ yoga_class.title }}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ yoga_class.title }}</h5>
+                        <p class="card-text">{{ yoga_class.description }}</p>
+                        <a href="#" class="btn btn-primary">Book</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock content %}

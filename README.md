@@ -12,3 +12,15 @@ https://www.yogabasics.com/explore/yogic-lifestyle/yogic-diet/yogic-diet-guide/
 https://www.yogajournal.com/lifestyle/yoga-trends/practice-yoga-dog/
 
 https://www.shutterstock.com/video/editorial/search/puppy-yoga
+
+Inspiration:
+
+<https://triyoga.co.uk/contact-us/>
+
+https://getbootstrap.com/docs/5.0/forms/select/
+
+https://docs.djangoproject.com/en/4.2/
+
+<https://getbootstrap.com/docs/5.0/getting-started/introduction/>
+
+<https://stackoverflow.com/questions/61020923/displaying-videos-in-django-template-media-link>
