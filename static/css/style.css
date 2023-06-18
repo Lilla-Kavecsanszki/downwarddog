@@ -1,176 +1,176 @@
 /* base.html */
 
 body {
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar-color {
-    background-color: #f2eae3;
+  background-color: #f2eae3;
 }
 
 .logo {
-    font-family: 'Poiret One', cursive;
-    font-size: 2rem;
-    color: #322925;
+  font-family: "Poiret One", cursive;
+  font-size: 2rem;
+  color: #322925;
 }
 
 .nav-item {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 120%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 120%;
 }
 
 .light-bg {
-    background-color: #f2eae3;
+  background-color: #f2eae3;
 }
 
 .dark-bg {
-    background-color: #322925;
+  background-color: #322925;
 }
 
 .main-bg {
-    background-color: white
+  background-color: white;
 }
 
 /* articles.html and articles_detail.html */
 
 .card {
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 }
 
 .image-container {
-    position: relative;
+  position: relative;
 }
 
 .image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #f2eae3;
+  position: absolute;
+  bottom: 5%;
+  min-width: 30%;
+  left: -2px;
+  background-color: #f2eae3;
 }
 
 .author {
-    color: #322925;
-    margin: 4px;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+  color: #322925;
+  margin: 4px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
 }
 
 .masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  height: 33vh;
+  width: 100%;
 }
 
 .masthead-text {
-    background-color: #f2eae3;
-    position: relative;
-    font-family: 'Poiret One', cursive;
+  background-color: #f2eae3;
+  position: relative;
+  font-family: "Poiret One", cursive;
 }
 
 .masthead-image {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #f2eae3;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 90%;
+  height: 100%;
+  width: 150%;
+  background: #f2eae3;
+  -webkit-transform: skew(15deg);
+  -moz-transform: skew(15deg);
+  transform: skew(15deg);
+  z-index: 100;
 }
 
 .post-link {
-    text-decoration: none;
-    color: #322925;
-    font-family: 'Poiret One', cursive;
+  text-decoration: none;
+  color: #322925;
+  font-family: "Poiret One", cursive;
 }
 
 .post-link:hover,
 .page-link {
-    color: #c36d4e;
+  color: #c36d4e;
 }
 
 .post-title {
-    margin-top: 20%;
-    margin-left: 5%;
-    color: #c36d4e;
+  margin-top: 20%;
+  margin-left: 5%;
+  color: #c36d4e;
 }
 
 .post-subtitle {
-    margin-left: 5%;
-    color: #c36d4e;
+  margin-left: 5%;
+  color: #c36d4e;
 }
 
 /* Like/ unlike hearts */
 
 .btn-like {
-    color: #c36d4e;
-    border: none;
-    background: transparent;
+  color: #c36d4e;
+  border: none;
+  background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #c36d4e;
-    background: transparent;
-    border: none;
+  color: #c36d4e;
+  background: transparent;
+  border: none;
 }
 
 /* Sign-up */
 
 .btn-signup {
-    background-color: #c36d4e;
-    color: #fff;
+  background-color: #c36d4e;
+  color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #f2eae3;
-    color: #c36d4e;
-    border: 2px solid #c36d4e;
+  background-color: #f2eae3;
+  color: #c36d4e;
+  border: 2px solid #c36d4e;
 }
 
 .link {
-    color: #c36d4e;
-    text-decoration: none;
+  color: #c36d4e;
+  text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #322925;
-    text-decoration: underline;
+  color: #322925;
+  text-decoration: underline;
 }
 
 /* index.hmtl */
 
 .custom-btn {
-    background-color: #c36d4e;
-    border: none;
+  background-color: #c36d4e;
+  border: none;
 }
 
 .custom-btn:hover,
 .custom-btn:active,
 .custom-btn:after {
-    background-color: #f2eae3;
-    border: 2px solid #c36d4e;
-    color: #c36d4e
+  background-color: #f2eae3;
+  border: 2px solid #c36d4e;
+  color: #c36d4e;
 }
 
 /* Footer */
 
 footer {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }

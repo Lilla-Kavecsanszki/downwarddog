@@ -54,3 +54,15 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
+
+
+"""Yoga page"""
+
+
+# class Video(models.Model):
+#     video = models.FileField(upload_to='videos_uploaded', null=True,
+#                              validators=[FileExtensionValidator(allowed_extensions=['MOV', 'avi', 'mp4', 'webm', 'mkv'])])
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+#     def __str__(self):
+#         return self.title

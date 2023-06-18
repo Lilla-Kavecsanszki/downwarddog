@@ -1,4 +1,3 @@
-
 deployed [Website](https://downwarddog.herokuapp.com/)
 
 Sources:
@@ -24,3 +23,7 @@ https://docs.djangoproject.com/en/4.2/
 <https://getbootstrap.com/docs/5.0/getting-started/introduction/>
 
 <https://stackoverflow.com/questions/61020923/displaying-videos-in-django-template-media-link>
+
+https://stackoverflow.com/questions/56969479/adding-video-field-in-django
+
+https://docs.djangoproject.com/en/2.2/topics/http/file-uploads/

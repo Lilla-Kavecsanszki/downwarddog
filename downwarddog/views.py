@@ -3,11 +3,28 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+# from .models import Video
 
 
 def home(request):
     """ Homepage """
     return render(request, 'index.html')
+
+
+def yoga_classes(request):
+    """ Yoga page """
+    return render(request, 'yoga.html')
+
+
+# def yoga_classes(request):
+#     # Retrieve the video objects from the database
+#     highlights = Video.objects.all()
+
+#     context = {
+#         'highlights': highlights,
+#     }
+
+#     return render(request, 'yoga.html', context)
 
 
 class PostList(generic.ListView):
@@ -81,8 +98,3 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('articles_detail', args=[slug]))
-
-
-def yoga(request):
-    """ Yoga """
-    return render(request, 'yoga.html')

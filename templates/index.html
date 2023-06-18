@@ -1,81 +1,92 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<section class="hero"
-    style="background-image: url('https://res.cloudinary.com/djpamvm7i/image/upload/v1686848229/mhwoj4iln0c5lvfoawpm.jpg');">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3 text-center">
-                <h1>Welcome to DownwardDog Yoga Studio</h1>
-                <p>Embark on a journey of serenity through the practice of yoga, where you can discover inner bliss and
-                    cultivate a sense of peace. And guess what? We warmly welcome your furry friend to join in the
-                    experience!</p>
-                <a href="{% url 'home' %}" class="btn btn-primary btn-lg custom-btn">Get Started</a>
-            </div>
-        </div>
+{% extends 'base.html' %} {% block content %}
+<section
+  class="hero"
+  style="
+    background-image: url('https://res.cloudinary.com/djpamvm7i/image/upload/v1686848229/mhwoj4iln0c5lvfoawpm.jpg');
+  "
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3 text-center">
+        <h1>Welcome to DownwardDog Yoga Studio</h1>
+        <p>
+          Embark on a journey of serenity through the practice of yoga, where
+          you can discover inner bliss and cultivate a sense of peace. And guess
+          what? We warmly welcome your furry friend to join in the experience!
+        </p>
+        <a
+          href="{% url 'account_signup' %}"
+          class="btn btn-primary btn-lg custom-btn"
+          >Get Started</a
+        >
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="classes">
-    <div class="container">
-        <h2>Our Classes</h2>
-        <div class="row">
-            {% for yoga_class in yoga_classes %}
-            <div class="col-lg-4">
-                <div class="card">
-                    <img src="#" alt="{{ yoga_class.title }}" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ yoga_class.title }}</h5>
-                        <p class="card-text">{{ yoga_class.description }}</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+  <div class="container">
+    <h2>Our Classes</h2>
+    <div class="row">
+      {% for yoga_class in yoga_classes %}
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="#" alt="{{ yoga_class.title }}" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">{{ yoga_class.title }}</h5>
+            <p class="card-text">{{ yoga_class.description }}</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
         </div>
+      </div>
+      {% endfor %}
     </div>
+  </div>
 </section>
 
 <section class="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <h2>Our Story</h2>
-                <p>Lorem ipsum dolor sit amet, bla bli bla bla.</p>
-            </div>
-            <div class="col-lg-6">
-                <img src="https://res.cloudinary.com/djpamvm7i/image/upload/v1687024071/whiteback-pug_alxmkr.jpg"
-                    alt="Dog doing yoga" class="img-fluid">
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Our Story</h2>
+        <p>Lorem ipsum dolor sit amet, bla bli bla bla.</p>
+      </div>
+      <div class="col-lg-6">
+        <img
+          src="https://res.cloudinary.com/djpamvm7i/image/upload/v1687024071/whiteback-pug_alxmkr.jpg"
+          alt="Dog doing yoga"
+          class="img-fluid"
+        />
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <h2>Our Team</h2>
-                <p>Lorem ipsum dolor sit amet, bla bli bla bla.</p>
-            </div>
-            <div class="col-lg-6">
-                <img src="#" alt="About Image" class="img-fluid">
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Our Team</h2>
+        <p>Lorem ipsum dolor sit amet, bla bli bla bla.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="#" alt="About Image" class="img-fluid" />
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="feedback">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Reach Out</h2>
-                <p>for general enquiries & feedback</p>
-            </div>
-            <div class="col-lg-8">
-                <img src="#" alt="Map" class="img-fluid">
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h2>Reach Out</h2>
+        <p>for general enquiries & feedback</p>
+      </div>
+      <div class="col-lg-8">
+        <img src="#" alt="Map" class="img-fluid" />
+      </div>
     </div>
+  </div>
 </section>
 {% endblock content %}
