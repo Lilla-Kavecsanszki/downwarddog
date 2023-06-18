@@ -11,9 +11,34 @@ def home(request):
     return render(request, 'index.html')
 
 
-def yoga_classes(request):
+def yoga_page(request):
     """ Yoga page """
     return render(request, 'yoga.html')
+
+
+def yoga_classes(request):
+    class_types = [
+        {
+            'name': 'Hatha Yoga',
+            'description': 'A gentle and slow-paced yoga practice bla bli bla bla.'
+        },
+        {
+            'name': 'Vinyasa Yoga',
+            'description': 'A dynamic and flowing yoga practice synchronized with breath bla bli bla bla.'
+        },
+        {
+            'name': 'Ashtanga Yoga',
+            'description': 'A rigorous and structured yoga practice bla bli bla bla.'
+        },
+        {
+            'name': 'Bikram Yoga',
+            'description': 'bla bli in a heated room.'
+        }
+    ]
+    context = {
+        'yoga_classes': class_types
+    }
+    return render(request, 'yoga.html', context)
 
 
 # def yoga_classes(request):

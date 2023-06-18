@@ -7,4 +7,19 @@
     Your browser does not support the video tag
 </video> -->
 <!-- {% endfor %} -->
+
+<h1>Yoga Classes</h1>
+
+<div class="row">
+    {% for yoga_class in yoga_classes %}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ yoga_class.name }}</h5>
+                <p class="card-text">{{ yoga_class.description }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 {% endblock content %}
