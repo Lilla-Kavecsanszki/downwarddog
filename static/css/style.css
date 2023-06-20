@@ -156,9 +156,19 @@ body {
 
 /* index.hmtl */
 
+.hero-text {
+    color: white;
+}
+
+.book {
+    font-family: "Poiret One", cursive;
+    font-size: 200%;
+}
+
 .custom-btn {
     background-color: #c36d4e;
     border: none;
+    width: 25%;
 }
 
 .custom-btn:hover,

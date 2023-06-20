@@ -1,27 +1,31 @@
 {% extends 'base.html' %} {% block content %}
-<section class="hero" style="
-    background-image: url('https://res.cloudinary.com/djpamvm7i/image/upload/v1686848229/mhwoj4iln0c5lvfoawpm.jpg');
-  ">
+
+<!-- for the photo to be displayed -->
+{% load static %}
+
+<section class="hero d-flex align-items-center"
+    style="background-image: url('{% static 'images/hero.jpg' %}'); background-size: cover; background-position: center; height: 700px;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 offset-lg-3 text-center">
+            <div class="col-lg-6 offset-lg-3 text-center hero-text">
                 <h1>Welcome to DownwardDog Yoga Studio</h1>
                 <p>
                     Embark on a journey of serenity through the practice of yoga, where
                     you can discover inner bliss and cultivate a sense of peace. And guess
                     what? We warmly welcome your furry friend to join in the experience!
                 </p>
-                <a href="{% url 'account_signup' %}" class="btn btn-primary btn-lg custom-btn">Get Started</a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="classes">
+<section class="classes col-lg-6 offset-lg-3 text-center">
     <div class="container">
-        <h2>Our Classes</h2>
         <div class="row">
-            <p>Learn more and book!</p>
+            <h4 class="book">Learn more about our classes and book!</h4>
+            <div class="col-12 d-flex justify-content-center">
+                <a href="{% url 'yoga' %}" class="btn btn-primary btn-lg custom-btn">Get Started</a>
+            </div>
         </div>
     </div>
 </section>
@@ -29,6 +33,10 @@
 <section class="about">
     <div class="container">
         <div class="row">
+            <div class="col-lg-6">
+                <img src="https://res.cloudinary.com/djpamvm7i/image/upload/v1687263829/whiteback-pug_qbta1m.jpg"
+                    alt="Dog doing yoga" class="img-fluid" />
+            </div>
             <div class="col-lg-6">
                 <h2>Our Story</h2>
                 <p>Welcome to our unique yoga studio, where we have created a sanctuary for yoga practitioners and
@@ -42,10 +50,6 @@
                     along. We believe that the presence of our furry friends brings an added sense of joy, comfort,
                     and connection to our yoga community.
                 </p>
-            </div>
-            <div class="col-lg-6">
-                <img src="https://res.cloudinary.com/djpamvm7i/image/upload/v1687024071/whiteback-pug_alxmkr.jpg"
-                    alt="Dog doing yoga" class="img-fluid" />
             </div>
         </div>
     </div>
@@ -72,7 +76,7 @@
                 </p>
             </div>
             <div class="col-lg-6">
-                <img src="#" alt="About Image" class="img-fluid" />
+                <img src="{% static 'images/team.jpg' %}" alt="About Image" class="img-fluid" />
             </div>
         </div>
     </div>
