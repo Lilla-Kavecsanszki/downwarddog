@@ -14,7 +14,7 @@ https://www.shutterstock.com/video/editorial/search/puppy-yoga
 
 Inspiration:
 
-<https://triyoga.co.uk/contact-us/>
+<<https://triyoga.co.uk/>
 
 https://getbootstrap.com/docs/5.0/forms/select/
 

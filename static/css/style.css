@@ -156,6 +156,11 @@ body {
 
 /* index.hmtl */
 
+.hero {
+    width: 100%;
+    height: auto;
+}
+
 .custom-btn {
     background-color: #c36d4e;
     border: none;

@@ -18,20 +18,20 @@ def home(request):
 def yoga_classes(request):
     class_types = [
         {
-            'name': 'Hatha Yoga',
-            'description': 'A gentle and slow-paced yoga practice bla bli bla bla.'
-        },
-        {
-            'name': 'Vinyasa Yoga',
-            'description': 'A dynamic and flowing yoga practice synchronized with breath bla bli bla bla.'
+            'name': 'Vinyasa Flow Yoga',
+            'description': 'Vinyasa Flow is a dynamic practice and one of the most popular forms of yoga in the world. In this class you will flow through a sequence of postures.'
         },
         {
             'name': 'Ashtanga Yoga',
-            'description': 'A rigorous and structured yoga practice bla bli bla bla.'
+            'description': 'Linking breath and movement, students move through a set sequence of asanas that purify, strengthen and give flexibility to the body.'
         },
         {
-            'name': 'Bikram Yoga',
-            'description': 'bla bli in a heated room.'
+            'name': 'Scaravelli Yoga',
+            'description': 'A gentle yet mentally-demanding class that focuses on developing core strength, releasing tension and creating length in the spine.'
+        },
+        {
+            'name': 'Iyengar Yoga',
+            'description': 'The Iyengar yoga method is internationally respected for its rigorous style and its sophisticated understanding of asana.'
         }
     ]
     context = {
