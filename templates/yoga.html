@@ -1,25 +1,36 @@
 {% extends "base.html" %} {% block content %}
-<!-- {% for video in highlights %}
-<video width="320" height="240" controls>
-    {% load static %}
-    <source src="{% static 'videos/puppy-yoga-video.mp4' %}" type="video/mp4">
-    </source>
-    Your browser does not support the video tag
-</video> -->
-<!-- {% endfor %} -->
 
-<h1>Yoga Classes</h1>
+<!-- for the video to be displayed -->
+{% load static %}
 
-<div class="row">
-    {% for yoga_class in yoga_classes %}
-    <div class="col-md-3">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">{{ yoga_class.name }}</h5>
-                <p class="card-text">{{ yoga_class.description }}</p>
+<div class="container">
+    <!-- Video Section -->
+    <section class="video-background">
+        <video autoplay muted loop id="puppyVideo">
+            <source src="{% static 'videos/puppy-yoga-video1.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag
+        </video>
+        <!-- Text on top-->
+        <div class="overlay"></div>
+        <div class="video-text">
+            <h1>Our Classes</h1>
+            <h5>Book now!</h5>
+            <br>
+            <i class="fa-solid fa-arrow-down fa-bounce fa-2xl" style="color: white;"></i>
+        </div>
+    </section>
+    <!-- Table Section -->
+    <div class="row">
+        {% for yoga_class in yoga_classes %}
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ yoga_class.name }}</h5>
+                    <p class="card-text">{{ yoga_class.description }}</p>
+                </div>
             </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 {% endblock content %}
