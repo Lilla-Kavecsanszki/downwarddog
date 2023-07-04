@@ -4,14 +4,21 @@
 {% load static %}
 
 <head>
-    script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init("XfnzvOvCslkErbYKK");
+            emailjs.send("service_j70zwjo","template_chr6g3c",{
+                to_name: "",
+                from_name: "",
+                message: "",
+                });
         })();
     </script>
+   
 </head>
+
 <section class="hero d-flex align-items-center"
     style="background-image: url('{% static 'images/hero.jpg' %}'); background-size: cover; background-position: center; height: 700px;">
     <div class="container">
@@ -115,3 +122,7 @@
 </section>
 
 {% endblock content %}
+
+<script src="{% static 'js/sendEmail.js' %}"></script>
+</body>
+</html>
