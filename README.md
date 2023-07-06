@@ -12,9 +12,13 @@ https://www.yogajournal.com/lifestyle/yoga-trends/practice-yoga-dog/
 
 https://www.shutterstock.com/video/editorial/search/puppy-yoga
 
+https://stackoverflow.com/questions/34586259/how-to-organize-js-files-in-django
+
 Inspiration:
 
 <<https://triyoga.co.uk/>
+
+https://en.wikipedia.org/wiki/Doga_(yoga)
 
 https://getbootstrap.com/docs/5.0/forms/select/
 
