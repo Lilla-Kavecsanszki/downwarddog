@@ -98,6 +98,7 @@
             <br>
         <p class="m-0 text-center text-white">This website is for educational use only</p>
     </footer>
+    {% block scripts %}
     <script>
         setTimeout(function () {
             let messages = document.getElementById('msg');
@@ -105,6 +106,7 @@
             alert.close();
         }, 2000);
     </script>
+    {% endblock %}
 </body>
 
 </html>

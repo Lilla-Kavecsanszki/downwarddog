@@ -27,3 +27,7 @@ https://docs.djangoproject.com/en/4.2/
 https://stackoverflow.com/questions/56969479/adding-video-field-in-django
 
 https://docs.djangoproject.com/en/2.2/topics/http/file-uploads/
+
+
+Bugs:
+EmailJS... was not connected properly, didnt copy the correct template parameters

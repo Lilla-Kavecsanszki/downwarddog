@@ -9,14 +9,9 @@
     <script type="text/javascript">
         (function () {
             emailjs.init("XfnzvOvCslkErbYKK");
-            emailjs.send("service_j70zwjo","template_chr6g3c",{
-                to_name: "",
-                from_name: "",
-                message: "",
-                });
         })();
     </script>
-   
+
 </head>
 
 <section class="hero d-flex align-items-center"
@@ -105,7 +100,7 @@
                 <p class="text-uppercase">for general enquiries & feedback</p>
             </div>
             <div class="center-form">
-                <form>
+                <form onsubmit="return sendMail(this);">
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
                         required />
@@ -123,6 +118,23 @@
 
 {% endblock content %}
 
-<script src="{% static 'js/sendEmail.js' %}"></script>
-</body>
-</html>
+{% block scripts %}
+<script>
+    function sendMail(contactForm) {
+    emailjs.send("service_j70zwjo", "template_chr6g3c", {
+        "from_name": contactForm.name.value,
+        "from_email": contactForm.emailaddress.value,
+        "message": contactForm.feedback.value
+    })
+        .then(
+            function (response) {
+                console.log("SUCCESS", response);
+            },
+            function (error) {
+                console.log("FAILED", error);
+            }
+        );
+    return false;  // To block from loading a new page
+}
+</script>
+{% endblock scripts %}
