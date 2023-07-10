@@ -56,13 +56,29 @@ class Comment(models.Model):
         return f"Comment {self.body} by {self.name}"
 
 
-"""Yoga page"""
+"""Yoga page - Classes"""
 
 
-# class Video(models.Model):
-#     video = models.FileField(upload_to='videos_uploaded', null=True,
-#                              validators=[FileExtensionValidator(allowed_extensions=['MOV', 'avi', 'mp4', 'webm', 'mkv'])])
-#     user = models.ForeignKey(User, on_delete=models.CASCADE)
+class ClassType(models.Model):
+    name = models.CharField(max_length=200)
+    description = models.TextField()
 
-#     def __str__(self):
-#         return self.title
+    def __str__(self):
+        return self.name
+
+
+"""Booking"""
+
+
+class Booking(models.Model):
+    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    booking_date = models.DateField()
+    start_time = models.TimeField()
+    class_type = models.ForeignKey(ClassType, on_delete=models.CASCADE)
+    description = models.CharField(max_length=200)
+
+    def __str__(self):
+        return f'Booking by {self.user.get_full_name()} on {self.booking_date} at {self.start_time} for {self.class_type}'
+
+    class Meta:
+        ordering = ['booking_date', 'start_time']

@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, ClassType
 from .forms import CommentForm
 
 
@@ -10,32 +10,28 @@ def home(request):
     return render(request, 'index.html')
 
 
-# def yoga_page(request):
-#     """ Yoga page """
-#     return render(request, 'yoga.html')
-
-
 def yoga_classes(request):
-    class_types = [
-        {
-            'name': 'Vinyasa Flow Yoga',
-            'description': 'Vinyasa Flow is a dynamic practice and one of the most popular forms of yoga in the world. In this class you will flow through a sequence of postures.'
-        },
-        {
-            'name': 'Ashtanga Yoga',
-            'description': 'Linking breath and movement, students move through a set sequence of asanas that purify, strengthen and give flexibility to the body.'
-        },
-        {
-            'name': 'Scaravelli Yoga',
-            'description': 'A gentle yet mentally-demanding class that focuses on developing core strength, releasing tension and creating length in the spine.'
-        },
-        {
-            'name': 'Iyengar Yoga',
-            'description': 'The Iyengar yoga method is internationally respected for its rigorous style and its sophisticated understanding of asana.'
-        }
-    ]
+    class_types = ClassType.objects.all()
+    for class_type in class_types:
+        if class_type.name == 'Vinyasa Flow Yoga':
+            class_type.description = 'Vinyasa Flow is a dynamic practice and one of the most popular forms of yoga in the world. In this class, you will flow through a sequence of postures.'
+            class_type.available_dates_times = [
+                '2023-09-10 09:00', '2023-09-12 17:30', '2023-09-15 11:00']
+        elif class_type.name == 'Ashtanga Yoga':
+            class_type.description = 'Linking breath and movement, students move through a set sequence of asanas that purify, strengthen and give flexibility to the body.'
+            class_type.available_dates_times = [
+                '2023-09-11 16:00', '2023-09-13 08:30', '2023-09-16 10:30']
+        elif class_type.name == 'Scaravelli Yoga':
+            class_type.description = 'A gentle yet mentally-demanding class that focuses on developing core strength, releasing tension and creating length in the spine.'
+            class_type.available_dates_times = [
+                '2023-09-10 14:30', '2023-09-12 11:00', '2023-09-15 15:00']
+        elif class_type.name == 'Iyengar Yoga':
+            class_type.description = 'The Iyengar yoga method is internationally respected for its rigorous style and its sophisticated understanding of asana.'
+            class_type.available_dates_times = [
+                '2023-09-11 10:00', '2023-09-13 13:30', '2023-09-16 09:00']
+
     context = {
-        'yoga_classes': class_types
+        'class_types': class_types
     }
     return render(request, 'yoga.html', context)
 
