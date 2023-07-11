@@ -105,6 +105,11 @@ class Booking(models.Model):
                              related_name='class_booking',)
     approved = models.BooleanField(default=False)
    
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['classes', 'user'],
+                                    name='unique_booking'),
+        ]
 
 def __str__(self):
         return f'{self.classes} is booked by {self.user}'

@@ -20,10 +20,12 @@ class PostList(generic.ListView):
     template_name = "articles.html"
     paginate_by = 4
 
+    
 class YogaList(generic.ListView):
     model = Classes
     queryset = Classes.objects.filter(status=1).order_by('status')
     template_name = 'yoga.html'
+    context_object_name = 'classes_list'
     paginate_by = 4
 
 class PostDetail(View):

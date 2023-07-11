@@ -219,6 +219,12 @@ body {
     text-align: center;
 }
 
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
 /* Footer */
 
 footer {
