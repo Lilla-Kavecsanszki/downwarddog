@@ -22,21 +22,22 @@
 </div>
 <div class="container">
     <!-- Table Section -->
-    <section class="col-12 mt-3">
-        <div class="row card-deck">
-            {% for class_instance in classes_list %}
-            <div class="col-md-3">
-                <div class="card" style="background-color: #c36d4e;">
-                    <div class="card-body" style="color: #f2eae3;">
-                        <h5 class="card-title">{{ class_instance.title }}</h5>
-                        <p class="card-text">{{ class_instance.description }}</p>
-                        <p class="card-text">Duration: {{ class_instance.duration_minutes }} minutes</p>
-                    </div>
+<section class="col-12 mt-3">
+    <div class="row card-deck">
+        {% for class_instance in classes_list %}
+        <div class="col-md-3">
+            <div class="card" style="background-color: #c36d4e;">
+                <div class="card-body" style="color: #f2eae3;">
+                    <h5 class="card-title">{{ class_instance.title }}</h5>
+                    <p class="card-text">{{ class_instance.description }}</p>
+                    <p class="card-text">Duration: {{ class_instance.duration_minutes }} minutes</p>
+                    <a href="{% url 'yoga_detail' slug=class_instance.slug %}" class="btn btn-primary">Availablities</a>
                 </div>
             </div>
-            {% endfor %}
         </div>
-    </section>
+        {% endfor %}
+    </div>
+</section>
 </div>
 
 {% endblock content %}

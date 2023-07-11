@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block content %}
+
+<!-- for the video to be displayed -->
+{% load static %}
+
+<div class="container">
+    <!-- Video Section -->
+    <section class="video-background">
+        <video autoplay muted loop id="puppyVideo">
+            <source src="{% static 'videos/puppy-yoga-video1.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag
+        </video>
+        <!-- Text on top-->
+        <div class="overlay"></div>
+        <div class="video-text">
+            <h1>Our Classes</h1>
+            <h5>Book now!</h5>
+            <br>
+            <i class="fa-solid fa-arrow-down fa-bounce fa-2xl" style="color: white;"></i>
+        </div>
+    </section>
+</div>
+    <div class="container">
+        <!-- Table Section -->
+        <section class="col-12 mt-3">
+            <div class="row card-deck">
+                {% for timetable in timetables %}
+                <div class="col-md-3">
+                    <div class="card" style="background-color: #c36d4e;">
+                        <div class="card-body" style="color: #f2eae3;">
+                            <p class="card-text">Available Date: {{ timetable.available_date }}</p>
+                            <p class="card-text">Available Time: {{ timetable.available_time }}</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+{% endblock content %}

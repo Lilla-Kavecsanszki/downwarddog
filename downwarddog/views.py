@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post, Classes
+from .models import Post, Classes, Timetable
 from .forms import CommentForm
 
 
@@ -20,13 +20,26 @@ class PostList(generic.ListView):
     template_name = "articles.html"
     paginate_by = 4
 
-    
+
 class YogaList(generic.ListView):
     model = Classes
     queryset = Classes.objects.filter(status=1).order_by('status')
     template_name = 'yoga.html'
     context_object_name = 'classes_list'
     paginate_by = 4
+
+
+class YogaDetail(View):
+    def get(self, request, slug, *args, **kwargs):
+        class_instance = get_object_or_404(Classes, slug=slug, status=1)
+        timetables = Timetable.objects.filter(classes=class_instance).order_by('available_time')
+
+        return render(request, 'yoga_detail.html', {
+            'class_instance': class_instance,
+            'timetables': timetables
+        })
+
+
 
 class PostDetail(View):
 
