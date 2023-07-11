@@ -1,6 +1,17 @@
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post, Comment, Classes, Timetable, Booking
 from django_summernote.admin import SummernoteModelAdmin
+
+admin.site.register(Timetable)
+admin.site.register(Booking)
+
+@admin.register(Classes)
+class ClassesAdmin(SummernoteModelAdmin):
+    summernote_fields = ('content',)
+    list_filter = ('status', 'updated_on')
+    prepopulated_fields = {'slug': ('title',)}
+    list_display = ('title', 'slug', 'status', 'updated_on')
+    search_fields = ['title', 'content']
 
 
 @admin.register(Post)

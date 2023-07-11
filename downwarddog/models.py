@@ -56,29 +56,55 @@ class Comment(models.Model):
         return f"Comment {self.body} by {self.name}"
 
 
-"""Yoga page - Classes"""
+"""Classes"""
+
+STATUS = ((0, 'Draft'), (1, 'Published'))
 
 
-class ClassType(models.Model):
-    name = models.CharField(max_length=200)
+class Classes(models.Model):
+    title = models.CharField(max_length=100, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
     description = models.TextField()
+    duration_minutes = models.IntegerField()
+    status = models.IntegerField(choices=STATUS, default=0)
+    updated_on = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["status"]
+        verbose_name_plural = 'Classes'
 
     def __str__(self):
-        return self.name
+        return self.title
 
+
+class Timetable(models.Model):
+    classes = models.ForeignKey(Classes, on_delete=models.CASCADE,
+                             related_name='approved_classes')
+    available_date = models.DateTimeField()
+    available_time = models.TimeField()
+
+
+    class Meta:
+        ordering = ["available_date"]
+        constraints = [
+            models.UniqueConstraint(fields=['classes', 'available_date', 'available_time'],
+                                    name='unique_class'),
+        ]
+
+    def __str__(self):
+        return f'Yoga class {self.classes} is scheduled for {self.available_date}'
+                     
 
 """Booking"""
 
 
 class Booking(models.Model):
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    booking_date = models.DateField()
-    start_time = models.TimeField()
-    class_type = models.ForeignKey(ClassType, on_delete=models.CASCADE)
-    description = models.CharField(max_length=200)
+    user = models.ForeignKey('auth.User', on_delete=models.CASCADE, 
+                             related_name="user_booking")
+    classes = models.ForeignKey(Timetable, on_delete=models.CASCADE,
+                             related_name='class_booking',)
+    approved = models.BooleanField(default=False)
+   
 
-    def __str__(self):
-        return f'Booking by {self.user.get_full_name()} on {self.booking_date} at {self.start_time} for {self.class_type}'
-
-    class Meta:
-        ordering = ['booking_date', 'start_time']
+def __str__(self):
+        return f'{self.classes} is booked by {self.user}'
