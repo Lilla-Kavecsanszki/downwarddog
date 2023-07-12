@@ -79,37 +79,36 @@ class Classes(models.Model):
 
 class Timetable(models.Model):
     classes = models.ForeignKey(Classes, on_delete=models.CASCADE,
-                             related_name='approved_classes')
+                                related_name='approved_classes')
     available_date = models.DateTimeField()
-    available_time = models.TimeField()
-
 
     class Meta:
         ordering = ["available_date"]
         constraints = [
-            models.UniqueConstraint(fields=['classes', 'available_date', 'available_time'],
+            models.UniqueConstraint(fields=['classes', 'available_date'],
                                     name='unique_class'),
         ]
 
     def __str__(self):
         return f'Yoga class {self.classes} is scheduled for {self.available_date}'
-                     
+
 
 """Booking"""
 
 
 class Booking(models.Model):
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE, 
+    user = models.ForeignKey('auth.User', on_delete=models.CASCADE,
                              related_name="user_booking")
     classes = models.ForeignKey(Timetable, on_delete=models.CASCADE,
-                             related_name='class_booking',)
+                                related_name='class_booking',)
     approved = models.BooleanField(default=False)
-   
+
     class Meta:
         constraints = [
             models.UniqueConstraint(fields=['classes', 'user'],
                                     name='unique_booking'),
         ]
 
+
 def __str__(self):
-        return f'{self.classes} is booked by {self.user}'
+    return f'{self.classes} is booked by {self.user}'

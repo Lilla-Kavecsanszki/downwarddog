@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import Post, Comment, Classes, Timetable, Booking
 from django_summernote.admin import SummernoteModelAdmin
 
+
 @admin.register(Classes)
 class ClassesAdmin(SummernoteModelAdmin):
     summernote_fields = ('content',)
@@ -10,10 +11,11 @@ class ClassesAdmin(SummernoteModelAdmin):
     list_display = ('title', 'slug', 'status', 'updated_on')
     search_fields = ['title', 'content']
 
+
 @admin.register(Timetable)
 class TimetableAdmin(SummernoteModelAdmin):
     summernote_fields = ('content',)
-    list_display = ('classes', 'available_date', 'available_time')
+    list_display = ('classes', 'available_date')
     search_fields = ['title', 'content']
 
 
@@ -36,6 +38,7 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
+
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
