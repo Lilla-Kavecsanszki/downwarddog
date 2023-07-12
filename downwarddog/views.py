@@ -9,6 +9,7 @@ def home(request):
     """ Homepage """
     return render(request, 'index.html')
 
+
 def yoga_page(request):
     """ Yoga page """
     return render(request, 'yoga.html')
@@ -32,13 +33,13 @@ class YogaList(generic.ListView):
 class YogaDetail(View):
     def get(self, request, slug, *args, **kwargs):
         class_instance = get_object_or_404(Classes, slug=slug, status=1)
-        timetables = Timetable.objects.filter(classes=class_instance).order_by('available_time')
+        timetables = Timetable.objects.filter(
+            classes=class_instance).order_by('available_date')
 
         return render(request, 'yoga_detail.html', {
             'class_instance': class_instance,
             'timetables': timetables
         })
-
 
 
 class PostDetail(View):

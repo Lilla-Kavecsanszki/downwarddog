@@ -20,22 +20,21 @@
         </div>
     </section>
 </div>
-    <div class="container">
-        <!-- Table Section -->
-        <section class="col-12 mt-3">
-            <div class="row card-deck">
-                {% for timetable in timetables %}
-                <div class="col-md-3">
-                    <div class="card" style="background-color: #c36d4e;">
-                        <div class="card-body" style="color: #f2eae3;">
-                            <p class="card-text">Available Date: {{ timetable.available_date }}</p>
-                            <p class="card-text">Available Time: {{ timetable.available_time }}</p>
-                            <a href="#" class="btn btn-primary">Book Now</a>
-                        </div>
+<div class="container">
+    <!-- Table Section -->
+    <section class="col-12 mt-3">
+        <div class="row card-deck">
+            {% for timetable in timetables %}
+            <div class="col-md-3">
+                <div class="card" style="background-color: #c36d4e;">
+                    <div class="card-body" style="color: #f2eae3;">
+                        <p class="card-text">Available Date: {{ timetable.available_date }}</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
-                {% endfor %}
             </div>
-        </section>
-    </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>
 {% endblock content %}
