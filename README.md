@@ -40,7 +40,11 @@ https://stackoverflow.com/questions/42628883/object-id-in-dja
 
 <https://stackoverflow.com/questions/26334133/passing-an-id-to-a-url-link-django>
 
+https://stackoverflow.com/questions/25345392/how-to-add-url-parameters-to-django-template-url-tag
+
 <https://stackoverflow.com/questions/44437706/django-render-redirect-to-page-with->
+
+<https://stackoverflow.com/questions/11293380/django-catching-integrity-error-and-showing-a-customized-message-using-template>
 
 
 Bugs:

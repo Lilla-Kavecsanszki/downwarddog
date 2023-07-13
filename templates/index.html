@@ -18,7 +18,8 @@
     style="background-image: url('{% static 'images/hero.jpg' %}'); background-size: cover; background-position: center; height: 700px;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 offset-lg-3 text-center hero-text">
+            <div class="col-lg-6 offset-lg-3 text-center hero-text"
+                style="background-color: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 10px;">
                 <h1>Welcome to DownwardDog Yoga Studio</h1>
                 <p>
                     Embark on a journey of serenity through the practice of yoga, where
@@ -30,11 +31,11 @@
     </div>
 </section>
 
-<section class="classes col-lg-6 offset-lg-3 text-center">
+<section class="classes col-lg-6 offset-lg-3 text-center mt-3">
     <div class="container">
         <div class="row">
             <h4 class="book">Learn more about our classes and book!</h4>
-            <div class="col-12 d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center mt-3">
                 <a href="{% url 'yoga' %}" class="btn btn-primary btn-lg custom-btn">Get Started</a>
             </div>
         </div>
@@ -47,7 +48,7 @@
             <div class="col-lg-6">
                 <img src="{% static 'images/whiteback-pug.jpg' %}" alt="Dog doing yoga" class="img-fluid" />
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 mt-3">
                 <h2>Our Story</h2>
                 <p>Welcome to our unique yoga studio, where we have created a sanctuary for yoga practitioners and
                     animal lovers alike. Our journey began with a vision to build a community that embraces the
@@ -86,7 +87,8 @@
                 </p>
             </div>
             <div class="col-lg-6">
-                <img src="{% static 'images/whiteback-pug-left.jpg' %}" alt="Dog doing yoga backwards" class="img-fluid" />
+                <img src="{% static 'images/whiteback-pug-left.jpg' %}" alt="Dog doing yoga backwards"
+                    class="img-fluid" />
             </div>
         </div>
     </div>
@@ -98,19 +100,30 @@
             <div class="col-lg-4">
                 <h2>Reach Out</h2>
                 <p class="text-uppercase">for general enquiries & feedback</p>
-            </div>
-            <div class="center-form">
-                <form onsubmit="return sendMail(this);">
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
-                        required />
-                    <textarea rows="5" name="feedback" class="form-control" id="feedback" placeholder="Message"
-                        required></textarea>
-                    <button type="submit" class="btn btn-primary btn-lg custom-btn center-block">Send Message</button>
-                </form>
+                <br>
+                <h4>Find us at:</h4>
+                <h6>221B Baker Street</h6>
+                <h6>London W1U 6TW</h6>
+                <h6>United Kingdom</h6>
             </div>
             <div class="col-lg-8">
-                <img src="#" alt="Map" class="img-fluid" />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form onsubmit="return sendMail(this);">
+                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name"
+                                required />
+                            <input type="text" name="emailaddress" class="form-control" id="emailaddress"
+                                placeholder="Email" required />
+                            <textarea rows="5" name="feedback" class="form-control" id="feedback" placeholder="Message"
+                                required></textarea>
+                            <button type="submit" class="btn btn-primary btn-sm custom-btn center-block mt-3">Send
+                                Message</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="{% static 'images/map.png' %}" alt="Map" class="img-fluid" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -121,20 +134,20 @@
 {% block scripts %}
 <script>
     function sendMail(contactForm) {
-    emailjs.send("service_j70zwjo", "template_chr6g3c", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "message": contactForm.feedback.value
-    })
-        .then(
-            function (response) {
-                console.log("SUCCESS", response);
-            },
-            function (error) {
-                console.log("FAILED", error);
-            }
-        );
-    return false;  // To block from loading a new page
-}
+        emailjs.send("service_j70zwjo", "template_chr6g3c", {
+            "from_name": contactForm.name.value,
+            "from_email": contactForm.emailaddress.value,
+            "message": contactForm.feedback.value
+        })
+            .then(
+                function (response) {
+                    console.log("SUCCESS", response);
+                },
+                function (error) {
+                    console.log("FAILED", error);
+                }
+            );
+        return false;  // To block from loading a new page
+    }
 </script>
 {% endblock scripts %}
