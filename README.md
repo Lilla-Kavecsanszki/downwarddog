@@ -1,6 +1,6 @@
 deployed [Website](https://downwarddog.herokuapp.com/)
 
-Sources:
+Article Sources:
 
 https://www.health.harvard.edu/staying-healthy/yoga-benefits-beyond-the-mat
 
@@ -32,6 +32,17 @@ https://stackoverflow.com/questions/56969479/adding-video-field-in-django
 
 https://docs.djangoproject.com/en/2.2/topics/http/file-uploads/
 
+<https://stackoverflow.com/questions/65880813/passing-id-to-django-url>
+
+https://stackoverflow.com/questions/46860710/django-linking-a-html-page-to-a-view
+
+https://stackoverflow.com/questions/42628883/object-id-in-dja
+
+<https://stackoverflow.com/questions/26334133/passing-an-id-to-a-url-link-django>
+
+<https://stackoverflow.com/questions/44437706/django-render-redirect-to-page-with->
+
 
 Bugs:
-EmailJS... was not connected properly, didnt copy the correct template parameters
+- EmailJS... was not connected properly, didnt copy the correct template parameters
+- slug not working for the Booking view-url, needed to the ID parameter - based on error code suggestion in Debug=True mode

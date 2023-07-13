@@ -1,7 +1,8 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from .models import Classes, Timetable, Booking
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post, Classes, Timetable
+from .models import Post, Classes, Timetable, Booking
 from .forms import CommentForm
 
 
@@ -40,6 +41,28 @@ class YogaDetail(View):
             'class_instance': class_instance,
             'timetables': timetables
         })
+
+
+class BookNow(View):
+    def get(self, request, timetable_id):
+        timetable = get_object_or_404(Timetable, id=timetable_id)
+
+        # Check if the user is authenticated
+        if request.user.is_authenticated:
+            # Create a new booking/enquiry
+            booking = Booking.objects.create(
+                user=request.user, classes=timetable, approved=False)
+
+            # Redirect to the 'my_bookings' page, otherwise to the login page
+            return HttpResponseRedirect(reverse('my_bookings'))
+        else:
+            return redirect('account_login')
+
+
+class MyBookings(View):
+    def get(self, request):
+        """ My Bookings page """
+        return render(request, 'my_bookings.html')
 
 
 class PostDetail(View):
