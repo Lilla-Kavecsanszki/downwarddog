@@ -233,6 +233,19 @@ body {
     margin-bottom: 15px;
 }
 
+.book-btn {
+    background-color: #c36d4e;
+    border: 3px solid #f2eae3;
+}
+
+.book-btn:hover,
+.book-btn:active,
+.book-btn:after {
+    background-color: #f2eae3;
+    border: 3px solid #322925;
+    color: #c36d4e;
+}
+
 /* Footer */
 
 footer {
