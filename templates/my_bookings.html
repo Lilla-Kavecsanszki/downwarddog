@@ -5,9 +5,12 @@
     {% if already_booked %}
     <h2>You already booked this yoga class</h2>
     <p>Please wait for approval</p>
-    {% elif booking_pending %}
+    {% elif pending %}
     <h2>Booking Enquiry pending approval</h2>
     <p>Your booking enquiry is waiting for approval</p>
+    {% elif approved %}
+    <h2>Your booking is approved!</h2>
+    <p>See you soon!</p>
     {% else %}
     <h2>You have no bookings yet!</h2>
     {% endif %}
