@@ -1,20 +1,27 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
+{% load static %}
+
+<div class=" container text-center">
     {% if already_booked %}
-    <h2>You already booked this yoga class</h2>
-    <p>Please wait for approval</p>
+    <h2 class=" text-center mt-5">You already booked this yoga class</h2>
+    <p class="text-center">Please wait for approval</p>
     {% elif pending %}
-    <h2>Booking Enquiry pending approval</h2>
-    <p>Your booking enquiry is waiting for approval</p>
+    <h2 class="text-center mt-5">Booking Enquiry pending approval</h2>
+    <p class="text-center mt-5">Your booking enquiry for {{ timetable.classes.title }} is waiting for approval</p>
     {% elif approved %}
-    <h2>Your booking is approved!</h2>
-    <p>See you soon!</p>
+    <h2 class="text-center mt-5">Your booking for {{ timetable.classes.title }} is approved!</h2>
+    <p class="text-center">See you soon, {{ request.user.username }}!</p>
     {% else %}
-    <h2>You have no bookings yet!</h2>
+    <h2 class="text-center mt-5">You have no bookings yet!</h2>
     {% endif %}
     <br>
-    <p>Please note: All bookings are subject to admin approval</p>
+    <p class="text-center">Please note: All bookings are subject to admin approval</p>
+    <br>
+    <span class="image-container mb-1">
+        <img src="{% static 'images/vizsla.jpg' %}" alt="Dog exercising">
+    </span>
 </div>
+
 {% endblock %}

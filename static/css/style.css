@@ -44,6 +44,7 @@ body {
     width: 600px;
     height: 400px;
     overflow: hidden;
+    display: inline-block;
 }
 
 .image-container img {
@@ -139,8 +140,8 @@ body {
 }
 
 /* Sign-up */
-
-/* .photo-background {
+/* 
+.photo-background {
     background: url("{% static 'images/puppy-yoga.jpg' %}");
     background-size: cover;
     background-position: center;
