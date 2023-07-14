@@ -29,12 +29,9 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-
-"""Like counting"""
-
-
-def number_of_likes(self):
-    return self.likes.count()
+    def number_of_likes(self):
+        """Like counting"""
+        return self.likes.count()
 
 
 """Comments"""
