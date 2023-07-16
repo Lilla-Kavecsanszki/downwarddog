@@ -80,6 +80,12 @@ class MyBookings(View):
                 'approved': False,
             })
 
+    def post(self, request, booking_id):
+        booking = get_object_or_404(
+            Booking, id=booking_id, user=request.user, approved=True)
+        booking.delete()
+        return redirect('my_bookings')
+
 
 class PostDetail(View):
 

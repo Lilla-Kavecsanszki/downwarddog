@@ -11,4 +11,6 @@ urlpatterns = [
     path('book-now/<int:timetable_id>/',
          views.BookNow.as_view(), name='book_now'),
     path('my-bookings/', views.MyBookings.as_view(), name='my_bookings'),
+    path('my-bookings/<int:booking_id>/',
+         views.MyBookings.as_view(), name='delete_booking'),
 ]

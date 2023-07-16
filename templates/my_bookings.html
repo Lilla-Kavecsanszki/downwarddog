@@ -19,6 +19,12 @@
                     {{ booking.user.username }} on the {{ booking.classes.available_date }}
                 </h5>
                 <p class="text-center">See you soon!</p>
+                <form method="post" action="{% url 'delete_booking' booking.id %}">
+                    {% csrf_token %}
+                    <button type="submit" class="btn book-btn"
+                        onclick="return confirm('Are you sure to cancel?')">Delete
+                        booking</button>
+                </form>
             </li>
             {% endfor %}
         </ul>
