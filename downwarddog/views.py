@@ -44,14 +44,21 @@ class YogaDetail(View):
         })
 
 
-class BookNow(View):
-    def get(self, request):
-        bookings = Booking.objects.filter(user=request.user)
-        return render(request, 'my_bookings.html', {
-            'bookings': bookings
-        })
+# class BookNow(View):
+#     def get(self, request, timetable_id, *args, **kwargs):
+#         # Check if the user is authenticated
+#         if request.user.is_authenticated:
+#             bookings = Booking.objects.filter(user=request.user)
+#             timetable = get_object_or_404(Timetable, id=timetable_id)
+#             return render(request, 'my_bookings.html', {
+#                 'already_booked': False,
+#                 'timetable': timetable
+#             })
+#         else:
+#             return redirect('account_login')
 
-    def post(self, request, timetable_id):
+class BookNow(View):
+    def get(self, request, timetable_id):
         timetable = get_object_or_404(Timetable, id=timetable_id)
         try:
             # Check if the user is authenticated
@@ -59,15 +66,18 @@ class BookNow(View):
                 # Create a new booking/enquiry
                 booking = Booking.objects.create(
                     user=request.user, classes=timetable, approved=False)
-
+                pending = True
                 # Redirect to the 'my_bookings' page, otherwise to the login page
                 return render(request, 'my_bookings.html', {
-                    'pending': True})
+                    'pending': pending
+                })
             else:
                 return redirect('account_login')
         except IntegrityError:
+            already_booked = True
             return render(request, 'my_bookings.html', {
-                'already_booked': True})
+                'already_booked': already_booked
+            })
 
 
 class MyBookings(View):
