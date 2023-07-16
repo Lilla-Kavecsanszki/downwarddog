@@ -44,19 +44,6 @@ class YogaDetail(View):
         })
 
 
-# class BookNow(View):
-#     def get(self, request, timetable_id, *args, **kwargs):
-#         # Check if the user is authenticated
-#         if request.user.is_authenticated:
-#             bookings = Booking.objects.filter(user=request.user)
-#             timetable = get_object_or_404(Timetable, id=timetable_id)
-#             return render(request, 'my_bookings.html', {
-#                 'already_booked': False,
-#                 'timetable': timetable
-#             })
-#         else:
-#             return redirect('account_login')
-
 class BookNow(View):
     def get(self, request, timetable_id):
         timetable = get_object_or_404(Timetable, id=timetable_id)
@@ -66,17 +53,15 @@ class BookNow(View):
                 # Create a new booking/enquiry
                 booking = Booking.objects.create(
                     user=request.user, classes=timetable, approved=False)
-                pending = True
                 # Redirect to the 'my_bookings' page, otherwise to the login page
                 return render(request, 'my_bookings.html', {
-                    'pending': pending
+                    'pending': True
                 })
             else:
                 return redirect('account_login')
         except IntegrityError:
-            already_booked = True
             return render(request, 'my_bookings.html', {
-                'already_booked': already_booked
+                'already_booked': True,
             })
 
 
@@ -85,10 +70,15 @@ class MyBookings(View):
         """ My Bookings page """
         approved_bookings = Booking.objects.filter(
             user=request.user, approved=True)
-        return render(request, 'my_bookings.html', {
-            'approved_bookings': approved_bookings,
-            'approved': True,
-        })
+        if approved_bookings:
+            return render(request, 'my_bookings.html', {
+                'approved_bookings': approved_bookings,
+                'approved': True,
+            })
+        else:
+            return render(request, 'my_bookings.html', {
+                'approved': False,
+            })
 
 
 class PostDetail(View):
