@@ -253,6 +253,12 @@ body {
     color: #c36d4e;
 }
 
+/* My Bookings */
+
+.no-dots {
+    list-style-type: none;
+}
+
 /* Footer */
 
 footer {

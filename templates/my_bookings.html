@@ -5,14 +5,24 @@
 
 <div class=" container text-center">
     {% if already_booked %}
-    <h2 class=" text-center mt-5">You already booked this yoga class</h2>
+    <h2 class=" text-center mt-5">You already booked this yoga class!</h2>
     <p class="text-center">Please wait for approval</p>
     {% elif pending %}
-    <h2 class="text-center mt-5">Booking Enquiry pending approval</h2>
-    <p class="text-center mt-5">Your booking enquiry for {{ timetable.classes.title }} is waiting for approval</p>
+    <h2 class="text-center mt-5">Your Booking Enquiry is pending approval</h2>
     {% elif approved %}
-    <h2 class="text-center mt-5">Your booking for {{ timetable.classes.title }} is approved!</h2>
-    <p class="text-center">See you soon, {{ request.user.username }}!</p>
+    <div class="container text-center">
+        <h2 class="text-center mt-5">Approved Bookings</h2>
+        <ul class="no-dots mt-5">
+            {% for booking in approved_bookings %}
+            <li>
+                <h5 class="text-center mt-5">{{ booking.classes.classes.title }} class is approved for
+                    {{ booking.user.username }} on the {{ booking.classes.available_date }}
+                </h5>
+                <p class="text-center">See you soon!</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
     {% else %}
     <h2 class="text-center mt-5">You have no bookings yet!</h2>
     {% endif %}

@@ -83,7 +83,12 @@ class BookNow(View):
 class MyBookings(View):
     def get(self, request):
         """ My Bookings page """
-        return render(request, 'my_bookings.html')
+        approved_bookings = Booking.objects.filter(
+            user=request.user, approved=True)
+        return render(request, 'my_bookings.html', {
+            'approved_bookings': approved_bookings,
+            'approved': True,
+        })
 
 
 class PostDetail(View):
