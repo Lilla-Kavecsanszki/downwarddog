@@ -45,7 +45,13 @@ class YogaDetail(View):
 
 
 class BookNow(View):
-    def get(self, request, timetable_id):
+    def get(self, request):
+        bookings = Booking.objects.filter(user=request.user)
+        return render(request, 'my_bookings.html', {
+            'bookings': bookings
+        })
+
+    def post(self, request, timetable_id):
         timetable = get_object_or_404(Timetable, id=timetable_id)
         try:
             # Check if the user is authenticated
@@ -55,11 +61,13 @@ class BookNow(View):
                     user=request.user, classes=timetable, approved=False)
 
                 # Redirect to the 'my_bookings' page, otherwise to the login page
-                return HttpResponseRedirect(reverse('my_bookings'))
+                return render(request, 'my_bookings.html', {
+                    'pending': True})
             else:
                 return redirect('account_login')
         except IntegrityError:
-            return HttpResponse("You already booked this yoga class!")
+            return render(request, 'my_bookings.html', {
+                'already_booked': True})
 
 
 class MyBookings(View):

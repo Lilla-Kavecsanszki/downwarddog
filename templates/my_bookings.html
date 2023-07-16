@@ -4,15 +4,27 @@
 {% load static %}
 
 <div class=" container text-center">
-    {% if already_booked %}
-    <h2 class=" text-center mt-5">You already booked this yoga class</h2>
-    <p class="text-center">Please wait for approval</p>
-    {% elif pending %}
-    <h2 class="text-center mt-5">Booking Enquiry pending approval</h2>
-    <p class="text-center mt-5">Your booking enquiry for {{ timetable.classes.title }} is waiting for approval</p>
-    {% elif approved %}
-    <h2 class="text-center mt-5">Your booking for {{ timetable.classes.title }} is approved!</h2>
-    <p class="text-center">See you soon, {{ request.user.username }}!</p>
+    {% if bookings %}
+    <h2 class="text-center mt-5">My Bookings</h2>
+    <ul class="mt-5">
+        {% for booking in bookings %}
+        <li>
+            {% if approved %}
+            <h5 class=" text-center mt-5">{{ booking.classes.title }} - booked by {{ booking.user.username }} is
+                approved!</h5>
+            <p class="text-center">See you soon!</p>
+            {% elif already_booked %}
+            <h5 class="text-center mt-5">You already booked the {{ booking.classes.title }} yoga class!
+            </h5>
+            <p class="text-center mt-5">Please wait for approval!</p>
+            {% else %}
+            <h5 class="text-center mt-5">{{ booking.classes.title }} - booked by {{ booking.user.username }} is pending!
+            </h5>
+            <p class="text-center mt-5">Please wait for approval!</p>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
     {% else %}
     <h2 class="text-center mt-5">You have no bookings yet!</h2>
     {% endif %}
