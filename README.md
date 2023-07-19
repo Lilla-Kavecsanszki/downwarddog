@@ -42,7 +42,7 @@ The ideal client for this business is:
 -	English speaking
 -	Practices yoga
 -	A dog owner
--	Individuals, or couples
+-	Individuals, or couples or friends
 
 Visitors of this website search for:
 
@@ -58,25 +58,79 @@ Visitors of this website search for:
 This website is the best way to help them achieve these goals because:
 
 - The menu makes the access of different activities very easy to reach
-- The 
-- The 
-- The 
+- The content on the website is carefully curated and updated to ensure that the visitors receive reliable information
+- The website offers interactive features as commenting, liking articles, encouraging the visitors to engage with the 
+  contect and to create a community 
+- The website offers dog-friendly yoga sessions, creating a unique yet inclusive experience for its visitors who would like to
+  bring along their furry friends
+- The website provides a wide range of yoga classes to chose from, allowing its visitors to choose based on their current 
+  needs
+- The website also displays multiple availabilities of each yoga class, allowing the visitors to choose the most convenient 
+  one for their free time 
+- The website offers flexibility in booking as it allows its visitors to delete a booked class, in case they are no 
+  longer available, providing a hassle-free experience
 
 This website:
 
-- Is easy to navigate by the menu and buttons
+- Is easy to navigate by the menu and buttons, offers an inclusive and engaging platform
 - Gives the customers options and access to useful and learnable information.
 - Gives the customers the information they need without overloading them or distracting them from their original ideas or
   wishes.
-- Guides them by their curiosity about the goal of the website.
-- Easy to use, due to redirecting links, that warn the user if they are about to book the same class again or redirecting them to the Sign In page, in case they are not signed in but wanted to book a class.
-- Easy to follow up, delete their bookings after signing in, from the My Bookings page, where all their bookings are organised
+- Gives the customers the opportunity to connect with like-minded individuals
+- Gives the the customers the opportunity to seamlessly manage their yoga sessions with their dogs
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
-### User stories
+### User stories and Epics
 
-1.	As a user of 
+Introduction and Navigation Epic
+
+#1	 As a user, I can read the homepage so that I can get more information about the studio, the team, the approach to dogs 
+    and yoga in general.
+#2  As a user, I can click on the navbar so that I go to the specific page I am interested in.
+
+Account Management Epic
+
+#3	 As a user, I can register to the website so that I have a higher level of permission and access.
+#4  As a user/admin, I can log in to the website so that I have the ability to book a class and/or comment on an article, 
+     or like/unlike it.
+#5  As a user, I can see whether I logged in or registered so that I know that it was successful.
+#6  As a user, I can log out from the website so that I can protect my privacy and information.
+
+Articles, Comments & Likes Epic
+
+#7	 As a user, I can click on the article so that I can read the entire text about the topic and learn.
+#8  As a user, if I am logged in, I can like or unlike the articles so that I have the opportunity to show my interest 
+     and appreciation.
+#9  As a user, if I am logged in, I can comment on the articles so that I can leave my feedback and/or thoughts 
+     regarding the article.
+
+Booking Epic
+
+#10 As a user, I can read more information about each classes so that I can choose which one suits me the best to book. 
+#11 As a user, if I am logged in, I can create a booking so that I can book and join a class.
+#12 As a user, I can choose the date of my future class so that I can book it on the date that suits my schedule.
+#13 As admin, I can authorize or disapprove booking enquiries so that I can assure that the classes are not overbooked.
+#14 As a user, I can edit my booking so that I can change the date.
+#15 As a user, if I am logged in, I can cancel my spot, my booking, so that I can give my space back to others and I can 
+    join the class when I am available.
+
+Management Epic
+
+#16	As an admin, I can authorize or disapprove comments so that I can assure that a respectful language is used at all times.
+#17 As an admin I can create, read, update and delete articles so that I can manage the content.
+#18 As an admin I can see each booking; the day and class combination, to understand how many clients has enquired/ booked 
+    it so that I can analyse popularity and busy/ weak days.
+
+Contact Epic
+
+#20	As a user, I can fill out a contact form so that I can communicate with the management, give my feedback, leave a review to the teachers and the studio
+
+Future ambition - Planned for the next sprint
+
+#21 create a share button to be able to share the articles
+#22 after successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
+#23 users to be able to add the booking information to their calendar
 
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
@@ -133,17 +187,17 @@ Python was used to complete this project.
 - Github was used as the repository for the projects code after being pushed from Git
 - Git was used for version control by the Gitpod terminal to commit to Git and Push to GitHub; to create and edit all
   original code
-- Google Spreadsheets was used as the external data store for stock data used by the project
-- Google Drive API was used to generate credentials used in the project to securely access the Google Spreadsheet
-- Google Sheets API was used to support interactions (e.g. read/write functionality) between the code and data stored in
-  the Google Spreadsheet
-- gspread is the Python API for Google Sheets
-- Google Auth is the Google authentication library for Python required to use the credentials generated for Google Drive
-  API
-- datetime is a standard library in Python that provides classes for working with dates and times
-- tabulate is a library in Python that provides a way to display data in a visually appealing way, allowing to create
-  tables from data
-- Heroku was used to deploy the application and provides an enviroment in which the code can execute
+- [Google Fonts](https://fonts.google.com/) used for the Montserrat and Poiret One fonts
+- [Font Awesome](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
+- [Bootstrap](https://getbootstrap.com/) was used to build a responsive website quicker
+- Microsoft Word was used to create the wireframes during the design process.
+- [Django](https://www.djangoproject.com/) was used as the framework of the application
+- [Gunicorn](https://gunicorn.org/) was used as the Web Server to run Django on Heroku
+- Django allauth used for account registration and authentication
+- Django crispy forms used for form rendering
+- Summernote used to to enable "WYSIWYG" (What You See Is What You Get) editing functionality to provide an intuitive and user-friendly interface
+- [Cloudinary](https://cloudinary.com/) used to store the images and data used by the website
+- [Heroku] was used to deploy the application and provides an enviroment in which the code can execute
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
