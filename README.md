@@ -1,12 +1,12 @@
 # DownwardDog Yoga Studio
 
-This application is designed to bring together all yoga fans who are also dog owners, creating a safe place for them to practise yoga together and the opportunity for a vibrant community. 
+This website is designed to bring together all yoga fans who are also dog owners, creating a safe place for them to practise yoga together and the opportunity for a vibrant community. 
 The main focus is to be straight forward enough to save time for the user, yet to be engaging and motivating at the same time.
 
 The user can interact with the website in various ways such as viewing relevant and uselful information on the articles page. The users, if they are registered and logged in, then can comment on the articles and also can express their opinion with a like. They can later also unlike the article, in case they changed their mind. 
 The users can also see a selection of yoga classes, then also a selection of available dates and times for the relevant classes to choose from through the Yoga page. If they are logged in, they will be able to book, register their interest. After admin approval, the user is able to follow up their bookings on the My Bookings page, and also to delete the bookings that they are not able to attend anymore.  
 
-Furthermore, the webiste stores all vital information and data in an external database, Cloudinary.
+This full-stack framework project was built using Django, Python, HTML, Bootstrap and CSS. Furthermore, the webiste stores all vital information and data in an external database, Cloudinary.
 
 ![Application](readme-images/responsive.png "Application")
 
@@ -21,30 +21,30 @@ The business goals of this website are:
 
 The customer goals of this website are:
 
--	To 
--	To 
+- To 
+- To 
 - To 
 - To 
 
 # Contents
 
-- [User Experience (UX)]()
-- [Ideal client]()
-- [User stories]()
-- [Flow Charts]()
-- [Languages Used]()
-- [Frameworks, Libraries, Programs & Technologies Used]()
-- [Features]()
-- [Deployment]()
-- [Testing]()
-  - [Manual Testing]()
-  - [User Stories Testing]()
-  - [Further Testing]()
-  - [Bugs]()
-- [Credits]()
-  - [Content - Data Model]()
-  - [Acknowledgments and Code]()
-  - [Disclaimer]()
+- [User Experience (UX)](https://github.com/Lilla-Kavecsanszki/downwarddog#user-experience-ux)
+- [Ideal client](https://github.com/Lilla-Kavecsanszki/downwarddog#ideal-client)
+- [User stories](https://github.com/Lilla-Kavecsanszki/downwarddog#user-stories)
+- [Flow Charts](https://github.com/Lilla-Kavecsanszki/downwarddog#flow-charts)
+- [Languages Used](https://github.com/Lilla-Kavecsanszki/downwarddog#languages-used)
+- [Frameworks, Libraries, Programs & Technologies Used](https://github.com/Lilla-Kavecsanszki/downwarddog#frameworks-libraries-programs--technologies-used)
+- [Features](https://github.com/Lilla-Kavecsanszki/downwarddog#features)
+- [Deployment](https://github.com/Lilla-Kavecsanszki/downwarddog#deployment)
+- [Testing](https://github.com/Lilla-Kavecsanszki/downwarddog#testing)
+  - [Manual Testing](https://github.com/Lilla-Kavecsanszki/downwarddog#manual-testing)
+  - [User Stories Testing](https://github.com/Lilla-Kavecsanszki/downwarddog#user-stories-testing)
+  - [Further Testing](https://github.com/Lilla-Kavecsanszki/downwarddog#further-testing)
+  - [Bugs](https://github.com/Lilla-Kavecsanszki/downwarddog#bugs)
+- [Credits](https://github.com/Lilla-Kavecsanszki/downwarddog#credits)
+  - [Content - Data Model](https://github.com/Lilla-Kavecsanszki/downwarddog#content---data-model)
+  - [Acknowledgments and Code](https://github.com/Lilla-Kavecsanszki/downwarddog#acknowledgments-and-code)
+  - [Disclaimer](https://github.com/Lilla-Kavecsanszki/downwarddog#disclaimer)
 
 # User Experience (UX)
 
@@ -53,39 +53,44 @@ The customer goals of this website are:
 The ideal client for this business is:
 
 -	English speaking
--	Works with any types of stock
--	Needs to order stocks
--	Individuals, or companies
+-	Practices yoga
+-	A dog owner
+-	Individuals, or couples
 
-Visitors of this app search for:
+Visitors of this website search for:
 
--	A knowledgeable app that is easy to use
-- That helps reducing the user's time spending on this specific task
+- A knowledgeable website that is easy to use
+- That helps the user gain information about the topic of yoga, and practicing yoga with dogs
 - That is reliable and accurate
+- That encourage the visitors to create a communnity, through being able to communicate, comment and like articles
+- That allows them to bring their dog to the yoga sessions
+- That offers the visitors different choices on yoga classes to chose from
+- That offers the visitors different dates and times when each classes are available
+- That offers flexibility and so the user can delete a booked class in case they are no longer available
 
-This application is the best way to help them achieve these goals because:
+This website is the best way to help them achieve these goals because:
 
--	The menu makes the access of different commands very easy to execute
-- The menu keeps coming back on display until the user chooses to exit the app
-- The program will display all relevant information that can be necessary to order the products; with their name, unit types, prices, how much the user currently has on stock, the ideal par level and therefore how much needs to be ordered.
-- The product list can be easily updated with a new product and/or deleting one.
+- The menu makes the access of different tasks very easy to reach
+- The 
+- The 
+- The 
 
-This application:
+This website:
 
--	Is easy to navigate by the menu
--	Gives the customers options and access to useful and learnable information.
--	Gives the customers the information they need without overloading them or distracting them from their original ideas or
+- Is easy to navigate by the menu
+- Gives the customers options and access to useful and learnable information.
+- Gives the customers the information they need without overloading them or distracting them from their original ideas or
   wishes.
--	Guides them by their curiosity about the goal of the website.
+- Guides them by their curiosity about the goal of the website.
 
-[Back to top]()
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 ### User stories
 
 1.	As a user of 
 
 
-[Back to top]()
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Flow Charts
 
@@ -114,13 +119,13 @@ This application:
 <img src="readme-images/option4-flow.jpg" alt="Get the Order List flow chart">
 </details>
 
-[Back to top]()
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Languages Used
 
 Python was used to complete this project.
 
-[Back to top]()
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Frameworks, Libraries, Programs & Technologies Used
 
@@ -140,7 +145,7 @@ Python was used to complete this project.
   tables from data
 - Heroku was used to deploy the application and provides an enviroment in which the code can execute
 
-[Back to top](https://github.com/Lilla-Kavecsanszki/order-easy#contents)
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Features
 
@@ -259,7 +264,7 @@ The user can exit and terminate the application by choosing option 5 from the me
 
 ![exit](readme-images/exit.png "exit")
 
-[Back to top](https://github.com/Lilla-Kavecsanszki/order-easy#contents)
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Deployment
 
@@ -357,7 +362,7 @@ The OrderEasy website is deployed using Heroku, this was done by:
 </details>
 <br>
 
-[Back to top](https://github.com/Lilla-Kavecsanszki/order-easy#contents)
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Testing
 
@@ -392,7 +397,7 @@ Use option 2 to add a new product or option 3 to delete a product, and then choo
 
 **Option 5 - Exit:** Enter the number 5 and press enter to confirm that the goodbye message is displayed, and the application terminates.
 
-[Back to top](https://github.com/Lilla-Kavecsanszki/order-easy#contents)
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 </details>
 
 ### User Stories Testing
@@ -450,7 +455,7 @@ Use option 2 to add a new product or option 3 to delete a product, and then choo
 
     ![results - orders](readme-images/order_information.png "results - orders").
 
-[Back to top](https://github.com/Lilla-Kavecsanszki/order-easy#contents)
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 </details>
 
 ### Further testing
@@ -460,7 +465,7 @@ Use option 2 to add a new product or option 3 to delete a product, and then choo
 I asked friends and family to look at the application on their browsers and report any issues they find. This time my focus was on UX and how understandable and easy the application is to use. Some print and ValueError messages were adjusted as a result of this.
 </details>
 
-[Back to top](https://github.com/Lilla-Kavecsanszki/order-easy#contents)
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 ## Bugs
 
@@ -468,7 +473,7 @@ An issue came up while testing the application in the meantime;
 
 - The 'Delete Product' function got into some issues when attempting to delete an existing product due to case sensitivity. Specifically, the function was unable to locate a product if it was inputted in lowercase or capitalized incorrectly. To address this issue, I utilized the capitalize() method in both the get_new_product() and get_deleted_product() functions. This modification ensures that the user inputs are formatted to start with a capital letter, regardless of their original input. As a result, the application can accurately locate and delete the requested products.
 
-[Back to top](https://github.com/Lilla-Kavecsanszki/order-easy#contents)
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Credits
 
@@ -493,7 +498,7 @@ The Google spreadsheet (order_spreadsheet) that the application uses has the fol
 </details>
 <br>
 
-[Back to top](https://github.com/Lilla-Kavecsanszki/order-easy#contents)
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 ## Acknowledgments and Code
 
@@ -509,7 +514,7 @@ I also would like to express my gratitude to Elaine Roche, my mentor, and the tu
 
 This application is for educational use only.
 
-[Back to top](https://github.com/Lilla-Kavecsanszki/order-easy#contents)
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 Article Sources:
 
