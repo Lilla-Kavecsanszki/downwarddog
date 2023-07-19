@@ -6,25 +6,11 @@ The main focus is to be straight forward enough to save time for the user, yet t
 The user can interact with the website in various ways such as viewing relevant and uselful information on the articles page. The users, if they are registered and logged in, then can comment on the articles and also can express their opinion with a like. They can later also unlike the article, in case they changed their mind. 
 The users can also see a selection of yoga classes, then also a selection of available dates and times for the relevant classes to choose from through the Yoga page. If they are logged in, they will be able to book, register their interest. After admin approval, the user is able to follow up their bookings on the My Bookings page, and also to delete the bookings that they are not able to attend anymore.  
 
-This full-stack framework project was built using Django, Python, HTML, Bootstrap and CSS. Furthermore, the webiste stores all vital information and data in an external database, Cloudinary.
+This full-stack framework project was built using Django framework, Python, HTML, Bootstrap and CSS. Furthermore, the webiste stores all vital information and data in an external database, Cloudinary.
 
 ![Application](readme-images/responsive.png "Application")
 
 [Link to the live project](https://downwarddog.herokuapp.com/)
-
-The business goals of this website are:
-
--	
--	
-- To 
-- To
-
-The customer goals of this website are:
-
-- To 
-- To 
-- To 
-- To 
 
 # Contents
 
@@ -32,6 +18,7 @@ The customer goals of this website are:
 - [Ideal client](https://github.com/Lilla-Kavecsanszki/downwarddog#ideal-client)
 - [User stories](https://github.com/Lilla-Kavecsanszki/downwarddog#user-stories)
 - [Flow Charts](https://github.com/Lilla-Kavecsanszki/downwarddog#flow-charts)
+- [Design](https://github.com/Lilla-Kavecsanszki/downwarddog#design)
 - [Languages Used](https://github.com/Lilla-Kavecsanszki/downwarddog#languages-used)
 - [Frameworks, Libraries, Programs & Technologies Used](https://github.com/Lilla-Kavecsanszki/downwarddog#frameworks-libraries-programs--technologies-used)
 - [Features](https://github.com/Lilla-Kavecsanszki/downwarddog#features)
@@ -70,18 +57,20 @@ Visitors of this website search for:
 
 This website is the best way to help them achieve these goals because:
 
-- The menu makes the access of different tasks very easy to reach
+- The menu makes the access of different activities very easy to reach
 - The 
 - The 
 - The 
 
 This website:
 
-- Is easy to navigate by the menu
+- Is easy to navigate by the menu and buttons
 - Gives the customers options and access to useful and learnable information.
 - Gives the customers the information they need without overloading them or distracting them from their original ideas or
   wishes.
 - Guides them by their curiosity about the goal of the website.
+- Easy to use, due to redirecting links, that warn the user if they are about to book the same class again or redirecting them to the Sign In page, in case they are not signed in but wanted to book a class.
+- Easy to follow up, delete their bookings after signing in, from the My Bookings page, where all their bookings are organised
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -120,6 +109,17 @@ This website:
 </details>
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
+
+# Design
+
+![colour_palette](README_images/colorkit.png "colour_palette")
+[Colour Palette](https://colorkit.co/palette/ffff-f2eae3-c36d4e-322925/)
+
+Fonts
+
+![colour_palette](README_images/poiret_one.png "colour_palette")
+![colour_palette](README_images/montserrat.png "colour_palette")
+
 
 # Languages Used
 
