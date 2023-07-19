@@ -16,9 +16,12 @@ This full-stack framework project was built using Django framework, Python, HTML
 
 - [User Experience (UX)](https://github.com/Lilla-Kavecsanszki/downwarddog#user-experience-ux)
 - [Ideal client](https://github.com/Lilla-Kavecsanszki/downwarddog#ideal-client)
-- [User stories](https://github.com/Lilla-Kavecsanszki/downwarddog#user-stories)
-- [Flow Charts](https://github.com/Lilla-Kavecsanszki/downwarddog#flow-charts)
+- [User stories & Epics](https://github.com/Lilla-Kavecsanszki/downwarddog#user-stories-and-epics)
+- [Planning](https://github.com/Lilla-Kavecsanszki/downwarddog#planning)
 - [Design](https://github.com/Lilla-Kavecsanszki/downwarddog#design)
+  - [Wireframes](https://github.com/Lilla-Kavecsanszki/downwarddog#wireframes)
+  - [Entity Relationship Diagrams](https://github.com/Lilla-Kavecsanszki/downwarddog#entity-relationshi-diagrams)
+  - [Theme](https://github.com/Lilla-Kavecsanszki/downwarddog#theme)
 - [Languages Used](https://github.com/Lilla-Kavecsanszki/downwarddog#languages-used)
 - [Frameworks, Libraries, Programs & Technologies Used](https://github.com/Lilla-Kavecsanszki/downwarddog#frameworks-libraries-programs--technologies-used)
 - [Features](https://github.com/Lilla-Kavecsanszki/downwarddog#features)
@@ -29,7 +32,7 @@ This full-stack framework project was built using Django framework, Python, HTML
   - [Further Testing](https://github.com/Lilla-Kavecsanszki/downwarddog#further-testing)
   - [Bugs](https://github.com/Lilla-Kavecsanszki/downwarddog#bugs)
 - [Credits](https://github.com/Lilla-Kavecsanszki/downwarddog#credits)
-  - [Content - Data Model](https://github.com/Lilla-Kavecsanszki/downwarddog#content---data-model)
+  - [Content](https://github.com/Lilla-Kavecsanszki/downwarddog#content)
   - [Acknowledgments and Code](https://github.com/Lilla-Kavecsanszki/downwarddog#acknowledgments-and-code)
   - [Disclaimer](https://github.com/Lilla-Kavecsanszki/downwarddog#disclaimer)
 
@@ -83,88 +86,72 @@ This website:
 
 ### User stories and Epics
 
-Introduction and Navigation Epic
+##### Introduction and Navigation Epic
 
-#1	 As a user, I can read the homepage so that I can get more information about the studio, the team, the approach to dogs 
-    and yoga in general.
-#2  As a user, I can click on the navbar so that I go to the specific page I am interested in.
+- #1  As a user, I can read the homepage so that I can get more information about the studio, the team, the approach to dogs 
+      and yoga in general.
+- #2  As a user, I can click on the navbar so that I go to the specific page I am interested in.
 
-Account Management Epic
+##### Account Management Epic
 
-#3	 As a user, I can register to the website so that I have a higher level of permission and access.
-#4  As a user/admin, I can log in to the website so that I have the ability to book a class and/or comment on an article, 
-     or like/unlike it.
-#5  As a user, I can see whether I logged in or registered so that I know that it was successful.
-#6  As a user, I can log out from the website so that I can protect my privacy and information.
+- #3  As a user, I can register to the website so that I have a higher level of permission and access.
+- #4  As a user/admin, I can log in to the website so that I have the ability to book a class and/or comment on an article, 
+      or like/unlike it.
+- #5  As a user, I can see whether I logged in or registered so that I know that it was successful.
+- #6  As a user, I can log out from the website so that I can protect my privacy and information.
 
-Articles, Comments & Likes Epic
+##### Articles, Comments & Likes Epic
 
-#7	 As a user, I can click on the article so that I can read the entire text about the topic and learn.
-#8  As a user, if I am logged in, I can like or unlike the articles so that I have the opportunity to show my interest 
-     and appreciation.
-#9  As a user, if I am logged in, I can comment on the articles so that I can leave my feedback and/or thoughts 
-     regarding the article.
+- #7  As a user, I can click on the article so that I can read the entire text about the topic and learn.
+- #8  As a user, if I am logged in, I can like or unlike the articles so that I have the opportunity to show my interest 
+      and appreciation.
+- #9  As a user, if I am logged in, I can comment on the articles so that I can leave my feedback and/or thoughts 
+      regarding the article.
 
-Booking Epic
+##### Booking Epic
 
-#10 As a user, I can read more information about each classes so that I can choose which one suits me the best to book. 
-#11 As a user, if I am logged in, I can create a booking so that I can book and join a class.
-#12 As a user, I can choose the date of my future class so that I can book it on the date that suits my schedule.
-#13 As admin, I can authorize or disapprove booking enquiries so that I can assure that the classes are not overbooked.
-#14 As a user, I can edit my booking so that I can change the date.
-#15 As a user, if I am logged in, I can cancel my spot, my booking, so that I can give my space back to others and I can 
+- #10 As a user, I can read more information about each classes so that I can choose which one suits me the best to book. 
+- #11 As a user, if I am logged in, I can create a booking so that I can book and join a class.
+- #12 As a user, I can choose the date of my future class so that I can book it on the date that suits my schedule.
+- #13 As admin, I can authorize or disapprove booking enquiries so that I can assure that the classes are not overbooked.
+- #14 As a user, I can edit my booking so that I can change the date.
+- #15 As a user, if I am logged in, I can cancel my spot, my booking, so that I can give my space back to others and I can 
     join the class when I am available.
 
-Management Epic
+##### Management Epic
 
-#16	As an admin, I can authorize or disapprove comments so that I can assure that a respectful language is used at all times.
-#17 As an admin I can create, read, update and delete articles so that I can manage the content.
-#18 As an admin I can see each booking; the day and class combination, to understand how many clients has enquired/ booked 
+- #16 As an admin, I can authorize or disapprove comments so that I can assure that a respectful language is used at all times.
+- #17 As an admin I can create, read, update and delete articles so that I can manage the content.
+- #18 As an admin I can see each booking; the day and class combination, to understand how many clients has enquired/ booked 
     it so that I can analyse popularity and busy/ weak days.
 
-Contact Epic
+##### Contact Epic
 
-#20	As a user, I can fill out a contact form so that I can communicate with the management, give my feedback, leave a review to the teachers and the studio
+- #20 As a user, I can fill out a contact form so that I can communicate with the management, give my feedback, leave a review to the teachers and the studio
 
-Future ambition - Planned for the next sprint
+##### Future ambition - Planned for the next sprint
 
-#21 create a share button to be able to share the articles
-#22 after successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
-#23 users to be able to add the booking information to their calendar
+- #21 create a share button to be able to share the articles
+- #22 after successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
+- #23 users to be able to add the booking information to their calendar
 
-
-[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
-
-# Flow Charts
-
-<p>
-<details><summary>Home page - Menu</summary><br/>
-<img src="readme-images/flowchart-menu.jpg" alt="menu flow chart">
-</details>
-
-<p>
-<details><summary>Option1 - Print Product List</summary><br/>
-<img src="readme-images/option1-flow.jpg" alt="Print Product List flow chart">
-</details>
-
-<p>
-<details><summary>Option2 - Add New Product</summary><br/>
-<img src="readme-images/option2-flow.jpg" alt="Add New Product flow chart">
-</details>
-
-<p>
-<details><summary>Option3 - Delete Product</summary><br/>
-<img src="readme-images/option3-flow.jpg" alt="Delete Product flow chart">
-</details>
-
-<p>
-<details><summary>Option4 - Get the Order List</summary><br/>
-<img src="readme-images/option4-flow.jpg" alt="Get the Order List flow chart">
-</details>
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
+
+
+# Planning
+
+Persona Profile - by using Code Institutes template - purpose of the website
+Agile Methodology 
+Canban board and Issues
 
 # Design
+
+### Wireframes
+
+### Entity Relationship Diagrams
+
+### Theme
 
 ![colour_palette](README_images/colorkit.png "colour_palette")
 [Colour Palette](https://colorkit.co/palette/ffff-f2eae3-c36d4e-322925/)
@@ -231,92 +218,7 @@ Products added or deleted while using the application will be reflected on the l
 
 The user can add a new product by choosing option 2 from the menu. The application displays a message on screen listing the input requirements and also an example input string of values for better understanding.
 
-![Option2](readme-images/add_new_product.png "Option2")
 
-In the event that the user inputs do not satisfy the validation criteria, they will be prompted to re-enter the required information. The explanation of the data needed is displayed again too.
-
-The rules for the input values:
-
-- Inputs are separated by commas
-- 4 values are required
-- The fourth value, the par level, needs to be an integer so that the program can use it for calculations later on
-
-![Invalid input for option2](readme-images/invalid_option2_input.png "Invalid input for option2")
-
-![Invalid literal input for option2](readme-images/integer_error_option2_input.png "Invalid literal input for option2")
-
-When the user inputs valid data the application displays multiple messages to assure the user with information on how the data is being processed and a new row is added to the stocks spreadsheet for the new product. Once the operation is complete it returns to the menu.
-
-![Valid input for option2](readme-images/valid_input_option2.png "Valid input for option2")
-
-The updated Google Spreadsheet:
-
-![Updated Spreadsheet for option2](readme-images/updated_spreadsheet_option2.png "Updated Spreadsheet for option2")
-
-#### Option 3 - Delete Product
-
-The user can remove, delete an already existing product by choosing option 3 from the menu. The application displays a message on screen explaining the input requirement and also an example input string of value for better understanding.
-
-![Option3](readme-images/delete_product.png "Option3")
-
-In the event that the user inputs do not satisfy the validation criteria, they will be prompted to re-enter the required information. The explanation of the data needed is displayed again too.
-
-The rules for the input values:
-
-- At least 1 string of input is required, not a whitespace
-- The product name cannot be left empty
-
-![Invalid input for option3](readme-images/invalid_option3_input.png "Invalid input for option3")
-
-When the user inputs valid data the application displays multiple messages to assure the user with information on how the data is being processed. There are two ways where the operation can go; if the program finds a match with the input on the stocks spreadsheet, another message will be displayed and the first found (matched) item, with its entire row relevantly gets deleted from the stocks spreadsheet for the mentioned product. Always only the first match, in case the user needs the other copy to stay in stocks. Once the operation is complete it returns to the menu.
-
-![Valid input for option3](readme-images/valid_input_option3.png "Valid input for option3")
-
-The updated Google Spreadsheet:
-
-![Updated Spreadsheet for option3](readme-images/updated_spreadsheet_option3.png "Updated Spreadsheet for option3")
-
-When the program doesn't find a match with the input on the stocks spreadsheet, again a message will be dispayed; explaining that the mentioned product is currently not on stock. The product therefore cannot be deleted as does not exist and the program will take the user back to the menu so they can carry on with their work accordingly.
-
-![Product is not found option3](readme-images/product_is_not_on_stock_option3.png "Product is not found option3")
-
-#### Option 4 - Get the Order List
-
-The main function of the program is when the user can gather relevant information on how much they need to order of their products on stock. They can do this by choosing option 4 from the menu. The application displays a message on screen prompting the user for the first action that they need to do and listing the input requirements, while also providing an example input string of values for better understanding. The program will always ask for the number of data that reflects the current product list on the stocks sheet. This number is calculated by the app by counting the length of the first column with values on the stock sheet and then subtracting 1 from it, in order to take the heading row into consideration.
-Therefore this number gets updated each time a new product was added or an existing one was deleted beforehand.
-
-![Option4](readme-images/get_the_order_list.png "Option4")
-
-In the event that the user inputs do not satisfy the validation criteria, they will be prompted to re-enter the required information. The explanation of the data needed is displayed again too.
-
-The rules for the input values:
-
-- Inputs are separated by commas
-- 'x' values are required, as many values as the program currently requires
-- The input values need to be integers or floats so that they reflect stock take method standards and also the program can use them for calculations later on
-
-![Invalid input for option4 by the amount of values](readme-images/invalid_input_option4_bythenumber.png "Invalid input for option4 by the amount of values")
-
-![Invalid input for option4 by their type](readme-images/invalid_input_option4_bythetype.png "Invalid input for option4 by their type")
-
-When the user inputs valid data the application displays multiple messages to assure the user with information on how the data is being processed. First the program updates the stocks sheet with the user inputs and also adds the current date to the heading of the Current Stock Holding column (5th col) so the user can reference it. After that, the application calculates how much the user needs to order of each products. The application calculates this by taking the par level values from the 4th column and from those it subtracts the previously input current stock holding values, 5th column. The results then are uploaded in the stocks spreadsheet, in the 6th column named, How much to order.
-
-![Valid input for option4](readme-images/valid_input_option4.png "Valid input for option4")
-
-The updated Google Spreadsheet:
-
-![Updated Spreadsheet for option4](readme-images/updated_spreadsheet_option4.png "Updated Spreadsheet for option4")
-
-After performing the necessary calculations and updating the stocks sheet with all the required data, the program presents the information to the user in a table format. This makes it easy and quick for the user to read and gather all the necessary information for placing a new order.
-Once the operation is complete it returns to the menu.
-
-![Order information](readme-images/order_information.png "Order information")
-
-#### Option 5 - Exit
-
-The user can exit and terminate the application by choosing option 5 from the menu. As a final touch, the program displays a Goodbye message to the user.
-
-![exit](readme-images/exit.png "exit")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -434,22 +336,7 @@ The OrderEasy website is deployed using Heroku, this was done by:
 
 **Option 1 - Print Product List:** Enter the number 1 and press enter to confirm that a reassuring message is displayed, followed by the list of current products. Use option 2 to add a new product or option 3 to delete a product, and then choose option 1 again to confirm that the Products List is updated accordingly.
 
-**Option 2 - Add New Product:** Enter the number 2 and press enter to confirm that a message is displayed explaining what the user needs to do next, including the required user input and an example.
-**Validation:** Enter more or less than the 4 required details to confirm that an error message is displayed explaining that the input data is invalid, and reminding the user of the requirements and the number of details entered. Enter 4 details with the fourth detail not being a number to confirm that an error message is displayed explaining that the input data is invalid, and also printing out the last detail that was entered, along with the requirement that it needs to be an integer.
-**Functionailty:** Enter valid values to confirm that the application displays multiple messages to reassure the user that their request is being processed. After completion, open the Google Sheet to confirm that the new product is uploaded after the previously last row. I also confirm that the product name starts with a capital letter, regardless of whether the input started with a capital letter or not.
 
-**Option 3 - Delete Product:** Enter the number 3 and press enter to confirm that a message is displayed explaining what the user needs to do next, including the required user input and an example.
-**Validation:** Press enter or input one or more spaces to confirm that an error message is displayed explaining that the input data is invalid, reminding the user of the requirements, and notifying the user that the product name cannot be empty.
-**Functionailty:** Enter valid values, but a product name that is not currently on the stock list to confirm that the application displays multiple messages to reassure the user that their request is being processed and in the last message it says that the product is not currently on stock. I confirm that in this case nothing gets deleted from the Google Sheet.
-Enter valid values, with an existing product name, to confirm that the application displays multiple messages to reassure the user that their request is being processed. After completion, open the Google Sheet to confirm that the mentioned product is deleted from the list. I also confirm that the function finds the mentioned product regardless of whether the input started with a capital letter or not.
-Use option 2 to add a new product and add the same product twice. Then, choose option 3 to delete the same product and confirm that only the first match will be deleted. View this result in Google Sheet.
-
-**Option 4 - Get the Order List:** Enter the number 4 then hit enter to confirm that a message is displayed explaining what the user needs to do next, including the required user input and an example.
-**Validation:** Enter more or less than the required amount of details to confirm that an error message is displayed explaining that the input data is invalid, and reminding the user of the requirements and the number of details entered. Enter the correct amount of details with one detail not being a number to confirm that an error message is displayed explaining that the input data is invalid, and also printing out the invalid detail that was entered, along with the requirement that it needs to be a float or an integer.
-**Functionailty:** Enter valid values to confirm that the application displays multiple messages to reassure the user that their request is being processed. In the end, a table is printed, that presents all data from the Stocks Sheet in an easily readable format. After completion, open the Google Sheet to confirm that the 'Current Stock Holding' column is uploaded and today's date is also displayed in the heading. Also confirm that the 'How much to order' column is uploaded too and all calculations are correct.
-Use option 2 to add a new product or option 3 to delete a product, and then choose option 4 again to confirm that the data and therefore the validation requirements are updated accordingly, and the programs runs smoothly with no issues.
-
-**Option 5 - Exit:** Enter the number 5 and press enter to confirm that the goodbye message is displayed, and the application terminates.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 </details>
@@ -469,45 +356,6 @@ Use option 2 to add a new product or option 3 to delete a product, and then choo
 
    ![Menu](readme-images/app.png "Menu")
 
-3. As a user of the application, I want to be able to retrieve the list of products that I have on stocks to make the
-    stock count, and therefore the later input faster, more efficient.
-
-    - The first option, Print Product List, in the menu helps the user just with that. It gathers all product names that are currently on the stock list and presents them under each other. In case there were products added or deleted from the stock while using the application, those will be reflected on the list when the 'Print Product List' option is subsequently run again.
-
-    ![List of Products](readme-images/print_product_list.png "List of Products")
-
-    - After a new product was added.
-
-    ![Updated Product List](readme-images/updated_option_1.png "Updated Product List")
-
-4. As a user of the application, I want to be able to add a new product to the stock list, in case my business needs a
-    new, different product with time.
-
-    -	The second option, Add New Product, in the menu helps the user just with that. First, the program displays its requirements, and what details it needs from the user to input to be able to upload the new product to the Google sheet and add it to the stock list. When the user inputs the correct, valid data, the program will display some messages to reassure the user that their request is being processed and completed.
-
-    ![Updated Stocks sheet - new product](readme-images/updated_spreadsheet_option2.png "Updated Stocks sheet - new product")
-
-5. As a user of the application, I want to be able to remove, delete an existing product from the stock list, in case my
-    business doesn't need that specific product anymore.
-
-    - The third option, Delete Product, in the menu helps the user just with that. First, the program displays its requirements, and what details it needs the user to input to be able to find the mentioned product in the Google Sheet and then delete it from the stock list. When the user inputs the correct, valid data, the program will display some messages to reassure the user that their request is being processed and completed. In case there is a repetition in the list, the app will only delete the first copy, leaving the rest of them on the list.
-
-    ![Updated Stocks sheet - deleted product](readme-images/updated_spreadsheet_option3.png "Updated Stocks sheet - deleted product")
-
-6. As a user of the application, I want to be able to see the results, as in how much I need to order and the date when
-    the data was entered, and requested too.
-
-    -	The fourth option, Get the Order List, in the menu helps the user just with that. First, the program displays its requirements, and what details it needs from the user to input, which is their stock take results. Once the user enters the correct and valid data, the program reassures the user with messages that their request is being processed. The application updates the date in the heading to today's date and uploads the inputted values to the Google Sheet and calculates the required quantity for each item. The calculation is based on the par level values and their difference with the previously taken stock take values. Once all calculations and actions are completed, the application displays the data from the stocks sheet in a table format for easy readability by the user.
-
-    ![Updated Stocks sheet - orders](readme-images/updated_spreadsheet_option4.png "Updated Stocks sheet - orders").  
-
-7. As a user of the application, I want to be able to see the relevant information of each product when I am ready to
-    order them for better consideration, including their price, units as well.
-
-    - The table at the completion of option 4, Get the Order List, displays many useful information of each products, namely their unit, their price, their set par level, their current stock holding amounts with the date when this input was created and lastly the amount of how much the user needs to order.
-    - In addition to facilitating quick decision-making on how much of each product the user should order, this information can also be utilized to identify product trends and popularity, determine potential changes required in par levels, calculate gross profit, and steer the business towards economic profitability.
-
-    ![results - orders](readme-images/order_information.png "results - orders").
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 </details>
@@ -531,7 +379,7 @@ An issue came up while testing the application in the meantime;
 
 # Credits
 
-## Content - Data Model
+## Content 
 
 I have based the model on functions used to request, validate, and return data to and from the user. These functions are called from within the 'Menu' function, which offers options to the user to decide on the order in which they want to execute them.
 
