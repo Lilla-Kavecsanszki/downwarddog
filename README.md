@@ -15,8 +15,8 @@ This full-stack framework project was built using Django framework, Python, HTML
 # Contents
 
 - [User Experience (UX)](https://github.com/Lilla-Kavecsanszki/downwarddog#user-experience-ux)
-- [Ideal client](https://github.com/Lilla-Kavecsanszki/downwarddog#ideal-client)
-- [User stories & Epics](https://github.com/Lilla-Kavecsanszki/downwarddog#user-stories-and-epics)
+  - [Ideal client](https://github.com/Lilla-Kavecsanszki/downwarddog#ideal-client)
+  - [User stories & Epics](https://github.com/Lilla-Kavecsanszki/downwarddog#user-stories-and-epics)
 - [Planning](https://github.com/Lilla-Kavecsanszki/downwarddog#planning)
 - [Design](https://github.com/Lilla-Kavecsanszki/downwarddog#design)
   - [Wireframes](https://github.com/Lilla-Kavecsanszki/downwarddog#wireframes)
@@ -143,7 +143,7 @@ This website:
 
 Persona Profile - by using Code Institutes template - purpose of the website
 Agile Methodology 
-Canban board and Issues
+Kanban board and Issues
 
 # Design
 
@@ -478,6 +478,12 @@ https://stackoverflow.com/questions/16955019/how-to-reload-a-page-after-the-ok-c
 https://www.w3schools.com/howto/howto_js_alert.asp
 
 https://stackoverflow.com/questions/32394684/how-to-confirm-and-call-function-with-onclick
+
+Rename the body field in the Comment form
+
+https://docs.djangoproject.com/en/4.2/topics/forms/
+
+https://stackoverflow.com/questions/73686042/how-do-i-label-fields-on-a-django-form
 
 
 Bugs:

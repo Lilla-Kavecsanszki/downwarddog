@@ -29,7 +29,7 @@
         <div class="row card-deck">
             {% for timetable in timetables %}
             <div class="col-md-3">
-                <div class="card" style="background-color: #c36d4e;">
+                <div class="card mb-2" style="background-color: #c36d4e;">
                     <div class="card-body" style="color: #f5f5f5;">
                         <p class="card-text">Available Date: {{ timetable.available_date }}</p>
                         <a href="{% url 'book_now' timetable.id %}" class="btn btn-primary book-btn">Book Now</a>

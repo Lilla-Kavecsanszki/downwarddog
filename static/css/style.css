@@ -44,7 +44,9 @@ body {
     width: 330px;
     height: 400px;
     overflow: hidden;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .image-container img {
