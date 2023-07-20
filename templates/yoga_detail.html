@@ -32,7 +32,20 @@
                 <div class="card mb-2" style="background-color: #c36d4e;">
                     <div class="card-body" style="color: #f5f5f5;">
                         <p class="card-text">Available Date: {{ timetable.available_date }}</p>
-                        <a href="{% url 'book_now' timetable.id %}" class="btn btn-primary book-btn">Book Now</a>
+                        <form method="post" action="{% url 'book_now' timetable.id %}">
+                            {% csrf_token %}
+                            <div class="dropdown mb-3">
+                                <label for="num_dogs">Number of Dogs:</label>
+                                <select class="dropdown-select" id="num_dogs" name="num_dogs">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary book-btn">Book Now</button>
+                        </form>
                     </div>
                 </div>
             </div>

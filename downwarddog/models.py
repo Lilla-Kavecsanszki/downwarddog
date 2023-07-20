@@ -5,6 +5,7 @@ from cloudinary.models import CloudinaryField
 
 """Articles"""
 
+
 STATUS = ((0, 'Draft'), (1, 'Published'))
 
 
@@ -55,6 +56,7 @@ class Comment(models.Model):
 
 """Classes"""
 
+
 STATUS = ((0, 'Draft'), (1, 'Published'))
 
 
@@ -99,6 +101,7 @@ class Booking(models.Model):
     classes = models.ForeignKey(Timetable, on_delete=models.CASCADE,
                                 related_name='class_booking',)
     approved = models.BooleanField(default=False)
+    number_of_dogs = models.PositiveIntegerField(default=1)
 
     class Meta:
         constraints = [

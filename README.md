@@ -142,6 +142,9 @@ This website:
 # Planning
 
 Persona Profile - by using Code Institutes template - purpose of the website
+
+- <a href="">
+
 Agile Methodology 
 Kanban board and Issues
 
@@ -486,6 +489,11 @@ https://docs.djangoproject.com/en/4.2/topics/forms/
 
 https://stackoverflow.com/questions/73686042/how-do-i-label-fields-on-a-django-form
 
+Dropdown HTML
+
+https://www.freecodecamp.org/news/html-drop-down-menu-how-to-add-a-drop-down-list-with-the-select-element/
+
+https://stackoverflow.com/questions/26450696/get-user-id-with-request-post-get-works-but-value-seems-to-be-no-integer
 
 Bugs:
 - EmailJS... was not connected properly, didnt copy the correct template parameters
