@@ -68,8 +68,8 @@
                     {% endif %}
                 </ul>
                 {% if user.is_authenticated %}
-                <span class="navbar-text">
-                    Welcome, {{ user.username }}!
+                <span class="navbar-text"><i class="fa-solid fa-circle-user fa-xl" style="color: #c36d4e;"></i>
+                    {{ user.username }}
                     <!-- This will display the logged-in user's username -->
                 </span>
                 {% else %}

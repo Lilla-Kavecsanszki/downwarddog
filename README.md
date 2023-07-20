@@ -468,7 +468,17 @@ https://stackoverflow.com/questions/25345392/how-to-add-url-parameters-to-django
 
 <https://docs.djangoproject.com/en/3.2/ref/models/querysets/>
 
-<https://stackoverflow.com/questions/32394684/how-to-confirm-and-call-function-with-onclick>
+
+Message alert and Reloading the page
+
+https://stackoverflow.com/questions/30050678/show-bootstrap-alert-box-on-a-button-click
+
+https://stackoverflow.com/questions/16955019/how-to-reload-a-page-after-the-ok-click-on-the-alert-page
+
+https://www.w3schools.com/howto/howto_js_alert.asp
+
+https://stackoverflow.com/questions/32394684/how-to-confirm-and-call-function-with-onclick
+
 
 Bugs:
 - EmailJS... was not connected properly, didnt copy the correct template parameters

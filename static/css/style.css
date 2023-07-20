@@ -41,7 +41,7 @@ body {
 
 .image-container {
     position: relative;
-    width: 600px;
+    width: 330px;
     height: 400px;
     overflow: hidden;
     display: inline-block;
@@ -140,12 +140,6 @@ body {
 }
 
 /* Sign-up */
-/* 
-.photo-background {
-    background: url("{% static 'images/puppy-yoga.jpg' %}");
-    background-size: cover;
-    background-position: center;
-} */
 
 .btn-signup {
     background-color: #c36d4e;

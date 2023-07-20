@@ -112,16 +112,21 @@
                         <form onsubmit="return sendMail(this);">
                             <input type="text" name="name" class="form-control" id="fullname" placeholder="Name"
                                 required />
-                            <input type="text" name="emailaddress" class="form-control" id="emailaddress"
+                            <input type="email" name="emailaddress" class="form-control" id="emailaddress"
                                 placeholder="Email" required />
                             <textarea rows="5" name="feedback" class="form-control" id="feedback" placeholder="Message"
                                 required></textarea>
-                            <button type="submit" class="btn btn-primary btn-sm custom-btn center-block mt-3">Send
+                                <button type="submit" class="btn btn-primary btn-sm custom-btn center-block mt-3 mb-1">Send
                                 Message</button>
                         </form>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="{% static 'images/map.png' %}" alt="Map" class="img-fluid" />
+                        <div id="successMessage" class="alert alert-success alert-dismissable" style="display: none;">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            Success! Message sent successfully.
+                        </div>
+                        <div id="errorMessage" class="alert alert-danger alert-dismissable" style="display: none;">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            Ooops! Something went wrong, please try again!
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,9 +147,17 @@
             .then(
                 function (response) {
                     console.log("SUCCESS", response);
+                    //Display reassuring message to user 
+                    document.getElementById('successMessage').style.display = 'block';
+                    //Refresh the page after confirming it
+                    setTimeout(function () {
+                    window.location.reload();
+                }, 2000);                    
                 },
                 function (error) {
                     console.log("FAILED", error);
+                    //Display error message also
+                    document.getElementById('errorMessage').style.display = 'block';
                 }
             );
         return false;  // To block from loading a new page
