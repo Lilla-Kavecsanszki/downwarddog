@@ -2,42 +2,50 @@
 
 {% block content %}
 {% load static %}
-
-<div class=" container text-center">
-    {% if already_booked %}
-    <h2 class=" text-center mt-5">You already booked this yoga class</h2>
-    <p class="text-center">Please wait for approval</p>
-    {% elif pending %}
-    <h2 class="text-center mt-5">Your Booking Enquiry pending approval</h2>
-    {% elif approved %}
-    <div class="container text-center">
-        <h2 class="text-center mt-5">Approved Bookings</h2>
-        <ul class="no-dots mt-5">
-            {% for booking in approved_bookings %}
-            <li>
-                <h5 class="text-center mt-5">{{ booking.classes.classes.title }} class is approved for
-                    {{ booking.user.username }} on the {{ booking.classes.available_date }}
-                </h5>
-                <p class="text-center">See you soon!</p>
-                <form method="post" action="{% url 'delete_booking' booking.id %}">
-                    {% csrf_token %}
-                    <button type="submit" class="btn book-btn"
-                        onclick="return confirm('Are you sure to cancel?')">Delete
-                        booking</button>
-                </form>
-            </li>
-            {% endfor %}
-        </ul>
+<div class="container-fluid">
+    <div class="row">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                {% if already_booked %}
+                <h2 class=" text-center mt-5">You already booked this yoga class</h2>
+                <p class="text-center">Please wait for approval</p>
+                {% elif pending %}
+                <h2 class="text-center mt-5">Your Booking Enquiry pending approval</h2>
+                {% elif approved %}
+                <div class="container text-center">
+                    <h2 class="text-center mt-5">Approved Bookings</h2>
+                    <ul class="no-dots mt-5">
+                        {% for booking in approved_bookings %}
+                        <li>
+                            <h5 class="text-center mt-5">{{ booking.classes.classes.title }} class is approved for
+                                {{ booking.user.username }} on the {{ booking.classes.available_date }}
+                            </h5>
+                            <p class="text-center">See you soon!</p>
+                            <form method="post" action="{% url 'delete_booking' booking.id %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn book-btn"
+                                    onclick="return confirm('Are you sure to cancel?')">Delete
+                                    booking</button>
+                            </form>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% else %}
+                <h2 class="text-center mt-5">You have no bookings yet!</h2>
+                {% endif %}
+                <br>
+                <p class="text-center">Please note: All bookings are subject to admin approval</p>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="image-container mb-1 container-fluid">
+                            <img src="{% static 'images/vizsla.jpg' %}" alt="Dog exercising" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    {% else %}
-    <h2 class="text-center mt-5">You have no bookings yet!</h2>
-    {% endif %}
-    <br>
-    <p class="text-center">Please note: All bookings are subject to admin approval</p>
-    <br>
-    <span class="image-container mb-1">
-        <img src="{% static 'images/vizsla.jpg' %}" alt="Dog exercising">
-    </span>
 </div>
-
 {% endblock %}

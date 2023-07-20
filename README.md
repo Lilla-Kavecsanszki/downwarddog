@@ -468,6 +468,8 @@ https://stackoverflow.com/questions/25345392/how-to-add-url-parameters-to-django
 
 <https://docs.djangoproject.com/en/3.2/ref/models/querysets/>
 
+<https://stackoverflow.com/questions/32394684/how-to-confirm-and-call-function-with-onclick>
+
 Bugs:
 - EmailJS... was not connected properly, didnt copy the correct template parameters
 - slug not working for the Booking view-url, needed to the ID parameter - based on error code suggestion in Debug=True mode

@@ -106,6 +106,5 @@ class Booking(models.Model):
                                     name='unique_booking'),
         ]
 
-
-def __str__(self):
-    return f'{self.classes} is booked by {self.user}'
+    def __str__(self):
+        return f'{self.classes} is booked by {self.user}'
