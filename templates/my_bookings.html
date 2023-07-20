@@ -4,7 +4,6 @@
 {% load static %}
 <div class="container-fluid">
     <div class="row">
-        <div class="row justify-content-center">
             <div class="col-lg-8">
                 {% if already_booked %}
                 <h2 class=" text-center mt-5">You already booked this yoga class</h2>
@@ -37,15 +36,14 @@
                 <br>
                 <p class="text-center">Please note: All bookings are subject to admin approval</p>
                 <br>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="image-container mb-1 container-fluid">
-                            <img src="{% static 'images/puppy-yoga.jpg' %}" alt="Dog exercising" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>  
+    <div class="col-lg-4">
+        <div class="image-container mb-1 container-fluid">
+            <img src="{% static 'images/puppy-yoga.jpg' %}" alt="Dog exercising" class="img-fluid">
         </div>
+    </div>
+               
+            
     </div>
 </div>
 {% endblock %}

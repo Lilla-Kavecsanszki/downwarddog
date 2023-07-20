@@ -170,12 +170,13 @@ Python was used to complete this project.
 
 # Frameworks, Libraries, Programs & Technologies Used
 
-- [Miro](https://miro.com/) was used to create the flow charts
+- [Lucid](https://lucid.app/documents#/documents?folder_id=recent) was used to create the ER Diagrams
 - Github was used as the repository for the projects code after being pushed from Git
 - Git was used for version control by the Gitpod terminal to commit to Git and Push to GitHub; to create and edit all
   original code
 - [Google Fonts](https://fonts.google.com/) used for the Montserrat and Poiret One fonts
-- [Font Awesome](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
+- [Font Awesome](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes
+- [Fonticon](https://gauger.io/fonticon/) was used to create the favicon
 - [Bootstrap](https://getbootstrap.com/) was used to build a responsive website quicker
 - Microsoft Word was used to create the wireframes during the design process.
 - [Django](https://www.djangoproject.com/) was used as the framework of the application
