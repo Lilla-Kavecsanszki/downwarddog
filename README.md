@@ -114,7 +114,7 @@ This website:
 - #11 As a user, if I am logged in, I can create a booking so that I can book and join a class.
 - #12 As a user, I can choose the date of my future class so that I can book it on the date that suits my schedule.
 - #13 As admin, I can authorize or disapprove booking enquiries so that I can assure that the classes are not overbooked.
-- #14 As a user, I can edit my booking so that I can change the number of dogs I would like to bring along
+- #14 As a user, if I am logged in, I can edit my booking so that I can change the number of dogs I would like to bring along
 - #15 As a user, if I am logged in, I can cancel my spot, my booking, so that I can give my space back to others and I can 
     join the class when I am available.
 

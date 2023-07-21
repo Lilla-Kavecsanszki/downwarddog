@@ -43,7 +43,7 @@ class CommentAdmin(admin.ModelAdmin):
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
     list_display = ('user', 'classes', 'number_of_dogs', 'approved')
-    list_filter = ('approved',)
+    list_filter = ('approved', 'classes')
     search_fields = ('user__username', 'classes__title', 'approved')
     actions = ['approve_bookings']
 
