@@ -16,9 +16,12 @@
                 <ul class="no-dots mt-5">
                     {% for booking in approved_bookings %}
                     <li>
-                        <h5 class="text-center mt-5">{{ booking.classes.classes.title }} class is approved for
-                            {{ booking.user.username }} on the {{ booking.classes.available_date }} with
-                            {{ booking.number_of_dogs }} dogs
+                        <h5 class="text-center mt-5"><strong><u>{{ booking.classes.classes.title }}</strong></u> class
+                            is
+                            approved for
+                            <strong><u>{{ booking.user.username }}</strong></u> on the
+                            <strong><u>{{ booking.classes.available_date }}</strong></u> with
+                            <strong><u>{{ booking.number_of_dogs }}</strong></u> dogs
                         </h5>
                         <p class="text-center">See you soon!</p>
                         <div class="row">
@@ -67,8 +70,6 @@
                 <img src="{% static 'images/puppy-yoga.jpg' %}" alt="Dog exercising" class="img-fluid">
             </div>
         </div>
-
-
     </div>
 </div>
 {% endblock %}
