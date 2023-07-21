@@ -47,11 +47,19 @@ class YogaDetail(View):
 class BookNow(View):
     def get(self, request, timetable_id):
         timetable = get_object_or_404(Timetable, id=timetable_id)
+        context = {
+            'timetables': timetable
+        }
+
+        return render(request, 'book_now.html', context)
+
+    def post(self, request, timetable_id):
+        timetable = get_object_or_404(Timetable, id=timetable_id)
         try:
             # Check if the user is authenticated
             if request.user.is_authenticated:
                 # Create a new booking/enquiry, set the default number of dogs to 1
-                num_dogs = int(request.POST.get('num_dogs', 1)) 
+                num_dogs = int(request.POST.get('num_dogs', 1))
                 booking = Booking.objects.create(
                     user=request.user, classes=timetable, approved=False, number_of_dogs=num_dogs)
                 # Redirect to the 'my_bookings' page, otherwise to the login page
@@ -82,6 +90,7 @@ class MyBookings(View):
             })
 
     def post(self, request, booking_id):
+        """ Delete the booking """
         booking = get_object_or_404(
             Booking, id=booking_id, user=request.user, approved=True)
         booking.delete()
