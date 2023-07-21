@@ -97,6 +97,17 @@ class MyBookings(View):
         return redirect('my_bookings')
 
 
+class UpdateBooking(View):
+    def post(self, request, booking_id):
+        """ Update the number of dogs """
+        booking = get_object_or_404(
+            Booking, id=booking_id, user=request.user, approved=True)
+        num_dogs = int(request.POST.get('num_dogs', 1))
+        booking.number_of_dogs = num_dogs
+        booking.save()
+        return redirect('my_bookings')
+
+
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
