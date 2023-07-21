@@ -4,9 +4,9 @@ This website is designed to bring together all yoga fans who are also dog owners
 The main focus is to be straight forward enough to save time for the user, yet to be engaging and motivating at the same time.
 
 The user can interact with the website in various ways such as viewing relevant and uselful information on the articles page. The users, if they are registered and logged in, then can comment on the articles and also can express their opinion with a like. They can later also unlike the article, in case they changed their mind. 
-The users can also see a selection of yoga classes, then also a selection of available dates and times for the relevant classes to choose from through the Yoga page. If they are logged in, they will be able to book, register their interest. After admin approval, the user is able to follow up their bookings on the My Bookings page, and also to delete the bookings that they are not able to attend anymore.  
+The users can also see a selection of yoga classes, then also a selection of available dates and times for the relevant classes to choose from through the Yoga page. If they are logged in, they will be able to book, register their interest. After admin approval, the user is able to follow up their bookings on the My Bookings page, and also to edit or delete the bookings that they wish to.  
 
-This full-stack framework project was built using Django framework, Python, HTML, Bootstrap and CSS. Furthermore, the webiste stores all vital information and data in an external database, Cloudinary.
+This full-stack framework project was built using Django framework, Python, HTML, Bootstrap and CSS. Furthermore, ElephantSQL and Cloudinary was also used to store data, images and CSS.
 
 ![Application](readme-images/responsive.png "Application")
 
@@ -135,18 +135,24 @@ This website:
 - #22 after successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
 - #23 users to be able to add the booking information to their calendar
 
+(#19 US was deleted during production)
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 
 # Planning
 
-Persona Profile - by using Code Institutes template - purpose of the website
+The planning process started with determining the target clientele, by creating a Persona Profile - by using Code Institutes template - based on design thinking. Therefore the website aims to cater to the needs, expectations and preferences of the identified persona.
+You can see the persona profile [HERE](README_docs/design_thinking_persona_template.pdf).
 
-- <a href="">
+Given the prevalence of mobile usage among our target users, creating a responsive website was a top priority in our design approach. To achieve this, we leveraged the power of Bootstrap grids, elements, and responsive utilities combined with custom CSS, to ensure seamless adaptability across various devices.
 
-Agile Methodology 
-Kanban board and Issues
+#### Agile Methodology
+
+In this project Github issues were used to create the User stories and groupped into Epics, in a Github Project. This served as the Agile tool. The issues' development was managed through a Kanban board. Currently, all the issues have been marked as "Done”.
+
+For easy access, you can find the Epics, User Stories/ Issues, and Kanban board [HERE](https://github.com/users/Lilla-Kavecsanszki/projects/5).
+
 
 # Design
 
@@ -154,20 +160,37 @@ Kanban board and Issues
 
 ### Entity Relationship Diagrams
 
-### Theme
+### Colour Scheme
 
-![colour_palette](README_images/colorkit.png "colour_palette")
-[Colour Palette](https://colorkit.co/palette/ffff-f2eae3-c36d4e-322925/)
+- White
+- Whitesmoke #f5f5f5
+- Very dark (mostly black) cyan #141c1e
+- Dark moderate lime green #48a04f
+- Bright red #ed3833
 
-Fonts
+![colour_palette](README_docs/images/colorkit.png "colour_palette")
+[My Colour Palette](https://colorkit.co/palette/f5f5f5-f8d649-48a04f-44aedd-8f4ec4-ed3833-141c1e/)
 
-![colour_palette](README_images/poiret_one.png "colour_palette")
-![colour_palette](README_images/montserrat.png "colour_palette")
+I picked these specific colours based on the purpose of the website and what the studio wishes to achieve. I made that decision for a playful and fun aesthetics that can also give a calming effect to the visitors at the same time. 
+
+
+### Typography
+
+The primary font used for the website is Poiret One. It was chosen because I found this font to be
+
+![Poiret One](README_docs/images/poiret_one.png "poiret_one")
+
+The secondary font used for the body is Montserrat, which was selected for its clear readability, which works well with Poiret One to maintain the airy yet fun outcome.
+
+![Montserrat](README_docs/images//montserrat.png "montserrat")
 
 
 # Languages Used
 
-Python was used to complete this project.
+- HTML5
+- Python
+- CSS3
+- Javascript
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -194,34 +217,51 @@ Python was used to complete this project.
 
 # Features
 
-#### Home - The Menu
+### Home Page
 
-The menu is displayed when the application starts to keep the interface simple to use and uncluttered. The menu features five options, functionalities for the user to choose from; 1) Print Product List, 2) Add New Product, 3) Delete Product, 4) Get the Order List and 5) Exit.
+### F01 Navigation Bar
 
-![f_menu](readme-images/f_menu.png "f_menu")
+The navigation bar provides easy access to all active pages for the user.
 
-The user is prompted to choose one of the menu options by entering the option number. In the event of an invalid input, an error message will be displayed and the main menu will be displayed again.
+**Menu Options:**
+- **Home:** This button serves as a quick link to the homepage, enabling users to navigate back to the main landing page at any point.
+- **Articles:** Users can explore and read articles by clicking on this button, which further leads them to a detailed page showcasing various content if they want to. The logged-in user will also be able to comment the articles or like them. The non-logged-in user can only view.
+- **Yoga:** The "Yoga" button takes users to a list of available classes. Each class is presented with relevant information and a button, 'Availabilities', which through the Users can choose their preferred date and time, and go ahead to book their desired class. At the end, only logged-in user can proceed with a booking, non-logged in users will be redirected to the Login page.
 
-![invalid input menu](readme-images/invalid_menu_input.png "invalid input menu")
+**Logged-In Users**
+For logged-in users, the navigation bar includes two additional menu options:
+- **My Bookings:** This button provides quick access to view and manage the user's booked classes.
+- **Logout:** Users can log out by clicking on this option.
+  
+![Navbar Logged_In](README_docs/images/navbar_loggedin.png "navbar_logged_in")
 
-The menu will continue to be displayed repeatedly until the user inputs a valid response and after the completion of each options (1-4). The application will be terminated only when the user selects option 5 from the menu.
+**Not Logged-In Visitors**
+For non-logged-in users, the following options are available instead:
+- **Register:** Users can register and create an account to gain access to more features and personalized content.
+- **Login:** Clicking on this button allows users to log in with their credentials and access personalized content and more features.
+  
+![Navbar Not Logged_In](README_docs/images/navbar_nonloggedin.png "navbar_not_logged_in")
 
-#### Option 1 - Print Product List
+**Special Case for Administrators**
+For the administrator or superuser who is logged in, an extra menu option is displayed:
+- **Admin:** This button offers a direct link to the main site administration page, eliminating the need to manually append '/admin' to the homepage URL.
+  
+![Navbar Admin](README_docs/images/navbar_admin.png "navbar_admin")
 
-If the user selects option 1 from the menu they are shown the list of the products that are currently on the stocks sheet in the Google Spreadsheet.
+**Decorative Element**
+On the right-hand side of the navigation bar, a muted text adds a touch of decoration. If a user is logged in, their username, along side by a user icon, is displayed. Otherwise, the text "Breathe.. or bark?" is shown, adding a playful and welcoming touch to the user interface.
 
-This is data taken from the Google Spreadsheet, all information listed under each other from its first column.
+The navigation bar is fully responsive, adjusting to different screen sizes, and it collapses on mobile screens, displaying a hamburger icon for easy navigation.
 
-![Option1](readme-images/print_product_list.png "Option1")
+![Navbar Hamburger](README_docs/images/navbar_hamburger.png "navbar_hamburger")
 
-Products added or deleted while using the application will be reflected on the list when the 'Print Product List' option is subsequently run.
+![Navbar Hamburger Open](README_docs/images/navbar_hamburger_open.png "navbar_hamburger_open")
 
-![Updated spreadsheet](readme-images/updated_option_1.png "Updated spreadsheet")
+### F02 Hero Image and Overlay Text
 
-#### Option 2 - Add New Product
+Underneath the navbar, the Home page features a very relevant photo of a woman doing yoga with a dog next to her. There is also a text overlay on top of the image, displaying the name of the website and the business, and also gives a clear idea of its purpose too.
 
-The user can add a new product by choosing option 2 from the menu. The application displays a message on screen listing the input requirements and also an example input string of values for better understanding.
-
+![Hero Image and Text](README_docs/images/hero_feature.png "hero_image&text")
 
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
