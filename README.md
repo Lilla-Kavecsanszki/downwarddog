@@ -181,7 +181,7 @@ The secondary font used for the body is Montserrat, which was selected for its c
 
 ![Montserrat](README_docs/images//montserrat.png "montserrat")
 
-# Languages Used
+# Languages Use
 
 - HTML5
 - Python
@@ -343,15 +343,67 @@ There is also a comment counter, next to the like counter, that tracks the numbe
 
 ### F11 Video background and Overlay Text
 
-The top of Yoga page features a muted video of a girl doing yoga with a dog next to her. The video creates a motivation to start moving right away the user sees it.The video has a faded black overlay on top of it to tone it down a little bit and to help blend it into its environment. There is also a text overlay on top of the video, suggesting the purpose of the page then the "jumping" arrow urges the user to scroll down to the next section where they can explore the different yoga classes that they can choose from.
+The top of the Yoga page features a muted video of a girl doing yoga with a dog next to her. The video serves as a motivation for users to start moving as soon as they see it. To blend the video into its environment, there is a faded black overlay on top of it. Additionally, there is a text overlay suggesting the purpose of the page, and a "jumping" arrow urges the user to scroll down to explore the different yoga classes available to choose from.
 
-![Video & Overlay](README_docs/images/video%26overlay.png "video&overlay")
+![Video & Overlay](README_docs/images/video%overlay.png "video&overlay")
 
-### F12 Yoga Classes
+### F12 Yoga Class Cards
 
-The top of 
+Underneath the video, users can view the different yoga classes and relevant information about them, presented on orange cards. Each class has an 'Availabilities' button that takes the user to the Yoga Detail page of the chosen class. The Yoga Detail page is also detailed under F13.
 
 ![Yoga Classes](README_docs/images/yoga_classes.png "yoga_classes")
+
+### F13 Yoga Detail Cards
+
+The Yoga Detail cards are displayed on the Yoga Detail page, which looks exactly the same as the Yoga page. The difference is the content of the orange cards, that this time are the yoga detail cards.
+The cards show the available dates and times of the chosen class. Underneath that information on each card there is a dropdown menu, where the user can select how many dog or dogs they wish to bring to the chosen class. The default is set to 1. After the user choses this detail and if they are logged in, they can proceed and book through the cards' own 'Book Now' button. If the user is not logged in, then the button will redirect them to the Sign in page. The Book Now button is explained further in details in F15.
+
+![Yoga Detail](README_docs/images/yoga_detail.png "yoga_detail")
+
+### F14 Warning Text
+
+Above the yoga detail cards on the yoga detail page, a polite warning message is displayed, explaining that users need to be logged in to book a class.
+
+![Warning Text](README_docs/images/warning.png "warning")
+
+### F15 Book Now
+
+As mentioned in F13, the "Book Now" button redirects users to the Sign-in page if they are not logged in. However, for logged-in users, it handles the creation of a booking.
+
+![Book](README_docs/images/book.png "book")
+
+When the logged-in user press the "Book Now" button, it takes them to the My Bookings page, displaying the relevant titles and paragraphs from that, which is in this case a pending status.
+
+![Pending Booking](README_docs/images/pending.png "pending")
+
+If a logged-in user attempts to press the "Book Now" button twice for the same class, date and time, the constraints in the Booking model prevent that. The user will be redirected to the "My Bookings" page, where they will see a message explaining that they have already attempted to book this class and should wait for approval.
+
+![Already Booked](README_docs/images/already_booked.png "already_booked")
+
+## F16 My Bookings page
+
+Logged-in users enjoy an additional option on their navbar: the "My Bookings" page. This page conveniently lists all approved bookings for the user, including the class title, username, date and time, and the number of dogs that it was booked with.
+Underneath there is also a friendly and welcoming message says: See you soon! 
+Under each booking in the list, users will find two buttons and a dropdown menu. The "Delete" button, detailed later in F17, allows users to cancel their bookings. On the other hand, the "Update" button, along with the dropdown menu (F18), serves to modify booking details as needed.
+Additionally, a disclaimer appears at the bottom of the page, informing users that all bookings are subject to admin approval.
+
+![Approved Booking](README_docs/images/approved_bookings.png "approved_booking")
+
+In case the user has no (approved) bookings yet, the "My Bookings" page will display a special message indicating that the user currently has no bookings. This message serves as a notification that the user has not yet made any bookings, encouraging them to explore available classes and make their first booking.
+
+![No Booking](README_docs/images/no_booking_yet.png "no_booking")
+
+## F17 Delete button
+
+Logged-in users 
+
+![Approved Booking](README_docs/images/approved_bookings.png "approved_booking")
+
+## F18 Update button and Dropdown
+
+Logged-in users 
+
+![Approved Booking](README_docs/images/approved_bookings.png "approved_booking")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -372,53 +424,7 @@ The top of
 6. Press enter to complete.
 
 </details>
-<br>
-
-**How to create and configure the Google spreadsheet and APIs**
-<p>
-<details><summary>Steps</summary><br/>
-
-1. Log in (or create) to your Google account
-2. Create a Google Spreadsheet (order_spreadsheet) on Google Drive. Mine has 1 page; 'stocks'.
-3. In row 1 of the stocks sheet, create the headings: Products, Unit, Price, Par level, Current Stock Holding, How much to
-   order
-4. Then go ahead and fill out the sheet as needed. For the initial sample data used in this project click [here](https://github.com/Lilla-Kavecsanszki/order-easy#content---data-model)
-5. Set up APIs on the [Google Cloud Platform](https://console.cloud.google.com/welcome?project=ordereasy-378810)
-6. Create a new project, so click on the “Select a project” button and then select “new project”. and
-7. Give it a unique name, then by clicking on “Select Project” again, go to dashboard
-8. Setup Google Drive credentials
-9. From the side menu (hamburger menu on the top) select "APIs and Services" and then "Library"
-10. Search for Google Drive API
-11. Select Google Drive API and click on the 'enable' button, which will take you to the API overview page.
-12. Click the “Create credentials” button, then there is a form the fill out.
-13. From the "Which API are you using?" dropdown menu, choose Google Drive API
-14. For the "What data will you be accessing?" question, select Application Data
-15. For the "Are you planning to use this API with Compute Engine, Kubernetes Engine, App Engine, or Cloud Functions?"     question, select No, I'm not using them
-16. Click Next
-17. Enter a Service Account name, then click Create
-18. In the Role Dropdown box choose Basic > Editor then press Continue
-19. You got taken to the next page, where those options can be left blank, click Done
-20. On the next page, click on the Service Account that has been created
-21. On the next page, click on the Keys tab
-22. Click on the Add Key dropdown and select Create New Key
-23. Select JSON and then click Create, which will trigger your credentials file to be downloaded  
-    into our computer files
-24. You also need to enable your Google Sheets API. So go back to the library again, and search for “google sheets”.  
-25. Select the Google Sheets API, then click “enable” (there's no need for more credentials here)
-Now you have your APIs enabled, and have your credentials file downloaded.  
-26. Add your credentials file that you downloaded in step 23; so locate the json file wherever it is within your computer
-    files and simply drag and drop it into your Gitpod workspace.
-27. Rename it to "creds.json" to make it easier to use
-28. Open up the json file and find the client_email value here, copy this email address generated for your credentials.
-    Copy it without the quotes around it.
-29. Go back to your spreadsheet and click the share button here
-30. Paste in the client email, make sure “Editor” is selected, untick “Notify People”, and then click "share"
-31. Make sure that gitignore file contains your creds.json file, then save and commit
-32. Install gspread and google-auth libraries in the development environment using the
-    command 'pip3 install gspread google-auth'
-
-</details>
-<br>
+<br
 
 **How to Fork**
 <p>
@@ -467,11 +473,7 @@ The OrderEasy website is deployed using Heroku, this was done by:
 <p>
 <details><summary>Details</summary><br/>
 
-**Menu:** Load or run the program to confirm that the menu is displayed correctly and responds as expected. The menu is also displayed after the completion of each option (1-4). The program terminates when the user chooses option 5 to exit. Enter any number other than 1-5 or a word to confirm that an error message is displayed explaining that it is a wrong input, reminding the user of the requirements, and displaying the menu again to prompt for another input.
-
-**Option 1 - Print Product List:** Enter the number 1 and press enter to confirm that a reassuring message is displayed, followed by the list of current products. Use option 2 to add a new product or option 3 to delete a product, and then choose option 1 again to confirm that the Products List is updated accordingly.
-
-
+**Menu:** Load or run the program to confirm that the menu is displayed correctly and responds as expected. The menu is also displayed after the completion of each option (1-4). The program terminates when the user chooses option 5 to exit. Enter any option 1 again to confirm that the Products List is updated accordingly.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 </details>
@@ -481,13 +483,7 @@ The OrderEasy website is deployed using Heroku, this was done by:
 <p>
 <details><summary>Details</summary><br/>
 
-1.	As a user of the application, I want to easily navigate the app, so I can find what I need quickly.
-
-    - After the application loeaded, the first 'page' that the user can see is the Menu. The menu breaks down the functionalities into 5 main actions or options to select. The menu will continue to be displayed repeatedly after the completion of each options (1-4). The application will only be terminated when the user selects option 5 from the menu and exits. Therefore, the opportunity to easily select from the menu again is always available to the user after they finish a task.
-
-2.	As a potential new user to the application, I want to understand what my options are
-
-    - The menu is the first interaction with the user and pops up again after each task completion.
+1.	As a user of 
 
    ![Menu](readme-images/app.png "Menu")
 
