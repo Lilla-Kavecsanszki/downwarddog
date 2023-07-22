@@ -246,9 +246,9 @@ For non-logged-in users, the following options are available instead:
 
 ##### Special Case for Administrators
 
-For the administrator or superuser who is logged in, an extra menu option is displayed:
+When the signed-in user is the admin user or superuser, an additional link labeled "Admin" is displayed on the navigation bar.
 
-- **Admin:** This button offers a direct link to the main site administration page, eliminating the need to manually append '/admin' to the homepage URL.
+- **Admin:** This link grants access to the Django Admin window, allowing the superuser to manage the website's data, such as adding new, modifying, deleting or using them.
   
 ![Navbar Admin](README_docs/images/navbar_admin.png "navbar_admin")
 
@@ -395,15 +395,31 @@ In case the user has no (approved) bookings yet, the "My Bookings" page will dis
 
 ## F17 Delete button
 
-Logged-in users 
+When the user clicks on the "Delete" button, a confirmation dialog box pops up, prompting the user to confirm whether they really want to cancel their booking. If the user decides not to proceed with the cancellation, they can click on "Cancel," and the booking will remain intact, and they will stay on the same page with all their bookings visible. However, if they click on "OK," the booking will be deleted. The page will then refresh automatically, and the deleted booking will no longer appear in the list of approved bookings, giving the user a clear indication that the cancellation was successful.
 
-![Approved Booking](README_docs/images/approved_bookings.png "approved_booking")
+![Delete Button](README_docs/images/delete_button.png "delete_button")
 
 ## F18 Update button and Dropdown
 
-Logged-in users 
+On the opposite side of the "Delete" button, the user has the option to update the number of dogs they wish to bring with them to the booked class. They can do this by selecting the desired number from a dropdown menu. The dropdown menu allows the user to choose any number between 1 and 5, with 5 being the maximum number of dogs they can bring. 
 
-![Approved Booking](README_docs/images/approved_bookings.png "approved_booking")
+![Dropdown](README_docs/images/dropdown.png "dropdown")
+
+After selecting the new number of dogs from the dropdown menu, the user can proceed by clicking the "Update" button. Upon clicking the button, the page will automatically refresh. The booking will then reappear in the list of approved bookings, displaying the updated number of dogs, providing the user with a clear indication that the update was successful. This process also ensures that the user's changes are reflected accurately in the booking details, allowing them to see the latest information without any confusion or delay.
+
+![Update Button](README_docs/images/update_button.png "update_button")
+
+## F19 Admin page
+
+When the superuser or admin is logged in, they have an additional option on the navbar; "Admin". The superuser can use this button to navigate seamlessly onto the administrator 
+
+![Admin_page](README_docs/images/admin_page.png "admin_page")
+
+## F19 User Authentication
+
+When the superuser or admin is logged in, they have an additional option on the navbar; "Admin". The superuser can use this button to navigate seamlessly onto the administrator 
+
+![Admin_page](README_docs/images/admin_page.png "admin_page")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
