@@ -139,7 +139,6 @@ This website:
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
-
 # Planning
 
 The planning process started with determining the target clientele, by creating a Persona Profile - by using Code Institutes template - based on design thinking. Therefore the website aims to cater to the needs, expectations and preferences of the identified persona.
@@ -152,7 +151,6 @@ Given the prevalence of mobile usage among our target users, creating a responsi
 In this project Github issues were used to create the User stories and groupped into Epics, in a Github Project. This served as the Agile tool. The issues' development was managed through a Kanban board. Currently, all the issues have been marked as "Done”.
 
 For easy access, you can find the Epics, User Stories/ Issues, and Kanban board [HERE](https://github.com/users/Lilla-Kavecsanszki/projects/5).
-
 
 # Design
 
@@ -173,7 +171,6 @@ For easy access, you can find the Epics, User Stories/ Issues, and Kanban board 
 
 I picked these specific colours based on the purpose of the website and what the studio wishes to achieve. I made that decision for a playful and fun aesthetics that can also give a calming effect to the visitors at the same time. 
 
-
 ### Typography
 
 The primary font used for the website is Poiret One. It was chosen because I found this font to be
@@ -183,7 +180,6 @@ The primary font used for the website is Poiret One. It was chosen because I fou
 The secondary font used for the body is Montserrat, which was selected for its clear readability, which works well with Poiret One to maintain the airy yet fun outcome.
 
 ![Montserrat](README_docs/images//montserrat.png "montserrat")
-
 
 # Languages Used
 
@@ -217,38 +213,47 @@ The secondary font used for the body is Montserrat, which was selected for its c
 
 # Features
 
-### Home Page
+## Home Page
 
 ### F01 Navigation Bar
 
 The navigation bar provides easy access to all active pages for the user.
 
 **Menu Options:**
+
+- **Logo:** Essentially it indicates the name of the website, while it also serves as a button that is linked to the homepage as an instant solution for the user. The logo also includes a "jumping" paw icon in the website's signature orange colour, adding an eye-catching and playful effect that draws the user's attention to the business name
 - **Home:** This button serves as a quick link to the homepage, enabling users to navigate back to the main landing page at any point.
 - **Articles:** Users can explore and read articles by clicking on this button, which further leads them to a detailed page showcasing various content if they want to. The logged-in user will also be able to comment the articles or like them. The non-logged-in user can only view.
 - **Yoga:** The "Yoga" button takes users to a list of available classes. Each class is presented with relevant information and a button, 'Availabilities', which through the Users can choose their preferred date and time, and go ahead to book their desired class. At the end, only logged-in user can proceed with a booking, non-logged in users will be redirected to the Login page.
 
-**Logged-In Users**
+##### Logged-In Users
+
 For logged-in users, the navigation bar includes two additional menu options:
+
 - **My Bookings:** This button provides quick access to view and manage the user's booked classes.
 - **Logout:** Users can log out by clicking on this option.
   
 ![Navbar Logged_In](README_docs/images/navbar_loggedin.png "navbar_logged_in")
 
-**Not Logged-In Visitors**
+##### Not Logged-In Visitors
+
 For non-logged-in users, the following options are available instead:
+
 - **Register:** Users can register and create an account to gain access to more features and personalized content.
 - **Login:** Clicking on this button allows users to log in with their credentials and access personalized content and more features.
   
 ![Navbar Not Logged_In](README_docs/images/navbar_nonloggedin.png "navbar_not_logged_in")
 
-**Special Case for Administrators**
+##### Special Case for Administrators
+
 For the administrator or superuser who is logged in, an extra menu option is displayed:
+
 - **Admin:** This button offers a direct link to the main site administration page, eliminating the need to manually append '/admin' to the homepage URL.
   
 ![Navbar Admin](README_docs/images/navbar_admin.png "navbar_admin")
 
-**Decorative Element**
+##### Decorative Element
+
 On the right-hand side of the navigation bar, a muted text adds a touch of decoration. If a user is logged in, their username, along side by a user icon, is displayed. Otherwise, the text "Breathe.. or bark?" is shown, adding a playful and welcoming touch to the user interface.
 
 The navigation bar is fully responsive, adjusting to different screen sizes, and it collapses on mobile screens, displaying a hamburger icon for easy navigation.
@@ -263,13 +268,99 @@ Underneath the navbar, the Home page features a very relevant photo of a woman d
 
 ![Hero Image and Text](README_docs/images/hero_feature.png "hero_image&text")
 
+### F03 Encouragement Text and Get started button
+
+Underneath the hero image, there is a larger text displayed, that encouraging the user to discover the available classes and with the button below it, instantly leads to the goal of the website, which is to get the user to book a class/ classes. The button therefore directs the user to the Yoga page, that lists the classes that can be booked.
+
+![Encouragement Text and Button](README_docs/images/goal.png "encouragement_text&button")
+
+### F04 Encouragement Text and Get started button
+
+Below F03 the user can see a section that includes 2 parts, where the website offers an introduction to the business namely its Story and its Team. On the opposite side of the texts, a stylized image of a stretching pug is displayed as a decorative element, visually capturing the essence and ambiance of the business.
+
+![Introduction](README_docs/images/introduction.png "Introduction")
+
+### F05 Contact section
+
+F05 includes a section through that the user can find the business and/or reach out. The title on top makes this purpose very clear, then underneath of that the address is shown. On the opposite side, a contact form is provided. The user is required to fill in their name, email, and message before they can submit the form using the 'Send Message' button. The button is disabled until all required fields are correctly filled out. Additionally, the email field validates the input to ensure it includes an '@' sign before submission. 
+When the contact form is filled out as required and submitted, the user will see a reassuring message popping up in green, letting them know that their message was successfully sent, then will also disappear in 2 seconds.
+In case of an error, and so failure of sending the message, a red message pops up informing the user that the submition failed and prompts them to try again.
+
+![Contact](README_docs/images/contact.png "contact")
+
+### F06 Footer 
+
+Just as the navigation bar, the footer is also presented on each page. It is at the very bottom, displaying information about the website creator, along with convenient links to the developer's Github and LinnkedIn profils. It also shows a disclaimer, clarifying that the website was created for educational use only. 
+
+![Footer](README_docs/images/footer.png "footer")
+
+## Articles page
+
+### F07 List of the articles
+
+On this page, users can browse through four articles per page, each displaying their titles, relevant images, author names, publication dates, and the number of likes they have received. 
+Pagination allows users to navigate to the next set of four articles using the "Next" button located below the last article. 
+
+![Pagination Button](README_docs/images/pagination_button.png "pagination_button")
+
+![Articles List](README_docs/images/articles_list.png "articles_list")
+
+### F08 Articles Detail page
+
+By clicking on the article titles, users are brought onto the Articles Detail page to read the full content and view likes, and any associated and approved comments.
+
+![Article](README_docs/images/article.png "article")
+
+![Like & Comment](README_docs/images/like&comment.png "like&comment")
+
+Logged-in users have additional privileges, as they can like and comment on the articles as well. This enhanced functionality enriches the overall user experience and encourages engagement with the content and other users in the community. 
+Likes are explained in F09, and Comments in F10 in more detail.
+
+### F09 Like an article
+
+In order for a user to like an article, they must first log in to their account. Once logged in, they can proceed to view the article's full content on the Articles Detail page and there simply click on the heart icon displayed beneath the article's content.
+If the user changes their mind, they can click on the heart icon again to unlike the article. 
+When the article is liked by the current user, the heart icon appears filled with the website's distinctive orange color. Additionally, a like counter is displayed next to the heart icon, indicating the number of likes the article has received from all the users.
+
+![Likes](README_docs/images/likes.png "likes")
+
+### F10 Comment on an article
+
+In order for a user to comment on an article, they again must first log in to their account. Once logged in, they can proceed to view the article's full content on the Articles Detail page and there scroll to the bottom. There, next to the existing Comments section, there is a form to leave their own comment. A clear message prompts the user to leave a comment and where it should be filled in. The username also appears above the form, showing who the comment will come from. The user needs to type in their comment into the text box then press the submit button. All comments then must be approved by the administrator before they will be visible on the Articles Detail page. Once approved, the comments will appear in the comments section at the bottom of the Articles Detail page, starting with the latest one.
+
+For the admin to approve a comment, they need to log in to the admin pages. There they need to click onto the Comments table, tick and select the comment or comments that they wish to authorise, choose the 'Approve Comments' button from the drop-down menu and finally click on 'Go'.
+The second way to achieve the same is to click on the individual comment (on the name row) and there select 'Approved' box then finally press save.
+
+There is also a comment counter, next to the like counter, that tracks the number of comments were approved for the specific article.
+
+![Comment](README_docs/images/comment.png "comment")
+
+![Comment Approve](README_docs/images/comment_approve.png "comment_approve")
+
+![Individual Approve](README_docs/images/individual_approve.png "individual_approve")
+
+## Yoga page
+
+### F11 Video background and Overlay Text
+
+The top of Yoga page features a muted video of a girl doing yoga with a dog next to her. The video creates a motivation to start moving right away the user sees it.The video has a faded black overlay on top of it to tone it down a little bit and to help blend it into its environment. There is also a text overlay on top of the video, suggesting the purpose of the page then the "jumping" arrow urges the user to scroll down to the next section where they can explore the different yoga classes that they can choose from.
+
+![Video & Overlay](README_docs/images/video%26overlay.png "video&overlay")
+
+### F12 Yoga Classes
+
+The top of 
+
+![Yoga Classes](README_docs/images/yoga_classes.png "yoga_classes")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Deployment
 
 **How to Clone**
-<p>
+
+
+
 <details><summary>Steps</summary><br/>
 
 1. Go to the <https://github.com/Lilla-Kavecsanszki/order-easy> repository
