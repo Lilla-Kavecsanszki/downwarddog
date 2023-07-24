@@ -380,6 +380,11 @@ If a logged-in user attempts to press the "Book Now" button twice for the same c
 
 ![Already Booked](README_docs/images/already_booked.png "already_booked")
 
+For the admin to approve a booking, they need to log in to the admin pages. There they need to click onto the Bookings table, tick and select the booking or bookings that they wish to authorise, choose the 'Approve bookings' button from the drop-down menu and finally click on 'Go'.
+The second way to achieve the same is to click on the individual booking (on the user row) and there select 'Approved' box then finally press save.
+
+![Approve Booking](README_docs/images/approve_booking.png "approve_booking")
+
 ## F16 My Bookings page
 
 Logged-in users enjoy an additional option on their navbar: the "My Bookings" page. This page conveniently lists all approved bookings for the user, including the class title, username, date and time, and the number of dogs that it was booked with.
@@ -393,13 +398,13 @@ In case the user has no (approved) bookings yet, the "My Bookings" page will dis
 
 ![No Booking](README_docs/images/no_booking_yet.png "no_booking")
 
-## F17 Delete button
+### F17 Delete button
 
 When the user clicks on the "Delete" button, a confirmation dialog box pops up, prompting the user to confirm whether they really want to cancel their booking. If the user decides not to proceed with the cancellation, they can click on "Cancel," and the booking will remain intact, and they will stay on the same page with all their bookings visible. However, if they click on "OK," the booking will be deleted. The page will then refresh automatically, and the deleted booking will no longer appear in the list of approved bookings, giving the user a clear indication that the cancellation was successful.
 
 ![Delete Button](README_docs/images/delete_button.png "delete_button")
 
-## F18 Update button and Dropdown
+### F18 Update button and Dropdown
 
 On the opposite side of the "Delete" button, the user has the option to update the number of dogs they wish to bring with them to the booked class. They can do this by selecting the desired number from a dropdown menu. The dropdown menu allows the user to choose any number between 1 and 5, with 5 being the maximum number of dogs they can bring. 
 
@@ -409,15 +414,46 @@ After selecting the new number of dogs from the dropdown menu, the user can proc
 
 ![Update Button](README_docs/images/update_button.png "update_button")
 
-## F19 Admin page
-
-When the superuser or admin is logged in, they have an additional option on the navbar; "Admin". The superuser can use this button to navigate seamlessly onto the administrator 
-
-![Admin_page](README_docs/images/admin_page.png "admin_page")
-
 ## F19 User Authentication
 
-When the superuser or admin is logged in, they have an additional option on the navbar; "Admin". The superuser can use this button to navigate seamlessly onto the administrator 
+The website also offers a range of personalized experiences for its users while ensures secure access to them with authentication. 
+
+**Registration**
+
+Before accessing the site's secured features, users are required to complete the registration process. As mentioned in F01, the "Register" option is available on the navigation bar when there is no user logged in. During registration, users need to provide a unique username that has not been previously registered, an optional email address, and a password, which must be entered twice to ensure accuracy.
+"Finally, they need to click the 'Sign Up' button, which will create their new account instantly and display a green message confirming their successful sign-in under their new username."
+
+![Register](README_docs/images/register.png "register")
+
+**Login**
+
+After successful registration, users can then sign in (button next to "Register" on the navbar) anytime and access the site's secured functionalities:
+
+- option to comment on an article
+- option to like an article
+- possibility to book, cancel or change a booking
+  
+To sign in, users have to enter their registered username, the corresponding password and click the "Sign In" button.
+After successfully signing in, a reassuring message will pop up in green, notifying the user that they have been successfully signed in to their account. This message serves as confirmation and provides a positive user experience, mentioning the username also, under the login happened.
+
+![Login](README_docs/images/login.png "login")
+
+![Logout](README_docs/images/signed_in.png "logout")
+
+**Logout**
+
+Once the user is signed in, they will see the "Logout" button on their navigation bar and they can easily log out by simply clicking on it. Upon clicking the link, a confirmation prompt will appear, and the user can complete the sign-out process by clicking the "Sign Out" button on the page.
+A reassurring message will pop in again in green, informing the user that they have indeed signed out.
+
+![Logout](README_docs/images/logout.png "logout")
+
+![Logout](README_docs/images/signed_out.png "logout")
+
+## F19 Admin page
+
+When the superuser or admin is logged in, they have an additional option on the navbar; "Admin". The superuser can use this button to navigate seamlessly onto the administrator page to manage the website and its functionalities:
+
+
 
 ![Admin_page](README_docs/images/admin_page.png "admin_page")
 
