@@ -146,7 +146,7 @@ You can see the persona profile [HERE](README_docs/design_thinking_persona_templ
 
 Given the prevalence of mobile usage among our target users, creating a responsive website was a top priority in our design approach. To achieve this, we leveraged the power of Bootstrap grids, elements, and responsive utilities combined with custom CSS, to ensure seamless adaptability across various devices.
 
-#### Agile Methodology
+### Agile Methodology
 
 In this project Github issues were used to create the User stories and groupped into Epics, in a Github Project. This served as the Agile tool. The issues' development was managed through a Kanban board. Currently, all the issues have been marked as "Done”.
 
@@ -157,6 +157,26 @@ For easy access, you can find the Epics, User Stories/ Issues, and Kanban board 
 ### Wireframes
 
 ### Entity Relationship Diagrams
+
+To support the functionality of the DownwardDog app, five models have been designed and implemented to store essential information in databases. 
+
+To showcase the relationships between the models, I have divided them into two categories: one relevant to the Articles and the other to the Booking functionality.
+
+The Entity Relationship Diagrams below illustrate how the models are connected to each other for the Articles section:
+- Post and Comment have a one-to-many relationship, where one post can have multiple comments, but each comment is associated with only one post.
+- User and Likes have a many-to-many relationship, where multiple users can like multiple posts, and each like is linked to both a user and a post.
+(- User and Post have a one-to-many relationship, where one user can be associated with multiple posts, but each post is linked to only one user (the author). This feature is however limited for the admin therefore not displayed)
+
+![Article ERD](README_docs/images/article_erd.png "article_erd")
+
+The Entity Relationship Diagrams below illustrate how the models are connected to each other for the Booking section:
+- Classes and Timetable have a one-to-many relationship, where one class can have multiple timetables, but each timetable is associated with only one class.
+- Timetable and Booking have a one-to-many relationship, where one timetable can have multiple bookings, but each booking is linked to only one timetable.
+- Booking and User have a many-to-one relationship, where one user can create many bookings. 
+
+The unique_booking constraint in the Booking model ensures that a user can create multiple bookings, but only one booking for a specific class on a specific date/time.
+
+![Booking ERD](README_docs/images/booking_erd.png "booking_erd")
 
 ### Colour Scheme
 
@@ -479,6 +499,18 @@ The admin provides timetable information for each existing class by creating the
 ![Add Timetable](README_docs/images/add_timetables.png "add_timetables")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
+
+## Future ambitions
+
+
+
+# User Story - Feature Crossreference table
+
+How the Features align with and fulfill the User Stories by providing the necessary functionality and interactions that meet the users' needs and requirements.
+
+![Cross-reference Table](README_docs/images/crossreference_table.png "crossreference_table")
+
+
 
 # Deployment
 

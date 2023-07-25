@@ -76,6 +76,9 @@ class Classes(models.Model):
         return self.title
 
 
+"""Timetable"""
+
+
 class Timetable(models.Model):
     classes = models.ForeignKey(Classes, on_delete=models.CASCADE,
                                 related_name='approved_classes')
