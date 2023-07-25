@@ -569,8 +569,15 @@ The OrderEasy website is deployed using Heroku, this was done by:
 # Testing
 
 <p>
-<details><summary>Python Validator result on the run.py file</summary><br/>
-<img src="readme-images/python_validator.png" alt="Python Validator">
+<details><summary>W3C HTML Validator result</summary><br/>
+to validate all HTML code written and used in this website
+<img src="README_docs/images/html_validator.png" alt="HTML Validator">
+</details>
+
+<p>
+<details><summary>W3C CSS Validator result</summary><br/>
+to validate all CSS code written and used in this website
+<img src="README_docs/images/css_validator.png" alt="CSS Validator">
 </details>
 
 ### Manual Testing

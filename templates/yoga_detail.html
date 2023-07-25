@@ -5,7 +5,7 @@
 
 <div class="container">
     <!-- Video Section -->
-    <section class="video-background">
+    <div class="video-background">
         <video autoplay muted loop id="puppyVideo">
             <source src="{% static 'videos/puppy-yoga-video1.mp4' %}" type="video/mp4">
             Your browser does not support the video tag
@@ -18,14 +18,14 @@
             <br>
             <i class="fa-solid fa-arrow-down fa-bounce fa-2xl" style="color: white;"></i>
         </div>
-    </section>
+    </div>
 </div>
 <div class="text-center mt-3">
     <h5>You need to be logged in to book!</h5>
 </div>
 <div class="container">
     <!-- Table Section -->
-    <section class="col-12 mt-3">
+    <div class="col-12 mt-3">
         <div class="row card-deck">
             {% for timetable in timetables %}
             <div class="col-md-3">
@@ -51,6 +51,6 @@
             </div>
             {% endfor %}
         </div>
-    </section>
+    </div>
 </div>
 {% endblock content %}

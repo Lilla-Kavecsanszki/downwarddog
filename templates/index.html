@@ -3,16 +3,14 @@
 <!-- for the photo to be displayed -->
 {% load static %}
 
-<head>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("XfnzvOvCslkErbYKK");
-        })();
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+<script>
+    (function () {
+        emailjs.init("XfnzvOvCslkErbYKK");
+    })();
+</script>
 
-</head>
 
 <section class="hero d-flex align-items-center"
     style="background-image: url('{% static 'images/hero.jpg' %}'); background-size: cover; background-position: center; height: 700px;">
