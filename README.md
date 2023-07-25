@@ -8,7 +8,7 @@ The users can also see a selection of yoga classes, then also a selection of ava
 
 This full-stack framework project was built using Django framework, Python, HTML, Bootstrap and CSS. Furthermore, ElephantSQL and Cloudinary was also used to store data, images and CSS.
 
-![Application](readme-images/responsive.png "Application")
+![Application](README_docs/images/responsive.png "Application")
 
 [Link to the live project](https://downwarddog.herokuapp.com/)
 
@@ -205,7 +205,7 @@ The secondary font used for the body is Montserrat, which was selected for its c
 - [Gunicorn](https://gunicorn.org/) was used as the Web Server to run Django on Heroku
 - Django allauth used for account registration and authentication
 - Django crispy forms used for form rendering
-- Summernote used to to enable "WYSIWYG" (What You See Is What You Get) editing functionality to provide an intuitive and user-friendly interface
+- Summernote used to to enable "WYSIWYG" (What You See Is What You Get) editing functionality to provide an intuitive and user-friendly interface when creating new articles
 - [Cloudinary](https://cloudinary.com/) used to store the images and data used by the website
 - [Heroku] was used to deploy the application and provides an enviroment in which the code can execute
 
@@ -385,6 +385,8 @@ The second way to achieve the same is to click on the individual booking (on the
 
 ![Approve Booking](README_docs/images/approve_booking.png "approve_booking")
 
+![Approve Booking Approve](README_docs/images/individual_booking_approve.png "individual_approve_booking")
+
 ## F16 My Bookings page
 
 Logged-in users enjoy an additional option on their navbar: the "My Bookings" page. This page conveniently lists all approved bookings for the user, including the class title, username, date and time, and the number of dogs that it was booked with.
@@ -449,13 +451,32 @@ A reassurring message will pop in again in green, informing the user that they h
 
 ![Logout](README_docs/images/signed_out.png "logout")
 
-## F19 Admin page
+## Admin page
 
-When the superuser or admin is logged in, they have an additional option on the navbar; "Admin". The superuser can use this button to navigate seamlessly onto the administrator page to manage the website and its functionalities:
+When the superuser or admin is logged in, they have an additional option on the navbar; "Admin". The superuser can use this button to navigate seamlessly onto the administrator page to manage the website and its functionalities detailed in the below features.
+The admin can also access this page by adding '/admin' to the website URL.
 
+### F20 Add an Article
 
+To add a new article, the admin can use the "+ Add Post" button at the top right corner of the Posts table after opening that and then fill in the required data fields for the article. Each post must have a unique title, and a slug will be automatically generated based on the title as it is typed in. If the admin does not upload a specific image for the article, a default image will be used.
+Articles can be saved as a "Draft" also, which is the default status. This means those articles are not visible on the Articles page until their status is chnaged to be "Published." This feature helps the admin to save their work before it is completely finished or agreed to by the management team for example and so can complete it at a later time to make it visible to the viewers.
 
-![Admin_page](README_docs/images/admin_page.png "admin_page")
+![Add an Article](README_docs/images/add_article1.png "add_article1")
+
+![Add an Article](README_docs/images/add_article2.png "add_article2")
+
+### F21 Add a Class
+
+The admin provides Yoga class information by creating them on the admin page in the Classes table. To add a new class, the admin can use the "+ Add Classes" button at the top right corner of the Classes table after opening that and then fill in the required data fields for the yoga class. Each post must have a unique title/name, and a slug will be automatically generated based on the title as it is typed in, as well as a descriptive text and duration time, indication how long the class will last.
+Classes can be saved as a "Draft" also, which is the default status. This means those classes are not visible on the Yoga page until their status is chnaged to be "Published." This feature helps the admin to save their work before it is completely finished or agreed to by the management team for example and so can complete it at a later time to make it visible to the viewers.
+
+![Add a Class](README_docs/images/add_classes.png "add_classes")
+
+### F22 Add a Timetable
+
+The admin provides timetable information for each existing class by creating them on the admin page in the Timetables table. To add a new availability, the admin clicks on the '+ Add Timetable' button at the top right corner of the Timetables table. They then choose the class for which they would like to create the new availability and add the date and time, as well. Once the new timetable is created, it becomes visible and available to book on the yoga detail page of the selected class.
+
+![Add Timetable](README_docs/images/add_timetables.png "add_timetables")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
