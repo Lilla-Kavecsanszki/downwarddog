@@ -300,7 +300,7 @@ Underneath the hero image, there is a larger text displayed, that encouraging th
 
 ![Encouragement Text and Button](README_docs/images/goal.png "encouragement_text&button")
 
-### F04 Encouragement Text and Get started button
+### F04 Story and Team
 
 Below F03 the user can see a section that includes 2 parts, where the website offers an introduction to the business namely its Story and its Team. On the opposite side of the texts, a stylized image of a stretching pug is displayed as a decorative element, visually capturing the essence and ambiance of the business.
 
@@ -511,7 +511,11 @@ The admin provides timetable information for each existing class by creating the
 
 ## Future ambitions
 
-
+- Integrate the onclick message that pops up when the user attempts to delete a booking
+- Create a share button to be able to share the articles
+- After sumbition of a comment, the page to refresh in a way so that the user could leave another comment
+- After successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
+- Users to be able to add the booking information to their calendar
 
 # User Story - Feature Crossreference table
 
@@ -524,51 +528,49 @@ How the Features align with and fulfill the User Stories by providing the necess
 # Deployment
 
 **How to Clone**
-
-
-
+<p>
 <details><summary>Steps</summary><br/>
 
-1. Go to the <https://github.com/Lilla-Kavecsanszki/order-easy> repository
+1. Go to the <https://github.com/Lilla-Kavecsanszki/downwarddog> repository.
 2. Click the Code button to the left of the green Gitpod button, then choose Local.
 3. Click on headings for HTTPS, SSH, and Github CLI to find their individual URL links. Choose the HTTPs one.
-4. Open your own terminal in your editor and change the current working directory to the location of where you want the
-   cloned directory to be.
+4. Open your own terminal in your editor and change the current working directory to the location of where you want
+   the cloned directory to be.
 5. In the terminal type git clone, and then paste the URL you copied from the repository page.
 6. Press enter to complete.
 
 </details>
-<br
+<br>
 
 **How to Fork**
 <p>
 <details><summary>Steps</summary><br/>
 
-1. Go to the <https://github.com/Lilla-Kavecsanszki/order-easy> repository
+1. Go to the <https://github.com/Lilla-Kavecsanszki/downwarddog> repository.
 2. Click the fork button in the top right of the screen, between the watch, and the star buttons.
 
 </details>
 <br>
 
-**Deployment to Heroku**
+**Github & Deployment to Heroku**
 <p>
 <details><summary>Steps</summary><br/>
 
-The OrderEasy website is deployed using Heroku, this was done by:
+The DownwardDog website is deployed using Heroku, this was done based on the: [CI Django Blog Cheat Sheet](README_docs/django_blog_cheat_sheet.pdf)
 
-1. Add dependencies in GitPod to requirements.txt file with command "pip3 freeze > requirements.txt"
-2. Commit and push to GitHub
-3. Go to the Heroku Dashboard
-4. Click "Create new app"
-5. Name app and select location
-6. Choose the Settings tab and add Config Vars for Creds and Port (creds.json file)
-   (as a second entry also add PORT for the key and 8000 for the value)
-7. Add the buildbacks to Python and NodeJS in that order
-8. Now go to Deploy tab
-9. Select GitHub as deployment method
-10. Connect to GitHub and link to repository
-11. Enable automatic deployment or deploy manually
-12. Click on Deploy
+- Create a Heroku application by pressing "New" on located on the upper right side of the main page
+- Select: 'Create new app' from the dropdown menu.
+- Go to the next page, fill the form with the following data: 'App name' and 'Choose a region' 
+- Press 'Create app'
+
+- When the Heroku app is created, go to 'Settings'
+- Scroll to 'Config Vars', press 'Reveal Config Vars' button  
+- Enter the KEY and VALUE for:
+
+DATABASE_URL:
+- To create DATABASE_URL, log in to  ElephantSQL
+- Press 'Create New Instance' 
+- Fill out the form, where you select a plan and name. 
 
 </details>
 <br>
@@ -637,34 +639,24 @@ to validate python code written and used in the project's settings.py
 <img src="README_docs/images/python_linter_p_settings.png" alt="Python Validator project settings.py">
 </details>
 
-### Manual Testing
+## Manual Testing
+
+The table provided below presents the test cases that were utilized, with the corresponding results, and references to the corresponding Feature IDs that each test case addressed. These test cases were primarily designed based on the Acceptance Criteria specified for each User Story.
 
 <p>
 <details><summary>Details</summary><br/>
-
-**Menu:** Load or run the program to confirm that the menu is displayed correctly and responds as expected. The menu is also displayed after the completion of each option (1-4). The program terminates when the user chooses option 5 to exit. Enter any option 1 again to confirm that the Products List is updated accordingly.
-
-[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
+[Manual Testing Document](README_docs/design_thinking_persona_template.pdf)
 </details>
 
-### User Stories Testing
-
-<p>
-<details><summary>Details</summary><br/>
-
-1.	As a user of 
-
-   ![Menu](readme-images/app.png "Menu")
-
+All tests passed successfully, indicating that the specified features and functionalities are working as intended.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
-</details>
 
 ### Further testing
 
 <p>
 <details><summary>Details</summary><br/>
-I asked friends and family to look at the application on their browsers and report any issues they find. This time my focus was on UX and how understandable and easy the application is to use. Some print and ValueError messages were adjusted as a result of this.
+I asked friends and family to look at the application on their browsers and report any issues they find. This time my focus was on UX and how understandable and easy the application is to use.
 </details>
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
@@ -681,24 +673,7 @@ An issue came up while testing the application in the meantime;
 
 ## Content 
 
-I have based the model on functions used to request, validate, and return data to and from the user. These functions are called from within the 'Menu' function, which offers options to the user to decide on the order in which they want to execute them.
 
-![Data Model](readme-images/data_model.png "Data Model")
-
-The first option allows the user to view a list of products, which is retrieved from the "Stocks Sheet" in an external Google Sheet. The second option allows the user to add a new product to the "Stocks Sheet" by entering data that is validated and uploaded to the Google Sheet. The third option allows the user to delete a product from the "Stocks Sheet" by entering data that is validated and used to find and remove the product from the Google Sheet. The fourth option allows the user to retrieve an order list by entering data that is validated and used to calculate amounts, which are also uploaded to the "Stocks Spreadsheet" in the Google Sheet and printed back to the user in a table format. The fifth option allows the user to exit the program.
-
-The External Google Sheet is used to store and manage the data for this system, including the "Stocks Sheet" with product names, units, prices, par levels, current stock holding values and calculated amounts. The user can also use this sheet to update the prices and par levels to keep their business in financial control.
-Data is formatted using the Tabulate() method for better user experience.
-
-The Google spreadsheet (order_spreadsheet) that the application uses has the following fictitious initial data, which was set up manually by the author:
-
-[See it live here](https://docs.google.com/spreadsheets/d/1N0ECIjFPmC-p_JI4heZHAFZnKkr4nlBe8KIJzD_k5DU/edit#gid=597566188)
-
-<p>
-<details><summary>Stocks Sheet</summary><br/>
-<img src="readme-images/updated_spreadsheet_option3.png" alt="Stocks sheet">
-</details>
-<br>
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -707,8 +682,6 @@ The Google spreadsheet (order_spreadsheet) that the application uses has the fol
 I received inspiration for this project from my personal experience working in the hospitality industry, as well as from my partner's struggles with similar issues at his job. These experiences helped me figure the logic for this project greatly. In addition, I reviewed the work of other students to gain a better understanding of project scope and to identify best practices for Milestone Project 3.
 
 The below websites have been used to understand the logic of building this project with Python.
-
-
 
 I also would like to express my gratitude to Elaine Roche, my mentor, and the tutoring team for their continuous support and valuable feedback. Their guidance, tips, and resources have been instrumental in my coding and testing skills.
 
