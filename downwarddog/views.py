@@ -58,11 +58,14 @@ class BookNow(View):
         try:
             # Check if the user is authenticated
             if request.user.is_authenticated:
-                # Create a new booking/enquiry, set the default number of dogs to 1
+                # Create a new booking/enquiry, set the default number of dogs
+                # to 1
                 num_dogs = int(request.POST.get('num_dogs', 1))
                 booking = Booking.objects.create(
-                    user=request.user, classes=timetable, approved=False, number_of_dogs=num_dogs)
-                # Redirect to the 'my_bookings' page, otherwise to the login page
+                    user=request.user, classes=timetable, approved=False,
+                    number_of_dogs=num_dogs)
+                # Redirect to the 'my_bookings' page, otherwise to the login
+                # page
                 return render(request, 'my_bookings.html', {
                     'pending': True
                 })

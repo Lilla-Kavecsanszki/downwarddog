@@ -167,7 +167,10 @@ The Entity Relationship Diagrams below illustrate how the models are connected t
 - User and Likes have a many-to-many relationship, where multiple users can like multiple posts, and each like is linked to both a user and a post.
 (- User and Post have a one-to-many relationship, where one user can be associated with multiple posts, but each post is linked to only one user (the author). This feature is however limited for the admin therefore not displayed)
 
-![Article ERD](README_docs/images/article_erd.png "article_erd")
+<p>
+<details><summary>Article ERD</summary><br/>
+<img src="README_docs/images/article_erd.png" alt="Article ERD">
+</details>
 
 The Entity Relationship Diagrams below illustrate how the models are connected to each other for the Booking section:
 - Classes and Timetable have a one-to-many relationship, where one class can have multiple timetables, but each timetable is associated with only one class.
@@ -176,7 +179,10 @@ The Entity Relationship Diagrams below illustrate how the models are connected t
 
 The unique_booking constraint in the Booking model ensures that a user can create multiple bookings, but only one booking for a specific class on a specific date/time.
 
-![Booking ERD](README_docs/images/booking_erd.png "booking_erd")
+<p>
+<details><summary>Booking ERD</summary><br/>
+<img src="README_docs/images/booking_erd.png" alt="Booking ERD">
+</details>
 
 ### Colour Scheme
 
@@ -303,10 +309,13 @@ Below F03 the user can see a section that includes 2 parts, where the website of
 ### F05 Contact section
 
 F05 includes a section through that the user can find the business and/or reach out. The title on top makes this purpose very clear, then underneath of that the address is shown. On the opposite side, a contact form is provided. The user is required to fill in their name, email, and message before they can submit the form using the 'Send Message' button. The button is disabled until all required fields are correctly filled out. Additionally, the email field validates the input to ensure it includes an '@' sign before submission. 
+
+![Contact](README_docs/images/contact.png "contact")
+
 When the contact form is filled out as required and submitted, the user will see a reassuring message popping up in green, letting them know that their message was successfully sent, then will also disappear in 2 seconds.
 In case of an error, and so failure of sending the message, a red message pops up informing the user that the submition failed and prompts them to try again.
 
-![Contact](README_docs/images/contact.png "contact")
+![Email Message](README_docs/images/email_message.png "email_message")
 
 ### F06 Footer 
 
@@ -578,6 +587,54 @@ to validate all HTML code written and used in this website
 <details><summary>W3C CSS Validator result</summary><br/>
 to validate all CSS code written and used in this website
 <img src="README_docs/images/css_validator.png" alt="CSS Validator">
+</details>
+
+<p>
+<details><summary>JS Hint result</summary><br/>
+to validate the javascript code written used in this website
+<img src="README_docs/images/jshint.png" alt="JSHint">
+</details>
+
+<p>
+<details><summary>CI Python Linter - views.py</summary><br/>
+to validate python code written and used in the views.py
+<img src="README_docs/images/python_linter_views.png" alt="Python Validator views.py">
+</details>
+
+<p>
+<details><summary>CI Python Linter - models.py</summary><br/>
+to validate python code written and used in the models.py
+<img src="README_docs/images/python_linter_models.png" alt="Python Validator models.py">
+</details>
+
+<p>
+<details><summary>CI Python Linter - forms.py</summary><br/>
+to validate python code written and used in the forms.py
+<img src="README_docs/images/python_linter_forms.png" alt="Python Validator forms.py">
+</details>
+
+<p>
+<details><summary>CI Python Linter - admin.py</summary><br/>
+to validate python code written and used in the admin.py
+<img src="README_docs/images/python_linter_admin.png" alt="Python Validator admin.py">
+</details>
+
+<p>
+<details><summary>CI Python Linter - application urls.py</summary><br/>
+to validate python code written and used in the app's urls.py
+<img src="README_docs/images/python_linter_urls.png" alt="Python Validator urls.py">
+</details>
+
+<p>
+<details><summary>CI Python Linter - project urls.py</summary><br/>
+to validate python code written and used in the project's urls.py
+<img src="README_docs/images/python_linter_p_urls.png" alt="Python Validator project urls.py">
+</details>
+
+<p>
+<details><summary>CI Python Linter - project settings.py</summary><br/>
+to validate python code written and used in the project's settings.py
+<img src="README_docs/images/python_linter_p_settings.png" alt="Python Validator project settings.py">
 </details>
 
 ### Manual Testing
