@@ -592,18 +592,47 @@ CLOUDINARY_URL:
 - Go on Dashboard 
 - Copy the API Environment variable URL = VALUE
 
--
+**Create a respository on GitHub**
+- Use the [CI Full Template](https://github.com/Code-Institute-Org/ci-full-template) to create a project
+- Click on 'Use this template' then 'Create a new respository'
+- Fill out the form, especially the 'Repository name' then click on 'Create repository'
+- Copy over the URL of the repository and paste it into a New Workspace on Codeanywhere then it will start to build.
+- Install Django and supporting libraries in the terminal:
+    - Install Django and gunicorn: 'pip3 install django gunicorn'
+    - Install supporting libraries: 'pip3 install dj_database_url psycopg2'
+    - Install Cloudinary Libraries: 'pip3 install dj3-cloudinary-storage'
+- Create requirements filel: 'pip3 freeze --local > requirements.txt'
+- Create Project: 'django-admin startproject PROJ_NAME .'
+- Create App: 'python3 manage.py startapp APP_NAME'
+- Create a new env.py file in the root directory and include the database:
+    - 'import os' on the top in env.py file
+    - Set the environment variables:
+        - os.environ["DATABASE_URL"] = "same value as in Heroku Config Vars"
+        - os.environ["SECRET_KEY"] = "same value as in Heroku Config Vars"
+        - os.environ["CLOUDINARY_URL"] = "same value as in Heroku Config Vars"
+- Create Procfile in the root directory and type 'web: gunicorn PROJ_NAME.wsgi'
 
-</details>
-<br>
+**Connect the Heroku application to the GitHub repository**
+- Go on the Heroku page of the application then 'navigate to the Deploy' tab
+- Scroll down to 'Deployment method' and select GitHub 
+- Below that search for the Github repository to connect 
+- Click on 'Connect' 
+- Below that there are two options: 'Automatic deploys' or 'Manual deploy'
+- To manually deploy: enter 'main' as the name of the branch and press 'Deploy Branch'
+- Main branch starts building up automatically 
+- At the end of the build a message pops up: 'Your app was successfully deployed' and a button: 'View'
+- Click on 'View' to see the live project. The live link to the project is [HERE](https://downwarddog.herokuapp.com/)  
 
-## Final steps of deployment
+**Final steps of deployment**
 
 - Set DEBUG to False in settings.py the
 - Set 'X_FRAME_OPTIONS' to 'SAMEORIGIN' in settings.py
 - Make sure that the requirements.txt file up-to-date: 'pip3 freeze --local > requirements.txt' 
 - Delete 'DISABLE_COLLECTSTATIC' Config Vars, in Heroku
 - Go to the Deploy on the Heroku dashboard of the application and click on deploy branch
+
+</details>
+<br>
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
