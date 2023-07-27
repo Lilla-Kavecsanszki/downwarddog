@@ -148,7 +148,7 @@ Given the prevalence of mobile usage among our target users, creating a responsi
 
 In this project Github issues were used to create the User stories and groupped into Epics, in a Github Project. This served as the Agile tool. The issues' development was managed through a Kanban board. Currently, all the issues have been marked as "Done”.
 
-For easy access, you can find the Epics, User Stories/ Issues, and Kanban board [HERE](https://github.com/users/Lilla-Kavecsanszki/projects/5).
+For easy access, you can find the Epics, Issues/ User Stories with their Acceptance Criterias and Kanban board [HERE](https://github.com/users/Lilla-Kavecsanszki/projects/5).
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -235,7 +235,7 @@ The secondary font used for the body is Montserrat, which was selected for its c
 - Django crispy forms used for form rendering
 - Summernote used to to enable "WYSIWYG" (What You See Is What You Get) editing functionality to provide an intuitive and user-friendly interface when creating new articles
 - [Cloudinary](https://cloudinary.com/) used to store all of static files and images.
-- [Heroku] was used to deploy the application and provides an enviroment in which the code can execute
+- [Heroku](https://heroku.com/) was used to deploy the application and provides an enviroment in which the code can execute
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -375,7 +375,7 @@ There is also a comment counter, next to the like counter, that tracks the numbe
 
 The top of the Yoga page features a muted video of a girl doing yoga with a dog next to her. The video serves as a motivation for users to start moving as soon as they see it. To blend the video into its environment, there is a faded black overlay on top of it. Additionally, there is a text overlay suggesting the purpose of the page, and a "jumping" arrow urges the user to scroll down to explore the different yoga classes available to choose from.
 
-![Video & Overlay](README_docs/images/video%overlay.png "video&overlay")
+![Video & Overlay](README_docs/images/video&overlay.png "video&overlay")
 
 ### F12 Yoga Class Cards
 
@@ -518,7 +518,7 @@ The admin provides timetable information for each existing class by creating the
 - After successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
 - Users to be able to add the booking information to their calendar
 
-# User Story - Feature Crossreference table
+# User Story - Features Crossreference table
 
 How the Features align with and fulfill the User Stories by providing the necessary functionality and interactions that meet the users' needs and requirements.
 
@@ -557,7 +557,7 @@ How the Features align with and fulfill the User Stories by providing the necess
 <p>
 <details><summary>Steps</summary><br/>
 
-The DownwardDog website is deployed using Heroku, this was done based on the: [CI Django Blog Cheat Sheet](README_docs/django_blog_cheat_sheet.pdf)
+The DownwardDog website is deployed using Heroku, this was done based on the: [CI Django Blog Cheat Sheet](README_docs/django%20_blog_cheat_sheet.pdf)
 
 - Create a Heroku application by pressing "New" on located on the upper right side of the main page
 - Select: 'Create new app' from the dropdown menu.
@@ -728,9 +728,9 @@ An issue came up while testing the application in the meantime;
 
 ## Media
 
-All images were taken from Pexels.com and Shutterstock.comm
+All images were taken from [Pexels.com](https://www.pexels.com/) and [Shutterstock.com](https://www.shutterstock.com/)
 
-The video was taken from Pexels.com
+The video was taken from [Pexels.com](https://www.pexels.com/)
 
 ## Acknowledgments and Code
 
