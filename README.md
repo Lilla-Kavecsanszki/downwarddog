@@ -567,14 +567,43 @@ The DownwardDog website is deployed using Heroku, this was done based on the: [C
 - When the Heroku app is created, go to 'Settings'
 - Scroll to 'Config Vars', press 'Reveal Config Vars' button  
 - Enter the KEY and VALUE for:
+  - DATABASE_URL
+  - SECRET_KEY
+  - CLOUDINARY_URL
+  - DISABLE_COLLECTSTATIC (value to be set to 1)
+  - PORT with the value 8000
 
 DATABASE_URL:
 - To create DATABASE_URL, log in to  ElephantSQL
 - Press 'Create New Instance' 
-- Fill out the form, where you select a plan and name. 
+- Fill out the form, where you select a plan and name
+- Press 'Select Region' button and select it 
+- Click 'Review' and then the instance is created
+- Go on your instance's page to see the details
+- Copy the URL link = VALUE
+
+SECRET_KEY:
+- Navigate to a [Django Secret Key Generator](https://django-secret-key-generator.netlify.app/)  
+- Generate Key
+- Copy the key = VALUE
+
+CLOUDINARY_URL:
+- Log in to Cloudinary. 
+- Go on Dashboard 
+- Copy the API Environment variable URL = VALUE
+
+-
 
 </details>
 <br>
+
+## Final steps of deployment
+
+- Set DEBUG to False in settings.py the
+- Set 'X_FRAME_OPTIONS' to 'SAMEORIGIN' in settings.py
+- Make sure that the requirements.txt file up-to-date: 'pip3 freeze --local > requirements.txt' 
+- Delete 'DISABLE_COLLECTSTATIC' Config Vars, in Heroku
+- Go to the Deploy on the Heroku dashboard of the application and click on deploy branch
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
