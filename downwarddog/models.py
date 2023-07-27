@@ -92,8 +92,10 @@ class Timetable(models.Model):
         ]
 
     def __str__(self):
-        return f'Yoga class {self.classes} is scheduled for
-        {self.available_date}'
+        return (
+            f'Yoga class {self.classes} is scheduled '
+            f'for {self.available_date}'
+        )
 
 
 """Booking"""
