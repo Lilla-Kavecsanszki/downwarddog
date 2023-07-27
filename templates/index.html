@@ -156,6 +156,9 @@
                     console.log("FAILED", error);
                     //Display error message also
                     document.getElementById('errorMessage').style.display = 'block';
+                    setTimeout(function () {
+                        window.location.reload();
+                    }, 2000);
                 }
             );
         return false;  // To block from loading a new page

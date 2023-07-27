@@ -122,9 +122,8 @@ This website:
 
 - #16 As an admin, I can authorize or disapprove comments so that I can assure that a respectful language is used at all times.
 - #17 As an admin I can create, read, update and delete articles so that I can manage the content.
-- #18 As an admin I can see each booking; the day and class combination, to understand how many clients has enquired/ booked 
-    it so that I can analyse popularity and busy/ weak days.
-
+- #18 As an admin I can add and manage Classes and their Timetables so that I can keep the selection up to date.
+    
 ##### Contact Epic
 
 - #20 As a user, I can fill out a contact form so that I can communicate with the management, give my feedback, leave a review to the teachers and the studio
@@ -312,8 +311,7 @@ F05 includes a section through that the user can find the business and/or reach 
 
 ![Contact](README_docs/images/contact.png "contact")
 
-When the contact form is filled out as required and submitted, the user will see a reassuring message popping up in green, letting them know that their message was successfully sent, then will also disappear in 2 seconds.
-In case of an error, and so failure of sending the message, a red message pops up informing the user that the submition failed and prompts them to try again.
+When the contact form is filled out as required and submitted, the user will see a reassuring message popping up in green, letting them know that their message was successfully sent, then will also disappear in 2 seconds. In case of an error, and so failure of sending the message, a red message pops up informing the user that the submition failed and prompts them to try again.
 
 ![Email Message](README_docs/images/email_message.png "email_message")
 
@@ -645,7 +643,7 @@ The table provided below presents the test cases that were utilized, with the co
 
 <p>
 <details><summary>Details</summary><br/>
-[Manual Testing Document](README_docs/design_thinking_persona_template.pdf)
+[Manual Testing Document](README_docs/manual_testing_cases.pdf)
 </details>
 
 All tests passed successfully, indicating that the specified features and functionalities are working as intended.
