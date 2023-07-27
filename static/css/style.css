@@ -265,3 +265,11 @@ body {
 footer {
     font-family: "Montserrat", sans-serif;
 }
+
+/* Adjust the font size of the Get Started button for very small screens */
+@media (max-width: 576px) {
+
+    .btn-text {
+        font-size: 12px;
+    }
+}
