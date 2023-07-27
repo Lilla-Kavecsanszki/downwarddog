@@ -20,7 +20,7 @@ This full-stack framework project was built using Django framework, Python, HTML
 - [Planning](https://github.com/Lilla-Kavecsanszki/downwarddog#planning)
 - [Design](https://github.com/Lilla-Kavecsanszki/downwarddog#design)
   - [Wireframes](https://github.com/Lilla-Kavecsanszki/downwarddog#wireframes)
-  - [Entity Relationship Diagrams](https://github.com/Lilla-Kavecsanszki/downwarddog#entity-relationshi-diagrams)
+  - [Entity Relationship Diagrams](https://github.com/Lilla-Kavecsanszki/downwarddog#entity-relationship-diagrams)
   - [Theme](https://github.com/Lilla-Kavecsanszki/downwarddog#theme)
 - [Languages Used](https://github.com/Lilla-Kavecsanszki/downwarddog#languages-used)
 - [Frameworks, Libraries, Programs & Technologies Used](https://github.com/Lilla-Kavecsanszki/downwarddog#frameworks-libraries-programs--technologies-used)
@@ -32,7 +32,6 @@ This full-stack framework project was built using Django framework, Python, HTML
   - [Further Testing](https://github.com/Lilla-Kavecsanszki/downwarddog#further-testing)
   - [Bugs](https://github.com/Lilla-Kavecsanszki/downwarddog#bugs)
 - [Credits](https://github.com/Lilla-Kavecsanszki/downwarddog#credits)
-  - [Content](https://github.com/Lilla-Kavecsanszki/downwarddog#content)
   - [Acknowledgments and Code](https://github.com/Lilla-Kavecsanszki/downwarddog#acknowledgments-and-code)
   - [Disclaimer](https://github.com/Lilla-Kavecsanszki/downwarddog#disclaimer)
 
@@ -86,13 +85,13 @@ This website:
 
 ### User stories and Epics
 
-##### Introduction and Navigation Epic
+#### Introduction and Navigation Epic
 
 - #1  As a user, I can read the homepage so that I can get more information about the studio, the team, the approach to dogs 
       and yoga in general.
 - #2  As a user, I can click on the navbar so that I go to the specific page I am interested in.
 
-##### Account Management Epic
+#### Account Management Epic
 
 - #3  As a user, I can register to the website so that I have a higher level of permission and access.
 - #4  As a user/admin, I can log in to the website so that I have the ability to book a class and/or comment on an article, 
@@ -100,7 +99,7 @@ This website:
 - #5  As a user, I can see whether I logged in or registered so that I know that it was successful.
 - #6  As a user, I can log out from the website so that I can protect my privacy and information.
 
-##### Articles, Comments & Likes Epic
+#### Articles, Comments & Likes Epic
 
 - #7  As a user, I can click on the article so that I can read the entire text about the topic and learn.
 - #8  As a user, if I am logged in, I can like or unlike the articles so that I have the opportunity to show my interest 
@@ -108,7 +107,7 @@ This website:
 - #9  As a user, if I am logged in, I can comment on the articles so that I can leave my feedback and/or thoughts 
       regarding the article.
 
-##### Booking Epic
+#### Booking Epic
 
 - #10 As a user, I can read more information about each classes so that I can choose which one suits me the best to book. 
 - #11 As a user, if I am logged in, I can create a booking so that I can book and join a class.
@@ -118,17 +117,17 @@ This website:
 - #15 As a user, if I am logged in, I can cancel my spot, my booking, so that I can give my space back to others and I can 
     join the class when I am available.
 
-##### Management Epic
+#### Management Epic
 
 - #16 As an admin, I can authorize or disapprove comments so that I can assure that a respectful language is used at all times.
 - #17 As an admin I can create, read, update and delete articles so that I can manage the content.
 - #18 As an admin I can add and manage Classes and their Timetables so that I can keep the selection up to date.
     
-##### Contact Epic
+#### Contact Epic
 
 - #20 As a user, I can fill out a contact form so that I can communicate with the management, give my feedback, leave a review to the teachers and the studio
 
-##### Future ambition - Planned for the next sprint
+#### Future ambition - Planned for the next sprint
 
 - #21 create a share button to be able to share the articles
 - #22 after successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
@@ -151,6 +150,8 @@ In this project Github issues were used to create the User stories and groupped 
 
 For easy access, you can find the Epics, User Stories/ Issues, and Kanban board [HERE](https://github.com/users/Lilla-Kavecsanszki/projects/5).
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
+
 # Design
 
 ### Wireframes
@@ -164,7 +165,7 @@ To showcase the relationships between the models, I have divided them into two c
 The Entity Relationship Diagrams below illustrate how the models are connected to each other for the Articles section:
 - Post and Comment have a one-to-many relationship, where one post can have multiple comments, but each comment is associated with only one post.
 - User and Likes have a many-to-many relationship, where multiple users can like multiple posts, and each like is linked to both a user and a post.
-(- User and Post have a one-to-many relationship, where one user can be associated with multiple posts, but each post is linked to only one user (the author). This feature is however limited for the admin therefore not displayed)
+- User and Post have a one-to-many relationship, where one user can be associated with multiple posts, but each post is linked to only one user (the author). This feature is however limited for the admin.
 
 <p>
 <details><summary>Article ERD</summary><br/>
@@ -183,28 +184,30 @@ The unique_booking constraint in the Booking model ensures that a user can creat
 <img src="README_docs/images/booking_erd.png" alt="Booking ERD">
 </details>
 
-### Colour Scheme
+### Theme
 
-- White
+- White #fff
 - Whitesmoke #f5f5f5
-- Very dark (mostly black) cyan #141c1e
-- Dark moderate lime green #48a04f
-- Bright red #ed3833
+- Chardon #f2eae3
+- Red Damask #c36d4e
+- Wood Bark #322925
 
 ![colour_palette](README_docs/images/colorkit.png "colour_palette")
-[My Colour Palette](https://colorkit.co/palette/f5f5f5-f8d649-48a04f-44aedd-8f4ec4-ed3833-141c1e/)
+[My Colour Palette](https://colorkit.co/palette/fff-f5f5f5-f2eae3-c36d4e-322925/)
 
 I picked these specific colours based on the purpose of the website and what the studio wishes to achieve. I made that decision for a playful and fun aesthetics that can also give a calming effect to the visitors at the same time. 
 
 ### Typography
 
-The primary font used for the website is Poiret One. It was chosen because I found this font to be
+The primary font used for the website is Poiret One. It was chosen because I found this font to be visually appealing, modern, and fits well with the overall theme of the studio.
 
 ![Poiret One](README_docs/images/poiret_one.png "poiret_one")
 
 The secondary font used for the body is Montserrat, which was selected for its clear readability, which works well with Poiret One to maintain the airy yet fun outcome.
 
 ![Montserrat](README_docs/images//montserrat.png "montserrat")
+
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Languages Use
 
@@ -218,9 +221,9 @@ The secondary font used for the body is Montserrat, which was selected for its c
 # Frameworks, Libraries, Programs & Technologies Used
 
 - [Lucid](https://lucid.app/documents#/documents?folder_id=recent) was used to create the ER Diagrams
+- [ColorKit](https://colorkit.co/) was used to create the colour palette.
 - Github was used as the repository for the projects code after being pushed from Git
-- Git was used for version control by the Gitpod terminal to commit to Git and Push to GitHub; to create and edit all
-  original code
+- CodeAnywhere was used for version control, allowing me to commit changes and push them to GitHub directly from the CodeAnywhere terminal. It was the primary tool used for creating and editing all the code.
 - [Google Fonts](https://fonts.google.com/) used for the Montserrat and Poiret One fonts
 - [Font Awesome](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes
 - [Fonticon](https://gauger.io/fonticon/) was used to create the favicon
@@ -231,7 +234,7 @@ The secondary font used for the body is Montserrat, which was selected for its c
 - Django allauth used for account registration and authentication
 - Django crispy forms used for form rendering
 - Summernote used to to enable "WYSIWYG" (What You See Is What You Get) editing functionality to provide an intuitive and user-friendly interface when creating new articles
-- [Cloudinary](https://cloudinary.com/) used to store the images and data used by the website
+- [Cloudinary](https://cloudinary.com/) used to store all of static files and images.
 - [Heroku] was used to deploy the application and provides an enviroment in which the code can execute
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
@@ -507,7 +510,7 @@ The admin provides timetable information for each existing class by creating the
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
-## Future ambitions
+### Future ambitions
 
 - Integrate the onclick message that pops up when the user attempts to delete a booking
 - Create a share button to be able to share the articles
@@ -521,7 +524,7 @@ How the Features align with and fulfill the User Stories by providing the necess
 
 ![Cross-reference Table](README_docs/images/crossreference_table.png "crossreference_table")
 
-
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Deployment
 
@@ -641,14 +644,10 @@ to validate python code written and used in the project's settings.py
 
 The table provided below presents the test cases that were utilized, with the corresponding results, and references to the corresponding Feature IDs that each test case addressed. These test cases were primarily designed based on the Acceptance Criteria specified for each User Story.
 
-<p>
-<details><summary>Details</summary><br/>
+Details here:
 [Manual Testing Document](README_docs/manual_testing_cases.pdf)
-</details>
 
 All tests passed successfully, indicating that the specified features and functionalities are working as intended.
-
-[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 ### Further testing
 
@@ -669,19 +668,21 @@ An issue came up while testing the application in the meantime;
 
 # Credits
 
-## Content 
+## Media
 
+All images were taken from Pexels.com and Shutterstock.comm
 
-
-[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
+The video was taken from Pexels.com
 
 ## Acknowledgments and Code
 
-I received inspiration for this project from my personal experience working in the hospitality industry, as well as from my partner's struggles with similar issues at his job. These experiences helped me figure the logic for this project greatly. In addition, I reviewed the work of other students to gain a better understanding of project scope and to identify best practices for Milestone Project 3.
+I drew inspiration for this project from my personal passion for both yoga and animals, particularly my pets, Whisky and Mia. To ensure I created a successful and well-rounded project, I reviewed numerous yoga studio websites and in addition, the work of other students to gain a better understanding of project scope and to identify best practices for Milestone Project 4.
 
-The below websites have been used to understand the logic of building this project with Python.
+The below websites and Youtube channels have been used to understand the logic of building this project with Django.
 
-I also would like to express my gratitude to Elaine Roche, my mentor, and the tutoring team for their continuous support and valuable feedback. Their guidance, tips, and resources have been instrumental in my coding and testing skills.
+I would like to extend my heartfelt appreciation to my mentor, Elaine Roche, and the tutoring team for their unwavering support and valuable feedback. Their guidance, tips, and resources have been pivotal in honing my coding and testing skills.
+
+[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 ## Disclaimer
 
