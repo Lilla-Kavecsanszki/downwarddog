@@ -562,7 +562,7 @@ The admin can also delete the timetable to keep the content of the website relev
 
 How the Features align with and fulfill the User Stories by providing the necessary functionality and interactions that meet the users' needs and requirements.
 
-![Cross-reference Table](README_docs/images/crossreference_table.png "crossreference_table")
+![Cross-reference Table](README_docs/us_f_crossreference.pdf "crossreference_table")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -597,7 +597,7 @@ How the Features align with and fulfill the User Stories by providing the necess
 <p>
 <details><summary>Steps</summary><br/>
 
-The DownwardDog website is deployed using Heroku, this was done based on the: [CI Django Blog Cheat Sheet](README_docs/django%20_blog_cheat_sheet.pdf)
+The DownwardDog website is deployed using Heroku, this was done based on the: [CI Django Blog Cheat Sheet](README_docs/django_blog_cheat_sheet.pdf)
 
 - Create a Heroku application by pressing "New" on located on the upper right side of the main page
 - Select: 'Create new app' from the dropdown menu.
@@ -782,6 +782,10 @@ python3 manage.py createsuperuser
 
 The contact form (index.html) did not send the messages, that is wired up with EmailJS. This was confusing as the test emails were successful from the . Eventually the issue was that it was not connected properly through my code, and I had to copy over the correct template parameters.
 
+### Unfixed bugs
+
+The video background is not working on some type of phones. A still image is shown instead.
+
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Credits
@@ -857,7 +861,7 @@ Message alert and Reloading the page and onclick
 Rename the body field in the Comment form
 
 <https://docs.djangoproject.com/en/4.2/topics/forms/>
-
+ 
 <https://stackoverflow.com/questions/73686042/how-do-i-label-fields-on-a-django-form>
 
 Dropdown menus - Yoga Detail and My Bookings
