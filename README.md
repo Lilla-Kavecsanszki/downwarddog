@@ -32,6 +32,7 @@ This full-stack framework project was built using Django framework, Python, HTML
   - [Further Testing](https://github.com/Lilla-Kavecsanszki/downwarddog#further-testing)
   - [Bugs](https://github.com/Lilla-Kavecsanszki/downwarddog#bugs)
 - [Credits](https://github.com/Lilla-Kavecsanszki/downwarddog#credits)
+  - [Media and Content](https://github.com/Lilla-Kavecsanszki/downwarddog#media-and-content)
   - [Acknowledgments and Code](https://github.com/Lilla-Kavecsanszki/downwarddog#acknowledgments-and-code)
   - [Disclaimer](https://github.com/Lilla-Kavecsanszki/downwarddog#disclaimer)
 
@@ -132,6 +133,11 @@ This website:
 - #21 create a share button to be able to share the articles
 - #22 after successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
 - #23 users to be able to add the booking information to their calendar
+- Integrate the onclick message that pops up when the user attempts to delete a booking
+- Create a share button to be able to share the articles
+- After sumbition of a comment, the page to refresh in a way so that the user could leave another comment
+- After successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
+- Users to be able to add the booking information to their calendar
 
 (#19 US was deleted during production)
 
@@ -234,7 +240,8 @@ The secondary font used for the body is Montserrat, which was selected for its c
 - Django allauth used for account registration and authentication
 - Django crispy forms used for form rendering
 - Summernote used to to enable "WYSIWYG" (What You See Is What You Get) editing functionality to provide an intuitive and user-friendly interface when creating new articles
-- [Cloudinary](https://cloudinary.com/) used to store all of static files and images.
+- [Cloudinary](https://cloudinary.com/) used to store all of static files and images
+- [EmailJS](https://www.emailjs.com/) was used to create the contact form functionality
 - [Heroku](https://heroku.com/) was used to deploy the application and provides an enviroment in which the code can execute
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
@@ -486,7 +493,7 @@ A reassurring message will pop in again in green, informing the user that they h
 When the superuser or admin is logged in, they have an additional option on the navbar; "Admin". The superuser can use this button to navigate seamlessly onto the administrator page to manage the website and its functionalities detailed in the below features.
 The admin can also access this page by adding '/admin' to the website URL.
 
-### F20 Add an Article
+### F20 Add and Manage an Article
 
 To add a new article, the admin can use the "+ Add Post" button at the top right corner of the Posts table after opening that and then fill in the required data fields for the article. Each post must have a unique title, and a slug will be automatically generated based on the title as it is typed in. If the admin does not upload a specific image for the article, a default image will be used.
 Articles can be saved as a "Draft" also, which is the default status. This means those articles are not visible on the Articles page until their status is chnaged to be "Published." This feature helps the admin to save their work before it is completely finished or agreed to by the management team for example and so can complete it at a later time to make it visible to the viewers.
@@ -495,18 +502,48 @@ Articles can be saved as a "Draft" also, which is the default status. This means
 
 ![Add an Article](README_docs/images/add_article2.png "add_article2")
 
-### F21 Add a Class
+The admin user later can update their articles, in both draft and pubished status, by opening an article in the Posts table and edit any of its data. After finished editing, the admin can click on the 'Save' button to save their changes. If the article's status is Published, then the changes will be visible on the website for the user immediately.
+
+The admin can also delete the articles to keep the content of the website relevant and up to date at all times. The admin user can do this in two ways; either by opening the article that needs deleting then clicking on the red 'Delete' button or selecting all the articles that they wish to delete in one go from the list in the Posts table, then selecting 'Delete selected posts' from the dropdown menu and finally click 'Go'. The system will double check whether the admin is sure to delete, then if so, they can click on 'Yes, I am sure'. The article then gets deleted immediately.
+
+![Delete and Update an Article](README_docs/images/delete_save_article.png "delete_save_article")
+
+![Delete Article from the List](README_docs/images/dropdown_delete_articles.png "dropdown_delete_articles")
+
+![Confiramtion to Delete Article](README_docs/images/sure_delete_article.png "sure_delete_article")
+
+### F21 Add and Manage Class
 
 The admin provides Yoga class information by creating them on the admin page in the Classes table. To add a new class, the admin can use the "+ Add Classes" button at the top right corner of the Classes table after opening that and then fill in the required data fields for the yoga class. Each post must have a unique title/name, and a slug will be automatically generated based on the title as it is typed in, as well as a descriptive text and duration time, indication how long the class will last.
 Classes can be saved as a "Draft" also, which is the default status. This means those classes are not visible on the Yoga page until their status is chnaged to be "Published." This feature helps the admin to save their work before it is completely finished or agreed to by the management team for example and so can complete it at a later time to make it visible to the viewers.
 
 ![Add a Class](README_docs/images/add_classes.png "add_classes")
 
-### F22 Add a Timetable
+The admin user later can update their classes, in both draft and pubished status, by opening a class in the Classes table and edit any of its data. After finished editing, the admin can click on the 'Save' button to save their changes. If the class' status is Published, then the changes will be visible on the website for the user immediately.
+
+The admin can also delete the class to keep the content of the website relevant and up to date at all times. The admin user can do this in two ways; either by opening the class that needs deleting then clicking on the red 'Delete' button or selecting all the classes that they wish to delete in one go from the list in the Classes table, then selecting 'Delete selected classes' from the dropdown menu and finally click 'Go'. The system will double check whether the admin is sure to delete, then if so, they can click on 'Yes, I am sure'. The class then gets deleted immediately.
+
+![Delete and Update a Class](README_docs/images/delete_save_class.png "delete_save_class")
+
+![Delete Class from the List](README_docs/images/dropdown_delete_classes.png "dropdown_delete_classes")
+
+![Confiramtion to Delete Class](README_docs/images/sure_delete_class.png "sure_delete_class")
+
+### F22 Add and Manage a Timetable
 
 The admin provides timetable information for each existing class by creating them on the admin page in the Timetables table. To add a new availability, the admin clicks on the '+ Add Timetable' button at the top right corner of the Timetables table. They then choose the class for which they would like to create the new availability and add the date and time, as well. Once the new timetable is created, it becomes visible and available to book on the yoga detail page of the selected class.
 
 ![Add Timetable](README_docs/images/add_timetables.png "add_timetables")
+
+The admin user later can update their timetables too, by opening a timetable in the Timetables table and edit any of its data. After finished editing, the admin can click on the 'Save' button to save their changes. The changes will be visible on the website for the user immediately.
+
+The admin can also delete the timetable to keep the content of the website relevant and up to date at all times. The admin user can do this in two ways; either by opening the timetable that needs deleting then clicking on the red 'Delete' button or selecting all the timetables that they wish to delete in one go from the list in the Timetables table, then selecting 'Delete selected timetables' from the dropdown menu and finally click 'Go'. The system will double check whether the admin is sure to delete, then if so, they can click on 'Yes, I am sure'. The timetable then gets deleted immediately.
+
+![Delete and Update a Timetable](README_docs/images/delete_save_timetable.png "delete_save_timetable")
+
+![Delete Timetable from the List](README_docs/images/dropdown_delete_timetables.png "dropdown_delete_timetables")
+
+![Confiramtion to Delete Timetable](README_docs/images/sure_delete_timetable.png "sure_delete_timetable")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -517,6 +554,9 @@ The admin provides timetable information for each existing class by creating the
 - After sumbition of a comment, the page to refresh in a way so that the user could leave another comment
 - After successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
 - Users to be able to add the booking information to their calendar
+- #21 create a share button to be able to share the articles
+- #22 after successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
+- #23 users to be able to add the booking information to their calendar
 
 # User Story - Features Crossreference table
 
@@ -711,34 +751,128 @@ All tests passed successfully, indicating that the specified features and functi
 
 <p>
 <details><summary>Details</summary><br/>
-I asked friends and family to look at the application on their browsers and report any issues they find. This time my focus was on UX and how understandable and easy the application is to use.
+I asked friends and family to look at the application on their browsers and report any issues they find. A few responsiveness and semantical issues were resolved as a result of this.
 </details>
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 ## Bugs
 
-An issue came up while testing the application in the meantime;
+**Updating models**
 
-- The 'Delete Product' function got into some issues when attempting to delete an existing product due to case sensitivity. Specifically, the function was unable to locate a product if it was inputted in lowercase or capitalized incorrectly. To address this issue, I utilized the capitalize() method in both the get_new_product() and get_deleted_product() functions. This modification ensures that the user inputs are formatted to start with a capital letter, regardless of their original input. As a result, the application can accurately locate and delete the requested products.
+A bigger issue came up right after I updated my model. The solution eventually was to reset the database and create a new superuser. The steps were the following:
+
+1. Delete the db.sqlite3 file
+2. In ElephantSQL, in the Details dashboard, click on the 'Reset' button
+
+![Reset ElephantSQL](README_docs/images/reset_elephantsql.png "reset_elephantsql")
+
+1. Delete all the migrations files inside the migration folder of the Django applications, EXCEPT for init.py file
+
+2. Make migrations again:
+python3 manage.py makemigrations --dry-run
+python3 manage.py makemigrations
+python3 manage.py migrate --plan
+python3 manage.py migrate
+
+1. Create a new superuser :
+python3 manage.py createsuperuser
+
+**EmailJS**
+
+The contact form (index.html) did not send the messages, that is wired up with EmailJS. This was confusing as the test emails were successful from the . Eventually the issue was that it was not connected properly through my code, and I had to copy over the correct template parameters.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Credits
 
-## Media
+## Media and Content
 
 All images were taken from [Pexels.com](https://www.pexels.com/) and [Shutterstock.com](https://www.shutterstock.com/)
 
 The video was taken from [Pexels.com](https://www.pexels.com/)
 
+Article Sources:
+
+<https://www.health.harvard.edu/staying-healthy/yoga-benefits-beyond-the-mat>
+
+<https://www.theguardian.com/lifeandstyle/2023/jun/14/desk-yoga-de-stress-office-india-y-break>
+
+<https://www.yogabasics.com/explore/yogic-lifestyle/yogic-diet/yogic-diet-guide/>
+
+<https://www.yogajournal.com/lifestyle/yoga-trends/practice-yoga-dog/>
+
+<https://en.wikipedia.org/wiki/Doga_(yoga)>
+
 ## Acknowledgments and Code
 
 I drew inspiration for this project from my personal passion for both yoga and animals, particularly my pets, Whisky and Mia. To ensure I created a successful and well-rounded project, I reviewed numerous yoga studio websites and in addition, the work of other students to gain a better understanding of project scope and to identify best practices for Milestone Project 4.
 
-The below websites and Youtube channels have been used to understand the logic of building this project with Django.
+The below websites and Youtube channels have been used to understand the logic of building this project with Django;
 
-I would like to extend my heartfelt appreciation to my mentor, Elaine Roche, and the tutoring team for their unwavering support and valuable feedback. Their guidance, tips, and resources have been pivotal in honing my coding and testing skills.
+<https://triyoga.co.uk/>
+
+The walkthrough project 'I Think Therefore I Blog' from Code Institute videos
+
+<https://www.youtube.com/playlist?list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc>
+
+<https://www.youtube.com/playlist?list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9>
+
+<https://getbootstrap.com/docs/5.0/forms/select/>
+
+<https://docs.djangoproject.com/en/4.2/>
+
+<https://getbootstrap.com/docs/5.0/getting-started/introduction/>
+
+<https://stackoverflow.com/questions/34586259/how-to-organize-js-files-in-django>
+
+<https://stackoverflow.com/questions/61020923/displaying-videos-in-django-template-media-link>
+
+<https://stackoverflow.com/questions/56969479/adding-video-field-in-django>
+
+<https://docs.djangoproject.com/en/2.2/topics/http/file-uploads/>
+
+<https://pythonguides.com/if-statement-in-django-template/>
+
+<https://stackoverflow.com/questions/65880813/passing-id-to-django-url>
+
+<https://stackoverflow.com/questions/46860710/django-linking-a-html-page-to-a-view>
+
+<https://stackoverflow.com/questions/42628883/object-id-in-dja>
+
+<https://stackoverflow.com/questions/26334133/passing-an-id-to-a-url-link-django>
+
+<https://stackoverflow.com/questions/25345392/how-to-add-url-parameters-to-django-template-url-tag>
+
+<https://stackoverflow.com/questions/44437706/django-render-redirect-to-page-with->
+
+<https://stackoverflow.com/questions/11293380/django-catching-integrity-error-and-showing-a-customized-message-using-template>
+
+<https://docs.djangoproject.com/en/3.2/ref/models/querysets/>
+
+Message alert and Reloading the page
+
+<https://stackoverflow.com/questions/30050678/show-bootstrap-alert-box-on-a-button-click>
+
+<https://stackoverflow.com/questions/16955019/how-to-reload-a-page-after-the-ok-click-on-the-alert-page>
+
+<https://www.w3schools.com/howto/howto_js_alert.asp>
+
+<https://stackoverflow.com/questions/32394684/how-to-confirm-and-call-function-with-onclick>
+
+Rename the body field in the Comment form
+
+<https://docs.djangoproject.com/en/4.2/topics/forms/>
+
+<https://stackoverflow.com/questions/73686042/how-do-i-label-fields-on-a-django-form>
+
+Dropdown HTML
+
+<https://www.freecodecamp.org/news/html-drop-down-menu-how-to-add-a-drop-down-list-with-the-select-element/>
+
+<https://stackoverflow.com/questions/26450696/get-user-id-with-request-post-get-works-but-value-seems-to-be-no-integer>
+
+I would like to also extend my heartfelt appreciation to my mentor, Elaine Roche, and the tutoring team for their unwavering support and valuable feedback. Their guidance, tips, and resources have been pivotal in honing my coding and testing skills.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -747,80 +881,3 @@ I would like to extend my heartfelt appreciation to my mentor, Elaine Roche, and
 This application is for educational use only.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
-
-Article Sources:
-
-https://www.health.harvard.edu/staying-healthy/yoga-benefits-beyond-the-mat
-
-https://www.theguardian.com/lifeandstyle/2023/jun/14/desk-yoga-de-stress-office-india-y-break
-
-https://www.yogabasics.com/explore/yogic-lifestyle/yogic-diet/yogic-diet-guide/
-
-https://www.yogajournal.com/lifestyle/yoga-trends/practice-yoga-dog/
-
-https://www.shutterstock.com/video/editorial/search/puppy-yoga
-
-Inspiration:
-
-<<https://triyoga.co.uk/>
-
-https://en.wikipedia.org/wiki/Doga_(yoga)
-
-https://getbootstrap.com/docs/5.0/forms/select/
-
-https://docs.djangoproject.com/en/4.2/
-
-<https://getbootstrap.com/docs/5.0/getting-started/introduction/>
-
-<https://stackoverflow.com/questions/34586259/how-to-organize-js-files-in-django>
-
-<https://stackoverflow.com/questions/61020923/displaying-videos-in-django-template-media-link>
-
-https://stackoverflow.com/questions/56969479/adding-video-field-in-django
-
-https://docs.djangoproject.com/en/2.2/topics/http/file-uploads/
-
-<https://pythonguides.com/if-statement-in-django-template/>
-
-<https://stackoverflow.com/questions/65880813/passing-id-to-django-url>
-
-https://stackoverflow.com/questions/46860710/django-linking-a-html-page-to-a-view
-
-https://stackoverflow.com/questions/42628883/object-id-in-dja
-
-<https://stackoverflow.com/questions/26334133/passing-an-id-to-a-url-link-django>
-
-https://stackoverflow.com/questions/25345392/how-to-add-url-parameters-to-django-template-url-tag
-
-<https://stackoverflow.com/questions/44437706/django-render-redirect-to-page-with->
-
-<https://stackoverflow.com/questions/11293380/django-catching-integrity-error-and-showing-a-customized-message-using-template>
-
-<https://docs.djangoproject.com/en/3.2/ref/models/querysets/>
-
-
-Message alert and Reloading the page
-
-https://stackoverflow.com/questions/30050678/show-bootstrap-alert-box-on-a-button-click
-
-https://stackoverflow.com/questions/16955019/how-to-reload-a-page-after-the-ok-click-on-the-alert-page
-
-https://www.w3schools.com/howto/howto_js_alert.asp
-
-https://stackoverflow.com/questions/32394684/how-to-confirm-and-call-function-with-onclick
-
-Rename the body field in the Comment form
-
-https://docs.djangoproject.com/en/4.2/topics/forms/
-
-https://stackoverflow.com/questions/73686042/how-do-i-label-fields-on-a-django-form
-
-Dropdown HTML
-
-https://www.freecodecamp.org/news/html-drop-down-menu-how-to-add-a-drop-down-list-with-the-select-element/
-
-https://stackoverflow.com/questions/26450696/get-user-id-with-request-post-get-works-but-value-seems-to-be-no-integer
-
-Bugs:
-- EmailJS... was not connected properly, didnt copy the correct template parameters
-- slug not working for the Booking view-url, needed to the ID parameter - based on error code suggestion in Debug=True mode
