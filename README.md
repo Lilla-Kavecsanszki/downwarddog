@@ -792,7 +792,7 @@ All images were taken from [Pexels.com](https://www.pexels.com/) and [Shuttersto
 
 The video was taken from [Pexels.com](https://www.pexels.com/)
 
-Article Sources:
+Article Sources and inspiration:
 
 <https://www.health.harvard.edu/staying-healthy/yoga-benefits-beyond-the-mat>
 
@@ -804,33 +804,23 @@ Article Sources:
 
 <https://en.wikipedia.org/wiki/Doga_(yoga)>
 
+<https://triyoga.co.uk/>
+
 ## Acknowledgments and Code
 
 I drew inspiration for this project from my personal passion for both yoga and animals, particularly my pets, Whisky and Mia. To ensure I created a successful and well-rounded project, I reviewed numerous yoga studio websites and in addition, the work of other students to gain a better understanding of project scope and to identify best practices for Milestone Project 4.
 
 The below websites and Youtube channels have been used to understand the logic of building this project with Django;
 
-<https://triyoga.co.uk/>
-
-The walkthrough project 'I Think Therefore I Blog' from Code Institute videos
+The walk-through project 'I Think Therefore I Blog' from Code Institute videos: <https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/>
 
 <https://www.youtube.com/playlist?list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc>
 
 <https://www.youtube.com/playlist?list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9>
 
-<https://getbootstrap.com/docs/5.0/forms/select/>
-
 <https://docs.djangoproject.com/en/4.2/>
 
 <https://getbootstrap.com/docs/5.0/getting-started/introduction/>
-
-<https://stackoverflow.com/questions/34586259/how-to-organize-js-files-in-django>
-
-<https://stackoverflow.com/questions/61020923/displaying-videos-in-django-template-media-link>
-
-<https://stackoverflow.com/questions/56969479/adding-video-field-in-django>
-
-<https://docs.djangoproject.com/en/2.2/topics/http/file-uploads/>
 
 <https://pythonguides.com/if-statement-in-django-template/>
 
@@ -840,17 +830,21 @@ The walkthrough project 'I Think Therefore I Blog' from Code Institute videos
 
 <https://stackoverflow.com/questions/42628883/object-id-in-dja>
 
-<https://stackoverflow.com/questions/26334133/passing-an-id-to-a-url-link-django>
-
 <https://stackoverflow.com/questions/25345392/how-to-add-url-parameters-to-django-template-url-tag>
 
-<https://stackoverflow.com/questions/44437706/django-render-redirect-to-page-with->
+Inserting javascript in templates
+
+<https://stackoverflow.com/questions/34586259/how-to-organize-js-files-in-django>
+
+How to display a video - Yoga.html and Yoga_detail.html
+
+<https://stackoverflow.com/questions/61020923/displaying-videos-in-django-template-media-link>
+
+Handling the Integrity Error
 
 <https://stackoverflow.com/questions/11293380/django-catching-integrity-error-and-showing-a-customized-message-using-template>
 
-<https://docs.djangoproject.com/en/3.2/ref/models/querysets/>
-
-Message alert and Reloading the page
+Message alert and Reloading the page and onclick
 
 <https://stackoverflow.com/questions/30050678/show-bootstrap-alert-box-on-a-button-click>
 
@@ -866,11 +860,11 @@ Rename the body field in the Comment form
 
 <https://stackoverflow.com/questions/73686042/how-do-i-label-fields-on-a-django-form>
 
-Dropdown HTML
+Dropdown menus - Yoga Detail and My Bookings
+
+<https://getbootstrap.com/docs/5.0/forms/select/>
 
 <https://www.freecodecamp.org/news/html-drop-down-menu-how-to-add-a-drop-down-list-with-the-select-element/>
-
-<https://stackoverflow.com/questions/26450696/get-user-id-with-request-post-get-works-but-value-seems-to-be-no-integer>
 
 I would like to also extend my heartfelt appreciation to my mentor, Elaine Roche, and the tutoring team for their unwavering support and valuable feedback. Their guidance, tips, and resources have been pivotal in honing my coding and testing skills.
 
