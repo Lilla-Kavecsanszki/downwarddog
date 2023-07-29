@@ -1,12 +1,11 @@
 # DownwardDog Yoga Studio
 
 This website is designed to bring together all yoga fans who are also dog owners, creating a safe place for them to practise yoga together and the opportunity for a vibrant community. 
-The main focus is to be straight forward enough to save time for the user, yet to be engaging and motivating at the same time.
+The main focus is to be straightforward enough to save time for the user, yet engaging and motivating at the same time. The primary goal is for the user to book classes efficiently.
 
-The user can interact with the website in various ways such as viewing relevant and uselful information on the articles page. The users, if they are registered and logged in, then can comment on the articles and also can express their opinion with a like. They can later also unlike the article, in case they changed their mind. 
-The users can also see a selection of yoga classes, then also a selection of available dates and times for the relevant classes to choose from through the Yoga page. If they are logged in, they will be able to book, register their interest. After admin approval, the user is able to follow up their bookings on the My Bookings page, and also to edit or delete the bookings that they wish to.  
+The users can interact with the website in various ways, such as viewing relevant and useful information on the articles page. If the users are registered and logged in, they can comment on the articles and express their opinions with a like too. They can also unlike the article if they change their mind. Additionally, users can view a selection of yoga classes and available dates and times for the relevant classes on the Yoga page. If they are logged in, they will be able to book and register their interest. After admin approval, the users can follow up on their bookings on the My Bookings page and also edit or delete the bookings they wish to.
 
-This full-stack framework project was built using Django framework, Python, HTML, Bootstrap and CSS. Furthermore, ElephantSQL and Cloudinary was also used to store data, images and CSS.
+This full-stack project was built using the Django framework, Python, HTML, Bootstrap, and CSS. Additionally, ElephantSQL and Cloudinary were used to store data, images, and static files.
 
 ![Application](README_docs/images/responsive.png "Application")
 
@@ -25,10 +24,10 @@ This full-stack framework project was built using Django framework, Python, HTML
 - [Languages Used](https://github.com/Lilla-Kavecsanszki/downwarddog#languages-used)
 - [Frameworks, Libraries, Programs & Technologies Used](https://github.com/Lilla-Kavecsanszki/downwarddog#frameworks-libraries-programs--technologies-used)
 - [Features](https://github.com/Lilla-Kavecsanszki/downwarddog#features)
+- [User Story - Features Cross-Reference table](https://github.com/Lilla-Kavecsanszki/downwarddog#user-story---features-cross-reference-table)
 - [Deployment](https://github.com/Lilla-Kavecsanszki/downwarddog#deployment)
 - [Testing](https://github.com/Lilla-Kavecsanszki/downwarddog#testing)
   - [Manual Testing](https://github.com/Lilla-Kavecsanszki/downwarddog#manual-testing)
-  - [User Stories Testing](https://github.com/Lilla-Kavecsanszki/downwarddog#user-stories-testing)
   - [Further Testing](https://github.com/Lilla-Kavecsanszki/downwarddog#further-testing)
   - [Bugs](https://github.com/Lilla-Kavecsanszki/downwarddog#bugs)
 - [Credits](https://github.com/Lilla-Kavecsanszki/downwarddog#credits)
@@ -44,39 +43,34 @@ The ideal client for this business is:
 
 -	English speaking
 -	Practices yoga
--	A dog owner
+-	Dog owners
 -	Individuals, or couples or friends
 
 Visitors of this website search for:
 
-- A knowledgeable website that is easy to use
-- That helps the user gain information about the topic of yoga, and practicing yoga with dogs
-- That is reliable and accurate
-- That encourage the visitors to create a communnity, through being able to communicate, comment and like articles
-- That allows them to bring their dog to the yoga sessions
-- That offers the visitors different choices on yoga classes to chose from
-- That offers the visitors different dates and times when each classes are available
-- That offers flexibility and so the user can delete a booked class in case they are no longer available
+- A user-friendly and informative website that provides reliable and accurate information about yoga and practicing yoga with dogs.
+- Features that encourage community engagement, such as the ability to communicate, comment, and like articles.
+- The option to bring their dogs to yoga sessions, promoting a pet-friendly environment.
+- A variety of yoga classes to choose from, offering different styles and dates to cater to individual preferences.
+- Flexible booking options, allowing users to delete booked classes if their availability changes or adjust the number of dogs they want to bring along.
 
 This website is the best way to help them achieve these goals because:
 
-- The menu makes the access of different activities very easy to reach
-- The content on the website is carefully curated and updated to ensure that the visitors receive reliable information
-- The website offers interactive features as commenting, liking articles, encouraging the visitors to engage with the 
-  contect and to create a community
-- The website offers dog-friendly yoga sessions, creating a unique yet inclusive experience for its visitors who would like to bring along their furry friends
-- The website provides a wide range of yoga classes to chose from, allowing its visitors to choose based on their current needs
-- The website also displays multiple availabilities of each yoga class, allowing the visitors to choose the most convenient one for their free time
-- The website offers flexibility in booking as it allows its visitors to delete a booked class, in case they are no 
-  longer available, providing a hassle-free experience
+- The user-friendly menu makes accessing different activities very easy and intuitive.
+- The website's content is carefully curated and regularly updated to provide reliable and up-to-date information to the visitors.
+- Interactive features such as commenting and liking articles encourage visitors to engage with the content and create a sense of community.
+- With dog-friendly yoga sessions, the website offers a unique and inclusive experience for visitors who want to bring their furry friends along.
+- The website provides a diverse selection of yoga classes, catering to various styles, ensuring there is something for everyone.
+- Multiple availabilities of each yoga class are displayed, allowing visitors to choose the most convenient time for their schedule.
+- The website's flexibility in booking enables visitors to delete a booked class if their availability changes, or to edit the number of dogs they wish to bring along, providing a seamless and convenient experience.
 
 This website:
 
-- Is easy to navigate by the menu and buttons, offers an inclusive and engaging platform
+- Is easy to navigate by the menu and buttons, offers an inclusive and engaging platform.
 - Gives the customers options and access to useful and learnable information.
-- Gives the customers the information they need without overloading them or distracting them from their original ideas or wishes
-- Gives the customers the opportunity to connect with like-minded individuals
-- Gives the the customers the opportunity to seamlessly manage their yoga sessions with their dogs
+- Gives the customers the information they need without overloading them or distracting them from their original ideas or wishes.
+- Gives the customers the opportunity to connect with like-minded individuals.
+- Gives the the customers the opportunity to seamlessly manage their yoga sessions with their dogs.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -84,7 +78,7 @@ This website:
 
 #### Introduction and Navigation Epic
 
-- #1  As a user, I can read the homepage so that I can get more information about the studio, the team, the approach to dogs and yoga in general.
+- #1  As a user, I can read the homepage so that I can get more information about the studio, the team, the approach to dogs and where to find them.
 - #2  As a user, I can click on the navbar so that I go to the specific page I am interested in.
 
 #### Account Management Epic
@@ -105,13 +99,13 @@ This website:
 - #10 As a user, I can read more information about each classes so that I can choose which one suits me the best to book.
 - #11 As a user, if I am logged in, I can create a booking so that I can book and join a class.
 - #12 As a user, I can choose the date of my future class so that I can book it on the date that suits my schedule.
-- #13 As admin, I can authorize or disapprove booking enquiries so that I can assure that the classes are not overbooked.
+- #13 As admin, I can authorise booking enquiries so that I can assure that the classes are not overbooked.
 - #14 As a user, if I am logged in, I can edit my booking so that I can change the number of dogs I would like to bring along
 - #15 As a user, if I am logged in, I can cancel my spot, my booking, so that I can give my space back to others and I can join the class when I am available.
 
 #### Management Epic
 
-- #16 As an admin, I can authorize or disapprove comments so that I can assure that a respectful language is used at all times.
+- #16 As an admin, I can authorise comments so that I can assure that a respectful language is used at all times.
 - #17 As an admin I can create, read, update and delete articles so that I can manage the content.
 - #18 As an admin I can add and manage Classes and their Timetables so that I can keep the selection up to date.
   
@@ -119,24 +113,13 @@ This website:
 
 - #20 As a user, I can fill out a contact form so that I can communicate with the management, give my feedback, leave a review to the teachers and the studio
 
-#### Future ambition - Planned for the next sprint
-
-- #21 create a share button to be able to share the articles
-- #22 after successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
-- #23 users to be able to add the booking information to their calendar
-- Integrate the onclick message that pops up when the user attempts to delete a booking
-- Create a share button to be able to share the articles
-- After sumbition of a comment, the page to refresh in a way so that the user could leave another comment
-- After successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
-- Users to be able to add the booking information to their calendar
-
-(#19 US was deleted during production)
+(Note: User Story #19 was removed during production and is no longer part of the project scope.)
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 # Planning
 
-The planning process started with determining the target clientele, by creating a Persona Profile - by using Code Institutes template - based on design thinking. Therefore the website aims to cater to the needs, expectations and preferences of the identified persona.
+The planning process began by identifying the target clientele, which involved creating a Persona Profile using Code Institute's template based on design thinking principles. This Persona Profile helps in understanding the needs, expectations, and preferences of the identified persona, and the website is designed to cater to these specific requirements.
 You can see the persona profile [HERE](README_docs/design_thinking_persona_template.pdf).
 
 Given the prevalence of mobile usage among our target users, creating a responsive website was a top priority in our design approach. To achieve this, we leveraged the power of Bootstrap grids, elements, and responsive utilities combined with custom CSS, to ensure seamless adaptability across various devices.
@@ -145,7 +128,7 @@ Given the prevalence of mobile usage among our target users, creating a responsi
 
 In this project Github issues were used to create the User stories and groupped into Epics, in a Github Project. This served as the Agile tool. The issues' development was managed through a Kanban board. Currently, all the issues have been marked as "Done”.
 
-For easy access, you can find the Epics, Issues/ User Stories with their Acceptance Criterias and Kanban board [HERE](https://github.com/users/Lilla-Kavecsanszki/projects/5).
+For easy access, you can find the Epics, Issues/ User Stories with their Acceptance Criteria and Kanban board [HERE](https://github.com/users/Lilla-Kavecsanszki/projects/5).
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -161,11 +144,13 @@ For easy access, you can find the Epics, Issues/ User Stories with their Accepta
 
 ### Entity Relationship Diagrams
 
-To support the functionality of the DownwardDog app, five models have been designed and implemented to store essential information in databases. 
+To support the functionality of the DownwardDog app, five models have been designed and implemented to store essential information in databases.
 
 To showcase the relationships between the models, I have divided them into two categories: one relevant to the Articles and the other to the Booking functionality.
+The Likes and User tables in the ER diagrams are for conceptual representation only and do not directly correspond to the models.py file or the physical database tables. They provide a logical view of data relationships without showing all the actual database details managed by Django and the database system.
 
 The Entity Relationship Diagrams below illustrate how the models are connected to each other for the Articles section:
+
 - Post and Comment have a one-to-many relationship, where one post can have multiple comments, but each comment is associated with only one post.
 - User and Likes have a many-to-many relationship, where multiple users can like multiple posts, and each like is linked to both a user and a post.
 - User and Post have a one-to-many relationship, where one user can be associated with multiple posts, but each post is linked to only one user (the author). This feature is however limited for the admin.
@@ -176,11 +161,12 @@ The Entity Relationship Diagrams below illustrate how the models are connected t
 </details>
 
 The Entity Relationship Diagrams below illustrate how the models are connected to each other for the Booking section:
+
 - Classes and Timetable have a one-to-many relationship, where one class can have multiple timetables, but each timetable is associated with only one class.
 - Timetable and Booking have a one-to-many relationship, where one timetable can have multiple bookings, but each booking is linked to only one timetable.
-- Booking and User have a many-to-one relationship, where one user can create many bookings. 
+- Booking and User have a many-to-one relationship, where one user can create many bookings.
 
-The unique_booking constraint in the Booking model ensures that a user can create multiple bookings, but only one booking for a specific class on a specific date/time.
+The unique_booking constraint in the Booking model ensures that a user can create multiple bookings, but only one booking for the same class on the same date/time.
 
 <p>
 <details><summary>Booking ERD</summary><br/>
@@ -198,7 +184,7 @@ The unique_booking constraint in the Booking model ensures that a user can creat
 ![colour_palette](README_docs/images/colorkit.png "colour_palette")
 [My Colour Palette](https://colorkit.co/palette/fff-f5f5f5-f2eae3-c36d4e-322925/)
 
-I picked these specific colours based on the purpose of the website and what the studio wishes to achieve. I made that decision for a playful and fun aesthetics that can also give a calming effect to the visitors at the same time. 
+I picked these specific colours based on the purpose of the website and what the studio wishes to achieve. I made that decision for a playful and fun aesthetics that can also give a calming effect to the visitors at the same time.
 
 ### Typography
 
@@ -223,6 +209,7 @@ The secondary font used for the body is Montserrat, which was selected for its c
 
 # Frameworks, Libraries, Programs & Technologies Used
 
+- [Balsamiq](https://balsamiq.com/) was used to create the Wireframes
 - [Lucid](https://lucid.app/documents#/documents?folder_id=recent) was used to create the ER Diagrams
 - [ColorKit](https://colorkit.co/) was used to create the colour palette.
 - Github was used as the repository for the projects code after being pushed from Git
@@ -253,7 +240,7 @@ The navigation bar provides easy access to all active pages for the user.
 
 **Menu Options:**
 
-- **Logo:** Essentially it indicates the name of the website, while it also serves as a button that is linked to the homepage as an instant solution for the user. The logo also includes a "jumping" paw icon in the website's signature orange colour, adding an eye-catching and playful effect that draws the user's attention to the business name
+- **Logo:** Essentially it indicates the name of the website, while it also serves as a button that is linked to the homepage as an instant solution for the user. The logo also includes a "jumping" paw icon in the website's signature orange colour, adding an eye-catching and playful effect that draws the user's attention to the business name.
 - **Home:** This button serves as a quick link to the homepage, enabling users to navigate back to the main landing page at any point.
 - **Articles:** Users can explore and read articles by clicking on this button, which further leads them to a detailed page showcasing various content if they want to. The logged-in user will also be able to comment the articles or like them. The non-logged-in user can only view.
 - **Yoga:** The "Yoga" button takes users to a list of available classes. Each class is presented with relevant information and a button, 'Availabilities', which through the Users can choose their preferred date and time, and go ahead to book their desired class. At the end, only logged-in user can proceed with a booking, non-logged in users will be redirected to the Login page.
@@ -296,7 +283,7 @@ The navigation bar is fully responsive, adjusting to different screen sizes, and
 
 ### F02 Hero Image and Overlay Text
 
-Underneath the navbar, the Home page features a very relevant photo of a woman doing yoga with a dog next to her. There is also a text overlay on top of the image, displaying the name of the website and the business, and also gives a clear idea of its purpose too.
+Underneath the navbar, the Home page features a very relevant photo of a woman doing yoga with a dog next to her. There is also a text overlay on top of the image, displaying the name of the website and the business, and also gives a clear idea of its purpose.
 
 ![Hero Image and Text](README_docs/images/hero_feature.png "hero_image&text")
 
@@ -308,13 +295,13 @@ Underneath the hero image, there is a larger text displayed, that encouraging th
 
 ### F04 Story and Team
 
-Below F03 the user can see a section that includes 2 parts, where the website offers an introduction to the business namely its Story and its Team. On the opposite side of the texts, a stylized image of a stretching pug is displayed as a decorative element, visually capturing the essence and ambiance of the business.
+Below F03 the user can see a section that includes 2 parts, where the website offers an introduction to the business namely its Story and its Team. On the opposite side of the texts, images of a stretching pug are displayed as decorative elements, visually capturing the essence and ambiance of the business.
 
 ![Introduction](README_docs/images/introduction.png "Introduction")
 
 ### F05 Contact section
 
-F05 includes a section through that the user can find the business and/or reach out. The title on top makes this purpose very clear, then underneath of that the address is shown. On the opposite side, a contact form is provided. The user is required to fill in their name, email, and message before they can submit the form using the 'Send Message' button. The button is disabled until all required fields are correctly filled out. Additionally, the email field validates the input to ensure it includes an '@' sign before submission. 
+F05 includes a section through that the user can find the business and/or reach out. The title on top makes this purpose very clear, then underneath of that the address is shown. On the opposite side, a contact form is provided. The user is required to fill in their name, email, and message before they can submit the form using the 'Send Message' button. The button is disabled until all required fields are correctly filled out. Additionally, the email field validates the input to ensure it includes an '@' sign before submission.
 
 ![Contact](README_docs/images/contact.png "contact")
 
@@ -322,9 +309,9 @@ When the contact form is filled out as required and submitted, the user will see
 
 ![Email Message](README_docs/images/email_message.png "email_message")
 
-### F06 Footer 
+### F06 Footer
 
-Just as the navigation bar, the footer is also presented on each page. It is at the very bottom, displaying information about the website creator, along with convenient links to the developer's Github and LinnkedIn profils. It also shows a disclaimer, clarifying that the website was created for educational use only. 
+Just as the navigation bar, the footer is also presented on each page. It is at the very bottom, displaying information about the website creator, along with convenient links to the developer's Github and LinkedIn profils. It also shows a disclaimer, clarifying that the website was created for educational use only.
 
 ![Footer](README_docs/images/footer.png "footer")
 
@@ -332,8 +319,8 @@ Just as the navigation bar, the footer is also presented on each page. It is at 
 
 ### F07 List of the articles
 
-On this page, users can browse through four articles per page, each displaying their titles, relevant images, author names, publication dates, and the number of likes they have received. 
-Pagination allows users to navigate to the next set of four articles using the "Next" button located below the last article. 
+On this page, users can browse through four articles per page, each displaying their titles, relevant images, author names, publication dates, and the number of likes they have received.
+Pagination allows users to navigate to the next set of four articles using the "Next" button located below the last article.
 
 ![Pagination Button](README_docs/images/pagination_button.png "pagination_button")
 
@@ -347,20 +334,20 @@ By clicking on the article titles, users are brought onto the Articles Detail pa
 
 ![Like & Comment](README_docs/images/like&comment.png "like&comment")
 
-Logged-in users have additional privileges, as they can like and comment on the articles as well. This enhanced functionality enriches the overall user experience and encourages engagement with the content and other users in the community. 
+Logged-in users have additional privileges, as they can like and comment on the articles as well. This enhanced functionality enriches the overall user experience and encourages engagement with the content and other users in the community.
 Likes are explained in F09, and Comments in F10 in more detail.
 
 ### F09 Like an article
 
 In order for a user to like an article, they must first log in to their account. Once logged in, they can proceed to view the article's full content on the Articles Detail page and there simply click on the heart icon displayed beneath the article's content.
-If the user changes their mind, they can click on the heart icon again to unlike the article. 
-When the article is liked by the current user, the heart icon appears filled with the website's distinctive orange color. Additionally, a like counter is displayed next to the heart icon, indicating the number of likes the article has received from all the users.
+If the user changes their mind, they can click on the heart icon again to unlike the article.
+When the article is liked by the current user, the heart icon appears filled with the website's distinctive orange color. Additionally, a like counter is displayed next to the heart icon, indicating the number of likes the article has received from all the users. This is also shown on the Articles page, at the bottom of each article cards.
 
 ![Likes](README_docs/images/likes.png "likes")
 
 ### F10 Comment on an article
 
-In order for a user to comment on an article, they again must first log in to their account. Once logged in, they can proceed to view the article's full content on the Articles Detail page and there scroll to the bottom. There, next to the existing Comments section, there is a form to leave their own comment. A clear message prompts the user to leave a comment and where it should be filled in. The username also appears above the form, showing who the comment will come from. The user needs to type in their comment into the text box then press the submit button. All comments then must be approved by the administrator before they will be visible on the Articles Detail page. Once approved, the comments will appear in the comments section at the bottom of the Articles Detail page, starting with the latest one.
+In order for a user to comment on an article, they again must first log in to their account. Once logged in, they can proceed to view the article's full content on the Articles Detail page and there scroll to the bottom. There, next to the existing Comments section, there is a form to leave their own comment. A clear message prompts the user to leave a comment and where it should be filled in. The username also appears above the form, showing who the comment will come from. The user needs to type in their comment into the text box then press the submit button. All comments then must be approved by the administrator before they will be visible on the Articles Detail page. Once approved, the comments will appear in the comments section at the bottom of the Articles Detail pag.
 
 For the admin to approve a comment, they need to log in to the admin pages. There they need to click onto the Comments table, tick and select the comment or comments that they wish to authorise, choose the 'Approve Comments' button from the drop-down menu and finally click on 'Go'.
 The second way to achieve the same is to click on the individual comment (on the name row) and there select 'Approved' box then finally press save.
@@ -436,13 +423,13 @@ In case the user has no (approved) bookings yet, the "My Bookings" page will dis
 
 ### F17 Delete button
 
-When the user clicks on the "Delete" button, a confirmation dialog box pops up, prompting the user to confirm whether they really want to cancel their booking. If the user decides not to proceed with the cancellation, they can click on "Cancel," and the booking will remain intact, and they will stay on the same page with all their bookings visible. However, if they click on "OK," the booking will be deleted. The page will then refresh automatically, and the deleted booking will no longer appear in the list of approved bookings, giving the user a clear indication that the cancellation was successful.
+When the user clicks on the "Delete" button, a confirmation dialog box pops up, prompting the user to confirm whether they really want to cancel their booking. If the user decides not to proceed with the cancellation, they can click on "Cancel," and the booking will remain intact, they will also stay on the same page with all their bookings visible. However, if they click on "OK," the booking will be deleted. The page will then refresh automatically, and the deleted booking will no longer appear in the list of approved bookings, giving the user a clear indication that the cancellation was successful.
 
 ![Delete Button](README_docs/images/delete_button.png "delete_button")
 
 ### F18 Update button and Dropdown
 
-On the opposite side of the "Delete" button, the user has the option to update the number of dogs they wish to bring with them to the booked class. They can do this by selecting the desired number from a dropdown menu. The dropdown menu allows the user to choose any number between 1 and 5, with 5 being the maximum number of dogs they can bring. 
+On the opposite side of the "Delete" button, the user has the option to update the number of dogs they wish to bring with them to the booked class. They can do this by selecting the desired number from a dropdown menu. The dropdown menu allows the user to choose any number between 1 and 5, with 5 being the maximum number of dogs they can bring.
 
 ![Dropdown](README_docs/images/dropdown.png "dropdown")
 
@@ -452,24 +439,24 @@ After selecting the new number of dogs from the dropdown menu, the user can proc
 
 ## F19 User Authentication
 
-The website also offers a range of personalized experiences for its users while ensures secure access to them with authentication. 
+The website also offers a range of personalized experiences for its users while ensures secure access to them with authentication.
 
 **Registration**
 
-Before accessing the site's secured features, users are required to complete the registration process. As mentioned in F01, the "Register" option is available on the navigation bar when there is no user logged in. During registration, users need to provide a unique username that has not been previously registered, an optional email address, and a password, which must be entered twice to ensure accuracy.
-"Finally, they need to click the 'Sign Up' button, which will create their new account instantly and display a green message confirming their successful sign-in under their new username."
+Before accessing the site's secured features, users are required to complete the registration process. As mentioned in F01, the 'Register' option is available on the navigation bar when there is no user logged in. During registration, users need to provide a unique username that has not been previously registered, an optional email address, and a password, which must be entered twice to ensure accuracy.
+Finally, they need to click the 'Sign Up' button, which will create their new account instantly and display a green message confirming their successful sign-in under their new username.
 
 ![Register](README_docs/images/register.png "register")
 
 **Login**
 
-After successful registration, users can then sign in (button next to "Register" on the navbar) anytime and access the site's secured functionalities:
+After successful registration, users can then sign in (button next to 'Register' on the navbar) anytime and access the site's secured functionalities:
 
 - option to comment on an article
 - option to like an article
 - possibility to book, cancel or change a booking
   
-To sign in, users have to enter their registered username, the corresponding password and click the "Sign In" button.
+To sign in, users have to enter their registered username, the corresponding password and click the 'Sign In' button.
 After successfully signing in, a reassuring message will pop up in green, notifying the user that they have been successfully signed in to their account. This message serves as confirmation and provides a positive user experience, mentioning the username also, under the login happened.
 
 ![Login](README_docs/images/login.png "login")
@@ -478,7 +465,7 @@ After successfully signing in, a reassuring message will pop up in green, notify
 
 **Logout**
 
-Once the user is signed in, they will see the "Logout" button on their navigation bar and they can easily log out by simply clicking on it. Upon clicking the link, a confirmation prompt will appear, and the user can complete the sign-out process by clicking the "Sign Out" button on the page.
+Once the user is signed in, they will see the 'Logout' button on their navigation bar and they can easily log out by simply clicking on it. Upon clicking the link, a confirmation prompt will appear, and the user can complete the sign-out process by clicking the 'Sign Out' button on the page.
 A reassurring message will pop in again in green, informing the user that they have indeed signed out.
 
 ![Logout](README_docs/images/logout.png "logout")
@@ -487,13 +474,13 @@ A reassurring message will pop in again in green, informing the user that they h
 
 ## Admin page
 
-When the superuser or admin is logged in, they have an additional option on the navbar; "Admin". The superuser can use this button to navigate seamlessly onto the administrator page to manage the website and its functionalities detailed in the below features.
+When the superuser or admin is logged in, they have an additional option on the navbar; 'Admin'. The superuser can use this button to navigate seamlessly onto the administrator page to manage the website and its functionalities detailed in the below features.
 The admin can also access this page by adding '/admin' to the website URL.
 
 ### F20 Add and Manage an Article
 
-To add a new article, the admin can use the "+ Add Post" button at the top right corner of the Posts table after opening that and then fill in the required data fields for the article. Each post must have a unique title, and a slug will be automatically generated based on the title as it is typed in. If the admin does not upload a specific image for the article, a default image will be used.
-Articles can be saved as a "Draft" also, which is the default status. This means those articles are not visible on the Articles page until their status is chnaged to be "Published." This feature helps the admin to save their work before it is completely finished or agreed to by the management team for example and so can complete it at a later time to make it visible to the viewers.
+To add a new article, the admin can use the "+ Add Post" button at the top right corner of the Posts table, after opening that, they can fill in the required data fields for the article. Each post must have a unique title, and a slug will be automatically generated based on the title as it is typed in. If the admin does not upload a specific image for the article, a default image will be used.
+Articles can be saved as a 'Draft' also, which is the default status. This means those articles are not visible on the Articles page until their status is chnaged to be 'Published'. This feature helps the admin to save their work before it is completely finished or agreed to by the management team for example and so can complete it at a later time to make it visible to the viewers.
 
 ![Add an Article](README_docs/images/add_article1.png "add_article1")
 
@@ -511,8 +498,8 @@ The admin can also delete the articles to keep the content of the website releva
 
 ### F21 Add and Manage Class
 
-The admin provides Yoga class information by creating them on the admin page in the Classes table. To add a new class, the admin can use the "+ Add Classes" button at the top right corner of the Classes table after opening that and then fill in the required data fields for the yoga class. Each post must have a unique title/name, and a slug will be automatically generated based on the title as it is typed in, as well as a descriptive text and duration time, indication how long the class will last.
-Classes can be saved as a "Draft" also, which is the default status. This means those classes are not visible on the Yoga page until their status is chnaged to be "Published." This feature helps the admin to save their work before it is completely finished or agreed to by the management team for example and so can complete it at a later time to make it visible to the viewers.
+The admin provides Yoga class information by creating them on the admin page in the Classes table. To add a new class, the admin can use the "+ Add Classes" button at the top right corner of the Classes table. After that they can fill in the required data fields for the yoga class. Each post must have a unique title/name, and a slug will be automatically generated based on the title as it is typed in, as well as a descriptive text and duration time, indication how long the class will last.
+Classes can be saved as a 'Draft' also, which is the default status. This means those classes are not visible on the Yoga page until their status is changed to be 'Published'. This feature helps the admin to save their work before it is completely finished or agreed to by the management team for example and so can complete it at a later time to make it visible to the viewers.
 
 ![Add a Class](README_docs/images/add_classes.png "add_classes")
 
@@ -544,18 +531,15 @@ The admin can also delete the timetable to keep the content of the website relev
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
-### Future ambitions
+### Future ambitions - Planned for the Next Sprint:
 
+- Implement a share button feature to allow users to easily share articles with others.
+- Set up automated confirmation messages or emails for users after successfully creating a booking, and also send reminders before the scheduled class.
+- Enable users to add booking information to their calendar, facilitating better planning and organization.
 - Integrate the onclick message that pops up when the user attempts to delete a booking
-- Create a share button to be able to share the articles
-- After sumbition of a comment, the page to refresh in a way so that the user could leave another comment
-- After successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
-- Users to be able to add the booking information to their calendar
-- #21 create a share button to be able to share the articles
-- #22 after successfully creating a booking, for the user to receive a confirmation text or email and/or reminder before the class also
-- #23 users to be able to add the booking information to their calendar
+- Enhance the comment submission process by refreshing the page after submission, allowing users to leave additional comments seamlessly.
 
-# User Story - Features Crossreference table
+# User Story - Features Cross-Reference table
 
 How the Features align with and fulfill the User Stories by providing the necessary functionality and interactions that meet the users' needs and requirements.
 
@@ -611,22 +595,22 @@ The DownwardDog website is deployed using Heroku, this was done based on the: [C
   - PORT with the value 8000
 
 DATABASE_URL:
-- To create DATABASE_URL, log in to  ElephantSQL
-- Press 'Create New Instance' 
+- Log in to ElephantSQL
+- Press 'Create New Instance'
 - Fill out the form, where you select a plan and name
-- Press 'Select Region' button and select it 
+- Press 'Select Region' button and select it
 - Click 'Review' and then the instance is created
 - Go on your instance's page to see the details
 - Copy the URL link = VALUE
 
 SECRET_KEY:
-- Navigate to a [Django Secret Key Generator](https://django-secret-key-generator.netlify.app/)  
+- Navigate to a [Django Secret Key Generator](https://django-secret-key-generator.netlify.app/)
 - Generate Key
 - Copy the key = VALUE
 
 CLOUDINARY_URL:
-- Log in to Cloudinary. 
-- Go on Dashboard 
+- Log in to Cloudinary
+- Go on Dashboard
 - Copy the API Environment variable URL = VALUE
 
 **Create a respository on GitHub**
@@ -651,12 +635,12 @@ CLOUDINARY_URL:
 
 **Connect the Heroku application to the GitHub repository**
 - Go on the Heroku page of the application then 'navigate to the Deploy' tab
-- Scroll down to 'Deployment method' and select GitHub 
-- Below that search for the Github repository to connect 
-- Click on 'Connect' 
+- Scroll down to 'Deployment method' and select GitHub
+- Below that search for the Github repository to connect
+- Click on 'Connect'
 - Below that there are two options: 'Automatic deploys' or 'Manual deploy'
 - To manually deploy: enter 'main' as the name of the branch and press 'Deploy Branch'
-- Main branch starts building up automatically 
+- Main branch starts building up automatically
 - At the end of the build a message pops up: 'Your app was successfully deployed' and a button: 'View'
 - Click on 'View' to see the live project. The live link to the project is [HERE](https://downwarddog.herokuapp.com/)  
 
@@ -664,7 +648,7 @@ CLOUDINARY_URL:
 
 - Set DEBUG to False in settings.py the
 - Set 'X_FRAME_OPTIONS' to 'SAMEORIGIN' in settings.py
-- Make sure that the requirements.txt file up-to-date: 'pip3 freeze --local > requirements.txt' 
+- Make sure that the requirements.txt file up-to-date: 'pip3 freeze --local > requirements.txt'
 - Delete 'DISABLE_COLLECTSTATIC' Config Vars, in Heroku
 - Go to the Deploy on the Heroku dashboard of the application and click on deploy branch
 
@@ -689,7 +673,7 @@ to validate all CSS code written and used in this website
 
 <p>
 <details><summary>JS Hint result</summary><br/>
-to validate the javascript code written used in this website
+to validate the javascript code written and used in this website
 <img src="README_docs/images/jshint.png" alt="JSHint">
 </details>
 
@@ -748,7 +732,7 @@ All tests passed successfully, indicating that the specified features and functi
 
 <p>
 <details><summary>Details</summary><br/>
-I asked friends and family to look at the application on their browsers and report any issues they find. A few responsiveness and semantical issues were resolved as a result of this.
+I asked friends and family to look at the application on their devices, browsers and report any issues they find. A few responsiveness and semantical issues were resolved as a result of this.
 </details>
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
@@ -757,31 +741,31 @@ I asked friends and family to look at the application on their browsers and repo
 
 **Updating models**
 
-A bigger issue came up right after I updated my model. The solution eventually was to reset the database and create a new superuser. The steps were the following:
+A bigger issue came up right after I updated my models. The solution eventually was to reset the database and create a new superuser. The steps were the following:
 
 1. Delete the db.sqlite3 file
 2. In ElephantSQL, in the Details dashboard, click on the 'Reset' button
 
 ![Reset ElephantSQL](README_docs/images/reset_elephantsql.png "reset_elephantsql")
 
-1. Delete all the migrations files inside the migration folder of the Django applications, EXCEPT for init.py file
+3. Delete all the migrations files inside the migration folder of the Django applications, EXCEPT for init.py file
 
-2. Make migrations again:
+4. Make migrations again:
 python3 manage.py makemigrations --dry-run
 python3 manage.py makemigrations
 python3 manage.py migrate --plan
 python3 manage.py migrate
 
-1. Create a new superuser :
+5. Create a new superuser :
 python3 manage.py createsuperuser
 
 **EmailJS**
 
-The contact form (index.html) did not send the messages, that is wired up with EmailJS. This was confusing as the test emails were successful from the . Eventually the issue was that it was not connected properly through my code, and I had to copy over the correct template parameters.
+The contact form (index.html) did not send the messages, that is wired up with EmailJS. This was confusing as the test emails were successful from the website of EmailJS. Eventually the issue was that I did not connect it properly through my code, and I had to copy over the correct template parameters.
 
 ### Unfixed bugs
 
-The video background is not working on some type of phones. A still image is shown instead.
+The video background is not working on some types of phones, resulting in the display of a still image instead.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
@@ -868,8 +852,6 @@ Dropdown menus - Yoga Detail and My Bookings
 <https://www.freecodecamp.org/news/html-drop-down-menu-how-to-add-a-drop-down-list-with-the-select-element/>
 
 I would like to also extend my heartfelt appreciation to my mentor, Elaine Roche, and the tutoring team for their unwavering support and valuable feedback. Their guidance, tips, and resources have been pivotal in honing my coding and testing skills.
-
-[Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
 ## Disclaimer
 
