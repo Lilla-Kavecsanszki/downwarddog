@@ -562,7 +562,7 @@ The admin can also delete the timetable to keep the content of the website relev
 
 How the Features align with and fulfill the User Stories by providing the necessary functionality and interactions that meet the users' needs and requirements.
 
-![Cross-reference Table](README_docs/us_f_crossreference.pdf "crossreference_table")
+[Cross-reference Table](README_docs/us_f_crossreference.pdf "crossreference_table")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
