@@ -182,7 +182,6 @@ The unique_booking constraint in the Booking model ensures that a user can creat
 - Wood Bark #322925
 
 ![colour_palette](README_docs/images/colorkit.png "colour_palette")
-[My Colour Palette](https://colorkit.co/palette/fff-f5f5f5-f2eae3-c36d4e-322925/)
 
 I picked these specific colours based on the purpose of the website and what the studio wishes to achieve. I made that decision for a playful and fun aesthetics that can also give a calming effect to the visitors at the same time.
 
@@ -198,7 +197,7 @@ The secondary font used for the body is Montserrat, which was selected for its c
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/downwarddog#contents)
 
-# Languages Use
+# Languages Used
 
 - HTML5
 - Python
@@ -578,7 +577,8 @@ How the Features align with and fulfill the User Stories by providing the necess
 <p>
 <details><summary>Steps</summary><br/>
 
-The DownwardDog website is deployed using Heroku, this was done based on the: [CI Django Blog Cheat Sheet](README_docs/django_blog_cheat_sheet.pdf)
+The DownwardDog website is deployed using Heroku, this was done based on the: 
+[CI Django Blog Cheat Sheet](README_docs/django_blog_cheat_sheet.pdf)
 
 - Create a Heroku application by pressing "New" on located on the upper right side of the main page
 - Select: 'Create new app' from the dropdown menu.
@@ -797,7 +797,7 @@ I drew inspiration for this project from my personal passion for both yoga and a
 
 The below websites and Youtube channels have been used to understand the logic of building this project with Django;
 
-The walk-through project 'I Think Therefore I Blog' from Code Institute videos: <https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/>
+The walk-through project 'I Think Therefore I Blog' from Code Institute videos - its codes were also heavily used in the project: <https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/>
 
 <https://www.youtube.com/playlist?list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc>
 
