@@ -63,13 +63,10 @@ This website is the best way to help them achieve these goals because:
 - The menu makes the access of different activities very easy to reach
 - The content on the website is carefully curated and updated to ensure that the visitors receive reliable information
 - The website offers interactive features as commenting, liking articles, encouraging the visitors to engage with the 
-  contect and to create a community 
-- The website offers dog-friendly yoga sessions, creating a unique yet inclusive experience for its visitors who would like to
-  bring along their furry friends
-- The website provides a wide range of yoga classes to chose from, allowing its visitors to choose based on their current 
-  needs
-- The website also displays multiple availabilities of each yoga class, allowing the visitors to choose the most convenient 
-  one for their free time 
+  contect and to create a community
+- The website offers dog-friendly yoga sessions, creating a unique yet inclusive experience for its visitors who would like to bring along their furry friends
+- The website provides a wide range of yoga classes to chose from, allowing its visitors to choose based on their current needs
+- The website also displays multiple availabilities of each yoga class, allowing the visitors to choose the most convenient one for their free time
 - The website offers flexibility in booking as it allows its visitors to delete a booked class, in case they are no 
   longer available, providing a hassle-free experience
 
@@ -77,8 +74,7 @@ This website:
 
 - Is easy to navigate by the menu and buttons, offers an inclusive and engaging platform
 - Gives the customers options and access to useful and learnable information.
-- Gives the customers the information they need without overloading them or distracting them from their original ideas or
-  wishes.
+- Gives the customers the information they need without overloading them or distracting them from their original ideas or wishes
 - Gives the customers the opportunity to connect with like-minded individuals
 - Gives the the customers the opportunity to seamlessly manage their yoga sessions with their dogs
 
@@ -88,42 +84,37 @@ This website:
 
 #### Introduction and Navigation Epic
 
-- #1  As a user, I can read the homepage so that I can get more information about the studio, the team, the approach to dogs 
-      and yoga in general.
+- #1  As a user, I can read the homepage so that I can get more information about the studio, the team, the approach to dogs and yoga in general.
 - #2  As a user, I can click on the navbar so that I go to the specific page I am interested in.
 
 #### Account Management Epic
 
 - #3  As a user, I can register to the website so that I have a higher level of permission and access.
-- #4  As a user/admin, I can log in to the website so that I have the ability to book a class and/or comment on an article, 
-      or like/unlike it.
+- #4  As a user/admin, I can log in to the website so that I have the ability to book a class and/or comment on an article, or like/unlike it.
 - #5  As a user, I can see whether I logged in or registered so that I know that it was successful.
 - #6  As a user, I can log out from the website so that I can protect my privacy and information.
 
 #### Articles, Comments & Likes Epic
 
 - #7  As a user, I can click on the article so that I can read the entire text about the topic and learn.
-- #8  As a user, if I am logged in, I can like or unlike the articles so that I have the opportunity to show my interest 
-      and appreciation.
-- #9  As a user, if I am logged in, I can comment on the articles so that I can leave my feedback and/or thoughts 
-      regarding the article.
+- #8  As a user, if I am logged in, I can like or unlike the articles so that I have the opportunity to show my interest and appreciation.
+- #9  As a user, if I am logged in, I can comment on the articles so that I can leave my feedback and/or thoughts regarding the article.
 
 #### Booking Epic
 
-- #10 As a user, I can read more information about each classes so that I can choose which one suits me the best to book. 
+- #10 As a user, I can read more information about each classes so that I can choose which one suits me the best to book.
 - #11 As a user, if I am logged in, I can create a booking so that I can book and join a class.
 - #12 As a user, I can choose the date of my future class so that I can book it on the date that suits my schedule.
 - #13 As admin, I can authorize or disapprove booking enquiries so that I can assure that the classes are not overbooked.
 - #14 As a user, if I am logged in, I can edit my booking so that I can change the number of dogs I would like to bring along
-- #15 As a user, if I am logged in, I can cancel my spot, my booking, so that I can give my space back to others and I can 
-    join the class when I am available.
+- #15 As a user, if I am logged in, I can cancel my spot, my booking, so that I can give my space back to others and I can join the class when I am available.
 
 #### Management Epic
 
 - #16 As an admin, I can authorize or disapprove comments so that I can assure that a respectful language is used at all times.
 - #17 As an admin I can create, read, update and delete articles so that I can manage the content.
 - #18 As an admin I can add and manage Classes and their Timetables so that I can keep the selection up to date.
-    
+  
 #### Contact Epic
 
 - #20 As a user, I can fill out a contact form so that I can communicate with the management, give my feedback, leave a review to the teachers and the studio
@@ -161,6 +152,12 @@ For easy access, you can find the Epics, Issues/ User Stories with their Accepta
 # Design
 
 ### Wireframes
+
+[Desktop Wireframes](README_docs/wireframes_desktop.pdf)
+
+[Tablet Wireframes](README_docs/wireframes_ipad.pdf)
+
+[Mobile Wireframes](README_docs/wireframes_mobile.pdf)
 
 ### Entity Relationship Diagrams
 
