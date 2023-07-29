@@ -346,7 +346,8 @@ When the article is liked by the current user, the heart icon appears filled wit
 
 ### F10 Comment on an article
 
-In order for a user to comment on an article, they again must first log in to their account. Once logged in, they can proceed to view the article's full content on the Articles Detail page and there scroll to the bottom. There, next to the existing Comments section, there is a form to leave their own comment. A clear message prompts the user to leave a comment and where it should be filled in. The username also appears above the form, showing who the comment will come from. The user needs to type in their comment into the text box then press the submit button. All comments then must be approved by the administrator before they will be visible on the Articles Detail page. Once approved, the comments will appear in the comments section at the bottom of the Articles Detail pag.
+In order for a user to comment on an article, they again must first log in to their account. Once logged in, they can proceed to view the article's full content on the Articles Detail page and there scroll to the bottom. There, next to the existing Comments section, there is a form to leave their own comment. A clear message prompts the user to leave a comment and where it should be filled in. The username also appears above the form, showing who the comment will come from. The user needs to type in their comment into the text box then press the submit button. When the form is filled out as required and submitted, the user will see a reassuring message popping up in green, at place of the comment form, letting them know that their feedback was successfully sent.
+All comments then must be approved by the administrator before they will be visible on the Articles Detail page. Once approved, the comments will appear in the comments section at the bottom of the Articles Detail pag.
 
 For the admin to approve a comment, they need to log in to the admin pages. There they need to click onto the Comments table, tick and select the comment or comments that they wish to authorise, choose the 'Approve Comments' button from the drop-down menu and finally click on 'Go'.
 The second way to achieve the same is to click on the individual comment (on the name row) and there select 'Approved' box then finally press save.
@@ -354,6 +355,8 @@ The second way to achieve the same is to click on the individual comment (on the
 There is also a comment counter, next to the like counter, that tracks the number of comments were approved for the specific article.
 
 ![Comment](README_docs/images/comment.png "comment")
+
+![Comment Message](README_docs/images/comment_message.png "comment_message")
 
 ![Comment Approve](README_docs/images/comment_approve.png "comment_approve")
 
