@@ -851,6 +851,11 @@ Dropdown menus - Yoga Detail and My Bookings
 
 <https://www.freecodecamp.org/news/html-drop-down-menu-how-to-add-a-drop-down-list-with-the-select-element/>
 
+Integrating the Admin page
+
+https://stackoverflow.com/questions/1022236/linking-to-the-django-admin-site 
+
+
 I would like to also extend my heartfelt appreciation to my mentor, Elaine Roche, and the tutoring team for their unwavering support and valuable feedback. Their guidance, tips, and resources have been pivotal in honing my coding and testing skills.
 
 ## Disclaimer
